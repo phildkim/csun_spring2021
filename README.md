@@ -1,14 +1,67 @@
 # CSUN SPRING 2021
 
-BIO 106L |
----------|
-BIO 106  |
----------|
- A2 |
----------|
- A3 |
- 
+****
 
-```
+```bash
 git push -u origin main
 ```
+
+****
+
+## BIO 106
+
+- [ ] 6.1 Mendelian Genetics (Lecture 20:52)
+- [ ] 6.2 Mendel's Principle of Segregation (Lecture 8:15)
+- [ ] Mendelian Genetics (Reading)
+- [ ] Inheritance (I) (Connect)
+- [ ] 6.3 Mendel's Principle of Independent Assortment (Lecture 4:42)
+- [ ] 6.4 Chromosome Theory of Inheritance (Lecture 8:01)
+- [ ] Quiz 7 (due Sept. 27) Note: you can do this quiz after completing all of the prior items in this section
+- [ ] 6.5 Beyond Mendel (Lecture 43:16)
+- [ ] 6.6 Solving Genetics Problems (Problem set and Video of Solutions)
+- [ ] Chromosomes and Inheritance (Reading)
+- [ ] Inheritance (II) (Connect)
+- [ ] Quiz 8 (due Feb. 28)
+- [ ] Quiz 9 (due Feb. 8)
+
+****
+
+## BIO 106L
+
+****
+
+## COMP 300
+
+- [ ] Essay #4
+
+****
+
+## COMP 322
+
+- [ ] Zybook Ch 3,4
+
+****
+
+## COMP 322L
+
+- [ ] Zybook Ch 3,4
+
+****
+
+## COMP 491L
+
+- [ ] Lab 1
+
+****
+
+## PHYS 220B
+
+- [ ] Ch 24 HW
+- [ ] Ch 24 Recitation
+
+****
+
+## PHYS 220BL
+
+- [ ] Wednesday Pick Kit at 13:00
+- [ ] Lab 3
