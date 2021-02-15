@@ -3,7 +3,25 @@
 ****
 
 ```bash
+git add .
+git commit -m "csun spring 2021"
 git push -u origin main
+```
+
+```c
+gcc main.c
+./a.out
+```
+
+```java
+javac main.java
+java main
+```
+
+```javascript
+npm install
+npm run dev // development server
+npm run build && npm start // production server
 ```
 
 ****
