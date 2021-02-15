@@ -28,7 +28,7 @@ npm run build && npm start // production server
 
 ## BIO 106
 
-- [ ] 6.1 Mendelian Genetics (Lecture 20:52)
+- [x] ~~6.1 Mendelian Genetics (Lecture 20:52)~~
 - [ ] 6.2 Mendel's Principle of Segregation (Lecture 8:15)
 - [ ] Mendelian Genetics (Reading)
 - [ ] Inheritance (I) (Connect)
