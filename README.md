@@ -46,6 +46,13 @@ npm run build && npm start // production server
 
 ## BIO 106L
 
+- [ ] Intermediate Disturbance Hypothesis Lab Report **Due Monday at 1:59pm**
+- [ ] Chapter 4 Discussion:
+  - FIRST comment due **Thursdays by 11:59pm**
+  - Second comment (on someone else post by **Sunday at 11:59pm**)
+- [ ] Chapter 4
+  - Quiz 4 due **Monday at 1:59pm** (chapter 1 & 2 on it)
+
 ****
 
 ## COMP 300
