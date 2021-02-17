@@ -34,11 +34,11 @@ npm run build && npm start // production server
 - [x] ~~Inheritance (I) (Connect)~~
 - [x] ~~6.3 Mendel's Principle of Independent Assortment (Lecture 4:42)~~
 - [x] ~~6.4 Chromosome Theory of Inheritance (Lecture 8:01)~~
-- [ ] **Quiz 7**
 - [x] ~~6.5 Beyond Mendel (Lecture 43:16)~~
 - [ ] 6.6 Solving Genetics Problems (Problem set and Video of Solutions)
 - [ ] Chromosomes and Inheritance (Reading)
 - [ ] Inheritance (II) (Connect)
+- [ ] **Quiz 7**
 - [ ] **Quiz 8**
 - [ ] **Quiz 9**
 
@@ -58,18 +58,23 @@ npm run build && npm start // production server
 ## COMP 300
 
 - [ ] Essay #4
+- [ ] Bibliography Assignment due: **3/14/21**
+- [ ] Research Paper due: **4/25/21**
+- [ ] Class Presentation (PowerPoint or Video) due: **5/14/21**
 
 ****
 
 ## COMP 322
 
-- [ ] Zybook Ch 3,4
+- [ ] Zybook Ch 3
+- [ ] Zybook Ch 4
 
 ****
 
 ## COMP 322L
 
-- [ ] Zybook Ch 3,4
+- [ ] Zybook Ch 3
+- [ ] Zybook Ch 4
 
 ****
 
@@ -81,8 +86,9 @@ npm run build && npm start // production server
 
 ## PHYS 220B
 
-- [ ] Ch 24 HW
-- [ ] Ch 24 Recitation
+- [ ] Ch 23 HW
+- [ ] Ch 23 Recitation
+- [ ] Midterm 1: **3/1/2021**
 
 ****
 
