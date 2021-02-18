@@ -173,9 +173,15 @@ npm run build && npm start // production server
 
 ### Week 5
 
+- [ ] Chapter 5 Quiz: **Monday at 1:59pm**
+
 ### Week 6
 
+- [ ] Chapter 6 Quiz: **Monday at 1:59pm**
+
 ### Week 7
+
+- [ ] Chapter 7 Quiz: **Monday at 1:59pm**
 
 ### Week 8
 
