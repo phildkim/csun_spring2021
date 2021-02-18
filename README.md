@@ -1,7 +1,7 @@
 # CSUN SPRING 2021
 
 ## philip.kim.657@my.csun.edu
-
+<!-- \<Neg4life\> -->
 ****
 
 ```bash
@@ -28,7 +28,7 @@ npm run build && npm start // production server
 
 ****
 
-## BIO 106
+## BIO 106: Online class
 
 - [x] ~~6.1 Mendelian Genetics (Lecture 20:52)~~
 - [x] ~~6.2 Mendel's Principle of Segregation (Lecture 8:15)~~
@@ -37,12 +37,12 @@ npm run build && npm start // production server
 - [x] ~~6.3 Mendel's Principle of Independent Assortment (Lecture 4:42)~~
 - [x] ~~6.4 Chromosome Theory of Inheritance (Lecture 8:01)~~
 - [x] ~~6.5 Beyond Mendel (Lecture 43:16)~~
-- [ ] 6.6 Solving Genetics Problems (Problem set and Video of Solutions)
+- [x] ~~6.6 Solving Genetics Problems (Problem set and Video of Solutions)~~
 - [x] ~~Chromosomes and Inheritance (Reading)~~
-- [ ] Inheritance (II) (Connect)
-- [ ] **Quiz 7**
-- [ ] **Quiz 8**
-- [ ] **Quiz 9**
+- [x] ~~Inheritance (II) (Connect)~~
+- [ ] Quiz 7 (_8 questions, 10mins_) **Feb 28 at 11:59pm**
+- [ ] Quiz 8 (_9 questions, 15mins_) **Feb 28 at 11:59pm**
+- [ ] Quiz 9 (_2 Mendelian Genetics problems, 20mins_) **Feb 28 at 11:59pm**
 
 ****
 
