@@ -10,15 +10,17 @@
 
 ### CSUN Student ID: 108508736
 
-<!-- 
-CSUN Password: <Neg4life> 
--->
+### CSUN Password: \<Neg4life>
+
 ****
 
 ```bash
+#!/bin/sh
 git add .
 git commit -m "csun spring 2021"
 git push -u origin main
+# run script for above
+./update.sh
 ```
 
 ```c
@@ -166,7 +168,7 @@ npm run build && npm start // production server
 ### Week 4
 
 - [x] ~~Intermediate Disturbance Hypothesis Lab Report **Due Monday at 1:59pm**~~
-- [ ] Chapter 4 Discussion:
+- [ ] [Chapter 4 Discussion](https://docs.google.com/document/d/1P982mfSFjoRND2v-wKB1t6xIbCzeL_GGmYC38UwO7Vk/edit):
   - First comment due **Thursdays by 11:59pm**
   - Second comment (on someone else post by **Sunday at 11:59pm**)
 - [ ] Chapter 4 Quiz (chapter 1,2,4): **Monday at 1:59pm**
@@ -315,13 +317,11 @@ npm run build && npm start // production server
 
 ### Part 1
 
-#### [Ch 21: Electric Charge and Electric Field](https://etext-ise.pearson.com/courses/MPPLUS2851634/products/H0IM2WJBBP/pages/a64cc447e4d788ccc8e1006d7c764358d5211a87a?locale=&isTpi=Y&key=3004420505643175451182021&iesCode=lHcR4SeKzp)
-
-#### [Ch 22: Gauss's Law](https://etext-ise.pearson.com/courses/MPPLUS2851634/products/H0IM2WJBBP/pages/ad1f56f65fa97f162c7aadfe16c4d567f21e581ba?locale=&isTpi=Y&key=3004420505643175451182021&iesCode=lHcR4SeKzp)
-
-#### [Ch 23: Electric Potential](https://etext-ise.pearson.com/courses/MPPLUS2851634/products/H0IM2WJBBP/pages/a0dde24ff6123b5919f35ca87c8e1077f49666c9c?locale=&isTpi=Y&key=3004420505643175451182021&iesCode=lHcR4SeKzp)
+#### [eBook](https://canvas.csun.edu/courses/90844/modules/items/3378731)
 
 - [ ] Recitation 4: **2/19/2021 @ 11:59pm**
+  - [ ] [Number 1](https://www.chegg.com/homework-help/questions-and-answers/region-space-contains-electric-field-er-e1-o-e2-o-j-e1-e2-positive-constants-frame-whose-c-q22334125)
+  - [ ] [Number 1](https://www.chegg.com/homework-help/questions-and-answers/region-space-contains-electric-field-e-e1-e2-j-e1-e2-positive-constants-frame-whose-corner-q2665529)
 - [ ] [Homework Ch 23](https://session.masteringphysics.com/myct/mastering#/): **Due 02/26/2021**
   - {2,3,5,6,8,9,11,(12),15,(16),17,19,20,21,22,24,26,27,28,29}
 - [ ] Practice Test
