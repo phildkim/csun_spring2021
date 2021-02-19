@@ -1,9 +1,19 @@
 \documentclass{article}
 \usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry}
+\usepackage[dvipsnames]{xcolor}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage{amssymb,amsmath,amsthm,latexsym}
+\usepackage{
+  amssymb,
+  amsmath,
+  amsthm,
+  latexsym
+}
+\definecolor{A}{HTML}{3366cc}
+\definecolor{B}{HTML}{339933}
+\definecolor{C}{HTML}{ff9900}
+\def\M#1#2{\(M_{\color{#1}{\textbf{#2}}}\)}
 \graphicspath{{./images/}}
 \title{Intermediate Disturbance Hypothesis Lab Report}
 \author{Philip Kim}
@@ -55,14 +65,16 @@
         \epsilon_{x} &= \frac{\sigma_{x}}{\sqrt{n}} \\
         \overline{A},~\overline{B},~\overline{C} &= 9.1379, 10.9655, 9.0345 \\
         \sigma_{A},~\sigma_{B},~\sigma_{C} &= 5.4098, 5.5964, 4.7017 \\
-        \epsilon_{A},~\epsilon_{B},~\epsilon_{C} &= 0.1865, 0.1930, 0.1621 \\
+        \epsilon_{A},~\epsilon_{B},~\epsilon_{C} &= 1.0046, 1.0392, 0.8731 \\
       \end{split}
     \end{equation}
   \end{center}
 \end{table}
 \newpage
 \begin{center}
-  \includegraphics[width=\textwidth]{idh.jpg}
+  \includegraphics[width=\textwidth]{idh.png}
+  \fbox{\begin{minipage}{45em}
+    In the bar chart above, are the averages of morphospecies with no disturbance \M{A}{A}, intermediate disturbance \M{B}{B} and high disturbance \M{C}{C}. As you can see from all three error bars and the dashed line across, \M{A}{A} has a overlap with both \M{B}{B} and \M{C}{C}. This means there is no statistical significant difference compared to \M{B}{B} and \M{C}{C}. However, \M{B}{B} and \M{C}{C} error bars do not overlap, therefore we can conclude that there is a statistical significant difference with \M{B}{B} and \M{C}{C}.
+  \end{minipage}}
 \end{center}
-In the bar chart above, are the averages of morphospecies with no disturbance, intermediate disturbance and high disturbance. The error bar for A (no disturbance) has no significant difference compared to C (high disturbance). However, B (intermediate disturbance) has significant difference with both A (no disturbance) and C (high disturbance).
 \end{document}
