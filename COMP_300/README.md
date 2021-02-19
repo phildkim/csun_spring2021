@@ -1,0 +1,65 @@
+# COMP 300: Fr 11:00AM-1:45PM
+
+- [ ] [Essay #4](https://docs.google.com/document/d/1Kq7Q_KJ8YbgBWHZvIkhsv5VkVqZjoKN2Rgs0e45KITc/edit): **Sunday by 11:59pm**
+  - [ ] [The Pandemic May (Finally) Push Online Edu. Into Teacher Prep Programs](https://www.edsurge.com/news/2020-05-28-pandemic-may-finally-push-online-education-into-teacher-prep-programs)
+  - [ ] [What Will Schools Look Like in the Future?](https://www.youtube.com/watch?v=JZlgYiXzu58)
+  - [ ] [What We're learning from Online Education](https://www.ted.com/talks/daphne_koller_what_we_re_learning_from_online_education)
+  - [ ] [The Uberization of Education](https://www.insidehighered.com/views/2016/08/12/dangers-uberization-higher-education-essay)
+  - [ ] [John Berger: Ways of Seeing](https://www.youtube.com/watch?v=0pDE4VX_9Kk)
+  - [ ] [Apple Computer's Knowledge Navigator](https://www.youtube.com/watch?v=3WdS4TscWH8&ab_channel=JustinPurnell)
+- [ ] [Essay #5](https://docs.google.com/document/d/1RxAGM3rwNtKEHA0ya-xSJxAhwSMWDap4xyQab0wvGIc/edit): **Feb 28 by 11:59pm**
+  - [ ] [History of Cellphones](https://www.youtube.com/watch?v=nrdNdprcYls)
+  - [ ] [Are You Lost in the World, Like Me? Moby](https://www.youtube.com/watch?v=VASywEuqFd8)
+  - [ ] [Your phone is trying to control your life](https://www.pbs.org/newshour/show/phone-trying-control-life)
+  - [ ] [Antisocial Phone Tricks](https://www.ted.com/talks/renny_gleeson_our_antisocial_phone_tricks)
+  - [ ] [Your Phone Company is Watching..](https://www.ted.com/talks/malte_spitz_your_phone_company_is_watching?language=en)
+  - [ ] [Our Cell Phone Culture](http://thetechnologicalcitizen.com/?p=1175)
+- [ ] [Essay #6](https://docs.google.com/document/d/1_qICcO-2zlUgyHDJyHt6eK3cREMXFZDWIJzsJ-tlBPc/edit): **Mar 7 by 11:59pm**
+  - [ ] [California's New Net Neutrality Legislation](https://www.cnet.com/news/california-net-neutrality-law-sparks-justice-department-lawsuit/)
+  - [ ] [Burger King Net Neutrality](https://www.youtube.com/watch?v=ltzy5vRmN8Q)
+  - [ ] [How the end of Net Neutrality may change the Internet](https://www.youtube.com/watch?v=HqXKEgTYZBQ)
+  - [ ] [Can You Hear me Now? 3/5/21](https://www.youtube.com/watch?v=aiZ8xwwycXA&t=38s)
+  - [ ] [Net Neutrality 101](https://en.wikipedia.org/wiki/Net_neutrality)
+  - [ ] [How Dumb Are We?](https://www.newsweek.com/how-ignorant-are-americans-66053)
+  - [ ] [Short Clip from Fahrenheit 451 (1966)](https://www.youtube.com/watch?v=M9n98SXNGl8)
+  - [ ] [Is It Time To Burn This Book? When Fahrenheit 451 becomes a comic book, it's time to worry.](https://slate.com/culture/2009/08/fahrenheit-451-in-comic-book-form.html)
+- [ ] [Bibliography](https://docs.google.com/document/d/1bEvjrZzd8rK3aCi-6D2LYhRRpUSAvsZ2I3KonbkhqgE/edit): **Mar 14 by 11:59pm**
+- [ ] [Essay #7](https://docs.google.com/document/d/1ITdP1aiIM3BZbLKjuEkSjzTU9EXNZ5tOBJ7__Nu5tMA/edit): **Mar 14 by 11:59pm**
+  - [ ] [What is Universal Design?](https://www.youtube.com/watch?v=AGQ_7K35ysA)
+  - [ ] [WebAIM: Introduction to Web Accessibility](https://webaim.org/intro/)
+  - [ ] [Universal Design for Learning](https://en.wikipedia.org/wiki/Universal_Design_for_Learning)
+  - [ ] [Universal Design Center](https://www.csun.edu/universal-design-center)
+- [ ] **SPRING BREAK: 3/15/21 - 3/19/21**
+- [ ] [Essay #8](https://docs.google.com/document/d/1ehvn4SjkYt9i3pzapPz8mEfd9Kdycz6GXwFx8Iwp1bo/edit): **Mar 28 by 11:59pm**
+  - [ ] [Intellectual Property Rights: Federalist Society](https://www.youtube.com/watch?v=BEV6hWog2Ww)
+  - [ ] [Blockathon: EU Intellectual Property Rights](https://www.youtube.com/watch?v=Sb3ecqzhW6g)
+  - [ ] [Social Media's New Intellectual Property Challenges](https://www.legalzoom.com/articles/social-medias-new-intellectual-property-challenges)
+  - [ ] [Plagiarism Lines Blur for Students in Digital Age](https://www.nytimes.com/2010/08/02/education/02cheat.html)
+  - [ ] [Fair use](https://en.wikipedia.org/wiki/Fair_use)
+- [ ] [Essay #9](https://docs.google.com/document/d/1giCKGmuenYdtZMsgJ3vwo2TFC5WRTbWg_mrmaVJskKI/edit): **Apr 4 by 11:59pm**
+  - [ ] [Hackers will pose a greater threat in 2018](https://www.youtube.com/watch?v=kCrV_hQ1W-Q)
+  - [ ] [Meet a 12-year-old hacker and cyber security expert](https://www.youtube.com/watch?v=7TpsYofbAPA)
+  - [ ] [How malware could disrupt midterm elections](https://www.youtube.com/watch?v=zfkCRY1YS-4)
+  - [ ] [10 Things to Remember When Connecting to Free Wi-Fi](https://www.youtube.com/watch?v=9KKwRoPzSzk)
+  - [ ] [Resolved: How to Keep Your Computer Safe, Clearn and Backed Up](https://lifehacker.com/resolved-how-to-keep-your-computer-safe-clean-and-ba-5720731)
+- [ ] [Essay #10](https://docs.google.com/document/d/11VbYPGMEN0A4Y1FU0bfmJx0ifNgBckCr8ehmzDlm3iE/edit): **Apr 11 by 11:59pm**
+  - [ ] [Freedom vs Security: Freedom at any cost?](https://www.youtube.com/watch?v=zL2LMTRoWlA)
+  - [ ] [Edward Snowden - Patriot or Traitor?](https://www.youtube.com/watch?v=LCJ1SBEMU1s)
+  - [ ] [Hacker Wins Election As Pirate Party Leader | Freethink Coded](https://www.youtube.com/watch?v=RFrKYYNiyZE)
+  - [ ] [How can social media impact the government?](https://www.youtube.com/watch?v=wDT1c89uazk)
+  - [ ] [Impact of media evolution on politics](https://www.youtube.com/watch?v=vyIMg4F5axw)
+- [ ] [Essay #11](https://docs.google.com/document/d/1VtpzEuzsG8ikLe3jToRdPXhIdgqsC-a1CsZuw9NFytA/edit): **Apr 18 by 11:59pm**
+  - [ ] [The Big Bang Theory - The Friendship Algorithm](https://www.youtube.com/watch?v=k0xgjUhEG3U)
+  - [ ] [How to Use Flow Charts to Show how Processes Work](https://www.youtube.com/watch?v=ba5duMARdMc)
+  - [ ] [Algorithm Using pseudocode and flowchart](https://www.youtube.com/watch?v=-TSOy_-8h3k)
+  - [ ] [Toast, Anyone?](https://www.youtube.com/watch?v=wb46UVX9t1E&feature=related)
+- [ ] [Research Paper](https://docs.google.com/document/d/1M6orVz_O3qvcHRX4s2yfCgBHDjIFA7Z37FPuEicI-qo/edit): **Apr 25 by 11:59pm**
+- [ ] [Essay #12](https://docs.google.com/document/d/1Nx2MUAz1ecL4lXr_3KRATTrozLR3hOS4kbpEzKMYuSE/edit): **Apr 25 by 11:59pm**
+  - [ ] [What is an Algorithm?](https://www.youtube.com/watch?v=AVScy7YsKM0)
+  - [ ] [What is Pseudocode?](https://en.wikipedia.org/wiki/Pseudocode)
+  - [ ] [Pseudocode: Monopoly](https://www.wiley.com/college/busin/icmis/oakman/outline/chap05/slides/pseudo.htm)
+- [ ] [Essay #13](https://docs.google.com/document/d/1RUrrBidI0zVxYQ00QFuhMLoKcUnPHv4tIXzK7igGKzc/edit): **May 2 by 11:59pm**
+  - [ ] [3 Facts About Semiotics](https://www.youtube.com/watch?v=llZk-ejfDcA)
+  - [ ] [Semiotics](https://en.wikipedia.org/wiki/Semiotics)
+  - [ ] [What is Visual Programming?](https://en.wikipedia.org/wiki/Visual_programming_language)
+- [ ] Class Presentation (PowerPoint or Video): **May 5**
