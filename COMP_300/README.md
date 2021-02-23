@@ -1,12 +1,12 @@
 # COMP 300: Fr 11:00AM-1:45PM
 
-- [ ] [Essay #4](https://docs.google.com/document/d/1Kq7Q_KJ8YbgBWHZvIkhsv5VkVqZjoKN2Rgs0e45KITc/edit): **Sunday by 11:59pm**
-  - [ ] [The Pandemic May (Finally) Push Online Edu. Into Teacher Prep Programs](https://www.edsurge.com/news/2020-05-28-pandemic-may-finally-push-online-education-into-teacher-prep-programs)
-  - [ ] [What Will Schools Look Like in the Future?](https://www.youtube.com/watch?v=JZlgYiXzu58)
-  - [ ] [What We're learning from Online Education](https://www.ted.com/talks/daphne_koller_what_we_re_learning_from_online_education)
-  - [ ] [The Uberization of Education](https://www.insidehighered.com/views/2016/08/12/dangers-uberization-higher-education-essay)
-  - [ ] [John Berger: Ways of Seeing](https://www.youtube.com/watch?v=0pDE4VX_9Kk)
-  - [ ] [Apple Computer's Knowledge Navigator](https://www.youtube.com/watch?v=3WdS4TscWH8&ab_channel=JustinPurnell)
+- [X] ~~[Essay #4](https://docs.google.com/document/d/1Kq7Q_KJ8YbgBWHZvIkhsv5VkVqZjoKN2Rgs0e45KITc/edit): **Sunday by 11:59pm**~~
+  - [X] ~~[The Pandemic May (Finally) Push Online Edu. Into Teacher Prep Programs](https://www.edsurge.com/news/2020-05-28-pandemic-may-finally-push-online-education-into-teacher-prep-programs)~~
+  - [X] ~~[What Will Schools Look Like in the Future?](https://www.youtube.com/watch?v=JZlgYiXzu58)~~
+  - [X] ~~[What We're learning from Online Education](https://www.ted.com/talks/daphne_koller_what_we_re_learning_from_online_education)~~
+  - [X] ~~[The Uberization of Education](https://www.insidehighered.com/views/2016/08/12/dangers-uberization-higher-education-essay)~~
+  - [X] ~~[John Berger: Ways of Seeing](https://www.youtube.com/watch?v=0pDE4VX_9Kk)~~
+  - [X] ~~[Apple Computer's Knowledge Navigator](https://www.youtube.com/watch?v=3WdS4TscWH8&ab_channel=JustinPurnell)~~
 - [ ] [Essay #5](https://docs.google.com/document/d/1RxAGM3rwNtKEHA0ya-xSJxAhwSMWDap4xyQab0wvGIc/edit): **Feb 28 by 11:59pm**
   - [ ] [History of Cellphones](https://www.youtube.com/watch?v=nrdNdprcYls)
   - [ ] [Are You Lost in the World, Like Me? Moby](https://www.youtube.com/watch?v=VASywEuqFd8)
@@ -41,7 +41,7 @@
   - [ ] [Meet a 12-year-old hacker and cyber security expert](https://www.youtube.com/watch?v=7TpsYofbAPA)
   - [ ] [How malware could disrupt midterm elections](https://www.youtube.com/watch?v=zfkCRY1YS-4)
   - [ ] [10 Things to Remember When Connecting to Free Wi-Fi](https://www.youtube.com/watch?v=9KKwRoPzSzk)
-  - [ ] [Resolved: How to Keep Your Computer Safe, Clearn and Backed Up](https://lifehacker.com/resolved-how-to-keep-your-computer-safe-clean-and-ba-5720731)
+  - [ ] [Resolved: How to Keep Your Computer Safe, Clear and Backed Up](https://lifehacker.com/resolved-how-to-keep-your-computer-safe-clean-and-ba-5720731)
 - [ ] [Essay #10](https://docs.google.com/document/d/11VbYPGMEN0A4Y1FU0bfmJx0ifNgBckCr8ehmzDlm3iE/edit): **Apr 11 by 11:59pm**
   - [ ] [Freedom vs Security: Freedom at any cost?](https://www.youtube.com/watch?v=zL2LMTRoWlA)
   - [ ] [Edward Snowden - Patriot or Traitor?](https://www.youtube.com/watch?v=LCJ1SBEMU1s)

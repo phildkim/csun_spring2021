@@ -14,7 +14,7 @@
 - [x] ~~6.6 Solving Genetics Problems (Problem set and Video of Solutions)~~
 - [x] ~~Chromosomes and Inheritance (Reading)~~
 - [x] ~~Inheritance (II) (Connect)~~
-- [ ] Quiz 7 (_8 questions, 10mins_) **Feb 28 at 11:59pm**
+- [x] ~~Quiz 7 (_8 questions, 10mins_) **Feb 28 at 11:59pm**~~
 - [ ] Quiz 8 (_9 questions, 15mins_) **Feb 28 at 11:59pm**
 - [ ] Quiz 9 (_2 Mendelian Genetics problems, 20mins_) **Feb 28 at 11:59pm**
 

@@ -6,4 +6,10 @@
 - [x] ~~[Chapter 4 Discussion](https://docs.google.com/document/d/1P982mfSFjoRND2v-wKB1t6xIbCzeL_GGmYC38UwO7Vk/edit):~~
   - ~~First comment due **Thursdays by 11:59pm**~~
   - ~~Second comment (on someone else post by **Sunday at 11:59pm**)~~
-- [ ] Chapter 4 Quiz (chapter 1,2,4): **Monday at 1:59pm**
+- [x] ~~Chapter 4 Quiz (chapter 1,2,4): **Monday at 1:59pm**~~
+
+## Week 5
+
+- [x] ~~Comparing two mosses~~
+- [ ] Chapter 5 Discussion: 2/25/2021
+- [ ] Chapter 5 Quiz (Ch 1, 2): 3/1/2021
