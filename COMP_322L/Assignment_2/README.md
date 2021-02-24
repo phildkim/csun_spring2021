@@ -1,6 +1,20 @@
 # Batch scheduling algorithms
 
 ***
+```
+repeat until Rᵢ == 0 for all n processes    /* repeat until all processes have terminated */
+  while no process is active, increment t   /* if no process is ready to run, just advance t */
+  choose active processes pᵢ to run next
+      according to scheduling algorithm     /* Ex: FIFO, SJF, SRT */
+   decrement Rᵢ                             /* pᵢ has accumulated 1 CPU time unit */
+   if Rᵢ == 0                               /* process i has terminated */
+      set active flag of pᵢ = 0             /* process i is excluded from further consideration */
+      TTᵢ = t - Aᵢ                          /* the turnaround time of process i is the time since arrival, TTᵢ, until the current time t */
+compute the average turnaround time,
+  ATT, by averaging all values TTᵢ
+```
+
+***
 
 ## FIFO
 
@@ -28,11 +42,9 @@ Process | Waiting Time | Turnaround Time
  B | 16 ms | 23 ms
  C | 23 ms | 33 ms
 
-Total waiting time: (0 + 16 + 23) = 39ms
-Average waiting time: (39/3) = 13ms
+**Total turnaround time:** (18 + 23 + 33) = **74ms**
 
-**Total turnaround time:** (18 + 23 + 33) = 74ms
-**Average turnaround time:** (74/3) = 24.66ms
+**Average turnaround time:** (74/3) = **24.66ms**
 
 ***
 

@@ -1,45 +1,76 @@
 #include <stdio.h>
-
-int main()
-{
-  int arrival_time[10], burst_time[10], temp[10];
-  int i, smallest, count = 0, time, limit;
-  double wait_time = 0, turnaround_time = 0, end;
-  float average_waiting_time, average_turnaround_time;
-  printf("\nEnter the Total Number of Processes:\t");
-  scanf("%d", &limit);
-  printf("\nEnter Details of %d Processes\n", limit);
-  for (i = 0; i < limit; i++)
-  {
-    printf("\nEnter Arrival Time:\t");
-    scanf("%d", &arrival_time[i]);
-    printf("Enter Burst Time:\t");
-    scanf("%d", &burst_time[i]);
-    temp[i] = burst_time[i];
+#include <stdlib.h>
+typedef unsigned int time;
+typedef struct job job;
+typedef struct job {
+  int id;
+  time arrival;
+  time process;
+  job *next;
+} job;
+job *prompt(const char *p, int id) {
+  time arrival, process;
+  job *result;
+  for (; printf("%s for J%d: ", p, id); printf("Re-try.\n")) {
+    int c;
+    char ln[200];
+    if (fgets(ln, sizeof(ln), stdin) == 0)
+      return 0;
+    if (sscanf(ln, " %n", &c) == 0 && c >= 0 && ln[c] == '\0')
+      return 0;
+    if (sscanf(ln, "%u %u %n", &arrival, &process, &c) == 2 && c > 0 && ln[c] == '\0')
+      break;
   }
-  burst_time[9] = 9999;
-  for (time = 0; count != limit; time++)
-  {
-    smallest = 9;
-    for (i = 0; i < limit; i++)
-    {
-      if (arrival_time[i] <= time && burst_time[i] < burst_time[smallest] && burst_time[i] > 0)
-      {
-        smallest = i;
+  result = (job *)malloc(sizeof(job));
+  if (result != 0) {
+    result->arrival = arrival;
+    result->process = process;
+    result->id = id;
+    result->next = 0;
+  }
+  return result;
+}
+job *sort(job *h, time clk) {
+  time c;
+  job *p, *q, **r, **s;
+  for (c = 0, p = h, r = &h; p != NULL;) {
+    for (s = &h; (q = *s) != p; s = &q->next)
+      if (p->arrival <= clk) {
+        if (p->process > q->process)
+          break;
       }
-    }
-    burst_time[smallest]--;
-    if (burst_time[smallest] == 0)
-    {
-      count++;
-      end = time + 1;
-      wait_time = wait_time + end - arrival_time[smallest] - temp[smallest];
-      turnaround_time = turnaround_time + end - arrival_time[smallest];
-    }
+      else if (p->arrival < q->arrival ||
+               (p->arrival == q->arrival && p->process > q->process))
+        break;
+    if (q != p)
+      *s = p, *r = p->next, p->next = q, p = *r;
+    else
+      r = &p->next, p = p->next;
   }
-  average_waiting_time = wait_time / limit;
-  average_turnaround_time = turnaround_time / limit;
-  printf("\n\nAverage Waiting Time:\t%lf\n", average_waiting_time);
-  printf("Average Turnaround Time:\t%lf\n", average_turnaround_time);
+  return h;
+}
+void print(const job *h) {
+  if (h != 0) {
+    printf("J%d: Arrival = %u, Process = %u\n", h->id, h->arrival, h->process);
+    print(h->next);
+  }
+}
+job *destroy(job *h) {
+  if (h != 0) {
+    destroy(h->next);
+    free(h);
+  }
+  return 0;
+}
+int main(void) {
+  int i;
+  time c;
+  job *list = 0, *j, **x;
+  for (i = 1; (j = prompt("Enter arrival and process times", i)) != 0; ++i)
+    j->next = list, list = j;
+  for (c = 0, x = &list; *x != 0; x = &(*x)->next)
+    c += (*x = sort(*x, c))->process;
+  print(list);
+  list = destroy(list);
   return 0;
 }

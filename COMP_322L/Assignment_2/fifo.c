@@ -1,72 +1,48 @@
-// C program for implementation of FCFS
-// scheduling
 #include <stdio.h>
-// Function to find the waiting time for all
-// processes
-void findWaitingTime(int processes[], int n,
-                     int bt[], int wt[])
-{
-  // waiting time for first process is 0
-  wt[0] = 0;
-
-  // calculating waiting time
-  for (int i = 1; i < n; i++)
-    wt[i] = bt[i - 1] + wt[i - 1];
-}
-
-// Function to calculate turn around time
-void findTurnAroundTime(int processes[], int n,
-                        int bt[], int wt[], int tat[])
-{
-  // calculating turnaround time by adding
-  // bt[i] + wt[i]
-  for (int i = 0; i < n; i++)
-    tat[i] = bt[i] + wt[i];
-}
-
-//Function to calculate average time
-void findavgTime(int processes[], int n, int bt[])
-{
-  int wt[n], tat[n], total_wt = 0, total_tat = 0;
-
-  //Function to find waiting time of all processes
-  findWaitingTime(processes, n, bt, wt);
-
-  //Function to find turn around time for all processes
-  findTurnAroundTime(processes, n, bt, wt, tat);
-
-  //Display processes along with all details
-  printf("Processes Burst time Waiting time Turn around time\n");
-
-  // Calculate total waiting time and total turn
-  // around time
-  for (int i = 0; i < n; i++)
-  {
-    total_wt = total_wt + wt[i];
-    total_tat = total_tat + tat[i];
-    printf(" %d ", (i + 1));
-    printf("	 %d ", bt[i]);
-    printf("	 %d", wt[i]);
-    printf("	 %d\n", tat[i]);
+#include <string.h>
+int main(void) {
+  char pn[10][10], t[10];
+  int arr[10], bur[10], star[10], finish[10], tat[10], wt[10], i, j, n, temp;
+  int totwt = 0, tottat = 0;
+  printf("Enter the number of processes:");
+  scanf("%d", &n);
+  for (i = 0; i < n; i++) {
+    printf("Enter the ProcessName, Arrival Time& Burst Time:");
+    scanf("%s%d%d", &pn[i], &arr[i], &bur[i]);
   }
-  int s = (float)total_wt / (float)n;
-  int t = (float)total_tat / (float)n;
-  printf("Average waiting time = %d", s);
-  printf("\n");
-  printf("Average turn around time = %d ", t);
-}
+  for (i = 0; i < n; i++) {
+    for (j = 0; j < n; j++) {
+      if (arr[i] < arr[j]) {
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        temp = bur[i];
+        bur[i] = bur[j];
+        bur[j] = temp;
+        strcpy(t, pn[i]);
+        strcpy(pn[i], pn[j]);
+        strcpy(pn[j], t);
+      }
+    }
+  }
+  for (i = 0; i < n; i++) {
+    if (i == 0)
+      star[i] = arr[i];
+    else
+      star[i] = finish[i - 1];
+    wt[i] = star[i] - arr[i];
+    finish[i] = star[i] + bur[i];
+    tat[i] = finish[i] - arr[i];
+  }
 
-// Driver code
-int main()
-{
-  //process id's
-  int processes[] = {1, 2, 3};
-  int n = sizeof processes / sizeof processes[0];
+  printf("\nPName Arrtime Burtime WaitTime Start TAT Finish");
+  for (i = 0; i < n; i++) {
+    printf("\n%s\t%3d\t%3d\t%3d\t%3d\t%6d\t%6d", pn[i], arr[i], bur[i], wt[i], star[i], tat[i], finish[i]);
+    totwt += wt[i];
+    tottat += tat[i];
+  }
 
-  //Burst time of all processes
-  int burst_time[] = {10, 5, 8};
-
-  findavgTime(processes, n, burst_time);
+  printf("\nTotal Turnaround Time: %.2f", (float)tottat);
+  printf("\nAverage Turn Around Time: %.2f\n", (float)tottat / n);
   return 0;
 }
-// This code is contributed by Shivi_Aggarwal
