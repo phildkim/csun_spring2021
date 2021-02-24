@@ -3,7 +3,7 @@
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amssymb,amsmath,amsthm,latexsym}
-\title{Lab 2 Simple DC Circuits}
+\title{Lab 1 Discovering Ohm's Law}
 \author{Philip Kim}
 \date{\today}
 \begin{document}
@@ -11,17 +11,18 @@
 
 \begin{table}[h!]
   \begin{center}
-    \caption{Voltage vs. Current for \(R_1\)}\label{tab:table1}
+    \caption{Voltage vs. Current}\label{tab:table1}
     \begin{tabular}{|c|c|c|c|c|c|c|}\hline
       & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline
-      Voltage (V) & 1.12 & 2.02 & 2.99 & 3.95 & 5.07 & 6.09 \\ \hline
-      Current (I) & 0.056 & 0.103 & 0.148 & 0.198 & 0.250 & 0.308 \\ \hline
+      Voltage (V) & 1.05 & 2.01 & 3.06 & 3.98 & 4.95 & 5.98 \\ \hline
+      Current (I) & 0.012 & 0.023 & 0.036 & 0.046 & 0.058 & 0.069 \\ \hline
+      Resistance (R) & 87.50 & 87.39 & 85.00 & 86.52 & 85.34 & 86.67 \\ \hline
     \end{tabular}
   \end{center}
   \begin{center}
     \begin{equation}
       \begin{split}
-        R_1 &= \boxed{0.0 \pm 0.0}
+        R, \sigma_R &= \boxed{86.40 \pm 1.0346,0.0102}
       \end{split}
     \end{equation}
   \end{center}
@@ -29,55 +30,34 @@
 
 \begin{table}[h!]
   \begin{center}
-    \caption{Voltage vs. Current for \(R_2\)}\label{tab:table1}
+    \caption{Resistance vs. Length}\label{tab:table1}
     \begin{tabular}{|c|c|c|c|c|c|c|}\hline
-      & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline
-      Voltage (V) & 1.06 & 1.89 & 3.12 & 3.97 & 4.88 & 5.90 \\ \hline
-      Current (I) & 0.043 & 0.079 & 0.132 & 0.165 & 0.200 & 0.249 \\ \hline
+      Length & 2m & 4m & 6m & 8m & 10m \\ \hline
+      Voltage (V) & 1.00 & 0.98 & 1.01 & 1.01 & 0.99 \\ \hline
+      Current (I) & 0.062 & 0.030 & 0.021 & 0.016 & 0.012 \\ \hline
+      Resistance (R) & 16.129 & 32.667 & 48.095 & 63.125 & 82.500 \\ \hline
+      Area (A) & 8.5517e-08 & 8.4458e-08 & 8.6036e-08 & 8.7402e-08 & 8.3595e-08 \\ \hline
+      Diameter (D) & 4.6666e-04 & 4.6373e-04 &4.6807e-04 & 4.7177e-04 & 4.6138e-04 \\ \hline
     \end{tabular}
   \end{center}
   \begin{center}
     \begin{equation}
       \begin{split}
-        R_2 &= \boxed{0.0 \pm 0.0}
+        A,\sigma_A &= \boxed{8.5399e - 08 \pm 1.4657e - 09}\\
+        D,\sigma_D &= \boxed{0.00046632 \pm 3.9998e - 06}
       \end{split}
     \end{equation}
   \end{center}
 \end{table}
-
-\begin{table}[h!]
-  \begin{center}
-    \caption{Voltage vs. Current for \(R_1\) and \(R_2\) in series}\label{tab:table1}
-    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
-      & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline
-      Voltage (V) & 0.91 & 2.09 & 3.08 & 3.98 & 5.01 & 5.97 \\ \hline
-      Current (I) & 0.021 & 0.048 & 0.071 & 0.091 & 0.114 & 0.133 \\ \hline
-    \end{tabular}
-  \end{center}
-  \begin{center}
-    \begin{equation}
-      \begin{split}
-        R_S &= \boxed{0.0 \pm 0.0}
-      \end{split}
-    \end{equation}
-  \end{center}
-\end{table}
-
-\begin{table}[h!]
-  \begin{center}
-    \caption{Voltage vs. Current for \(R_1\) and \(R_2\) in parallel}\label{tab:table1}
-    \begin{tabular}{|c|c|c|c|c|c|c|}\hline
-      & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline
-      Voltage (V) & 0.93 & 2.12 & 3.10 & 4.10 & 5.11 & 5.99 \\ \hline
-      Current (I) & 0.0841 & 0.1930 & 0.2880 & 0.3800 & 0.4740 & 0.5540 \\ \hline
-    \end{tabular}
-  \end{center}
-  \begin{center}
-    \begin{equation}
-      \begin{split}
-        R_P &= \boxed{0.0 \pm 0.0}
-      \end{split}
-    \end{equation}
-  \end{center}
-\end{table}
+\begin{enumerate}
+  \item What conclusion can you draw from your data reduction?
+  \begin{itemize}
+    \item Voltage is directly proportional to the current: V \(\propto \) I \(\Rightarrow \) V = RI, proving Ohm's law.
+  \end{itemize}
+  \item Do the experimental points really fall on a straight line in your plots? Give some discussion.
+  \begin{itemize}
+    \item For Voltage vs. Current, the points lie on the fitted line proving Ohm's law and experiment done properly.
+    \item For Resistance vs. Length, the points lie mostly on the fitted line. At 8m, voltage did not change from 6m. Not sure if that has to do with calibration error or not but the possibility of the line not fitting has to do with the same voltage from 6m to 8m.
+  \end{itemize}
+\end{enumerate}
 \end{document}
