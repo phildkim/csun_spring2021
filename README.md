@@ -18,6 +18,10 @@
 
 ##### [CECS Scholarships: March 8, 2021 at 5:00pm](https://www.ecs.csun.edu/scholarship/)
 
+***
+
+#### [BIO LAB EXTRA CREDIT](https://csun.zoom.us/w/87830258549?tk=6a54MsoAKhQkxh9D_8pi-pR1XvYs1PSRB3hYvi_yuyo.DQIAAAAUcxdjdRZWM2xtcnNfdFJDT0dYOW9xRTJkT0xRAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=TFIzaTRhRFdwVnpSQlBhREF1WkVXUT09&uuid=WN_xIpxihTmSpuPnHK5bdal0Q)
+
 ****
 
 ```bash

@@ -9,8 +9,8 @@
   - [X] ~~[Are You Lost in the World, Like Me? Moby](https://www.youtube.com/watch?v=VASywEuqFd8)~~
   - [X] ~~[Your phone is trying to control your life](https://www.pbs.org/newshour/show/phone-trying-control-life)~~
   - [X] ~~[Antisocial Phone Tricks](https://www.ted.com/talks/renny_gleeson_our_antisocial_phone_tricks)~~
-  - [ ] [Your Phone Company is Watching..](https://www.ted.com/talks/malte_spitz_your_phone_company_is_watching?language=en)
-  - [ ] [Our Cell Phone Culture](http://thetechnologicalcitizen.com/?p=1175)
+  - [X] ~~[Your Phone Company is Watching..](https://www.ted.com/talks/malte_spitz_your_phone_company_is_watching?language=en)~~
+  - [X] ~~[Our Cell Phone Culture](http://thetechnologicalcitizen.com/?p=1175)~~
 
 ***
 
