@@ -1,5 +1,7 @@
 # PHYS 220B: MoWe 08:00AM-09:15AM
 
+## Grade: 100.63%
+
 ***
 
 ## [Part 1](https://canvas.csun.edu/courses/90844/modules/items/3378731)

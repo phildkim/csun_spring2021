@@ -1,5 +1,9 @@
 # COMP 322: TuTh 09:30AM-10:45AM
 
+## Grade: N/A
+
+***
+
 - [ ] [Zybook Ch 3: Scheduling](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021/chapter/3/section/2)
 - [ ] [Zybook Ch 4: Concurrency](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021/chapter/4/section/2)
 - [ ] [Zybook Ch 5: Deadlock](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021/chapter/5/section/2)
