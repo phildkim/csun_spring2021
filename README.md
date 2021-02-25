@@ -22,16 +22,16 @@
 - [X] ~~Comp 491 Lab: 5:30 - 6:45PM~~
   - [X] ~~[Finish Comp 491L: Lab #1](https://docs.google.com/spreadsheets/d/1jBQKT3liELgpTbFgqcYbL12p7KXyOfZrEwGDWHCHIzk/edit?ouid=103452000981440923965&usp=sheets_home&ths=true)~~
   - [X] ~~[Finish Zybook Ch2 Exercise](https://docs.google.com/document/d/1R8GEAMWxzc6ClVCBaq5jRYqGm9UDqejmy2T-rN6809Q/edit)~~
-  - [ ] [Finish Project 2](https://canvas.csun.edu/courses/103947/assignments/975529)
+  - [X] ~~[Finish Project 2](https://canvas.csun.edu/courses/103947/assignments/975529)~~
     - [X] ~~FIFO~~
     - [X] ~~SJF~~
-    - [ ] SRT
-  - [ ] [Finish Comp 300 Essay #5](https://docs.google.com/document/d/1RxAGM3rwNtKEHA0ya-xSJxAhwSMWDap4xyQab0wvGIc/edit)
+    - [X] ~~SRT~~
 
 #### Thursday
 
-- [ ] Comp 322: 9:30 - 10:45AM
-- [ ] Comp 322 Lab: 11:00 - 12:15PM
+- [X] ~~Comp 322: 9:30 - 10:45AM~~
+- [X] ~~Comp 322 Lab: 11:00 - 12:15PM~~
+- [ ] [Finish Comp 300 Essay #5](https://docs.google.com/document/d/1RxAGM3rwNtKEHA0ya-xSJxAhwSMWDap4xyQab0wvGIc/edit)
 - [ ] [Bio 106 Lab: Discussion](https://canvas.csun.edu/courses/102340/discussion_topics/1057228?module_item_id=3294518)
 - [ ] [Bio 106: Quiz 8](https://canvas.csun.edu/courses/91145/quizzes/267667)
 - [ ] [Bio 106: Quiz 9](https://canvas.csun.edu/courses/91145/quizzes/267657)
@@ -41,7 +41,6 @@
 #### Friday
 
 - [ ] Comp 300: 11:00 - 1:45PM
-
 - [ ] [Physics Practice Exam](https://docs.google.com/document/d/1IhAfLo_hjznWVY6u8tDw4UsYmSJULve7jYRV3rfSbYA/edit)
 - [ ] [Physics Study Ch 21,22](https://docs.google.com/document/d/1JX4J3CjCF9OobUxwsSfdl3E4tuZtMZcFp0g8jPKmp1c/edit)
 
