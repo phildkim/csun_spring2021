@@ -16,11 +16,11 @@
 
 #### Wednesday
 
-- [ ] Physics 220B: 8:00 - 9:15AM
-- [ ] Physics 220B Lab: 11:00 - 1:45PM
+- [X] ~~Physics 220B: 8:00 - 9:15AM~~
+- [X] ~~Physics 220B Lab: 11:00 - 1:45PM~~
   - [ ] Finish Physics Lab
-- [ ] Comp 491 Lab: 5:30 - 6:45PM
-  - [ ] [Finish Comp 491L: Lab #1](https://docs.google.com/spreadsheets/d/1jBQKT3liELgpTbFgqcYbL12p7KXyOfZrEwGDWHCHIzk/edit?ouid=103452000981440923965&usp=sheets_home&ths=true)
+- [X] ~~Comp 491 Lab: 5:30 - 6:45PM~~
+  - [X] ~~[Finish Comp 491L: Lab #1](https://docs.google.com/spreadsheets/d/1jBQKT3liELgpTbFgqcYbL12p7KXyOfZrEwGDWHCHIzk/edit?ouid=103452000981440923965&usp=sheets_home&ths=true)~~
 - [ ] [Bio 106: Quiz 8](https://canvas.csun.edu/courses/91145/quizzes/267667)
 - [ ] [Bio 106: Quiz 9](https://canvas.csun.edu/courses/91145/quizzes/267657)
 
