@@ -31,15 +31,17 @@
 
 - [X] ~~Comp 322: 9:30 - 10:45AM~~
 - [X] ~~Comp 322 Lab: 11:00 - 12:15PM~~
-- [ ] [Physics Practice Exam](https://docs.google.com/document/d/1IhAfLo_hjznWVY6u8tDw4UsYmSJULve7jYRV3rfSbYA/edit)
-- [ ] [Bio 106 Lab: Discussion](https://canvas.csun.edu/courses/102340/discussion_topics/1057228?module_item_id=3294518)
-- [ ] [Finish Comp 300 Essay #5](https://docs.google.com/document/d/1RxAGM3rwNtKEHA0ya-xSJxAhwSMWDap4xyQab0wvGIc/edit)
+- [X] ~~[Bio 106 Lab: Discussion](https://canvas.csun.edu/courses/102340/discussion_topics/1057228?module_item_id=3294518)~~
 
 #### Friday
 
 - [ ] Comp 300: 11:00 - 1:45PM
+  - [ ] [Finish Comp 300 Essay #5](https://docs.google.com/document/d/1RxAGM3rwNtKEHA0ya-xSJxAhwSMWDap4xyQab0wvGIc/edit)
+- [ ] Go Home
 - [ ] [Bio 106: Quiz 8](https://canvas.csun.edu/courses/91145/quizzes/267667)
 - [ ] [Bio 106: Quiz 9](https://canvas.csun.edu/courses/91145/quizzes/267657)
+- [ ] [Physics Practice Exam](https://docs.google.com/document/d/1IhAfLo_hjznWVY6u8tDw4UsYmSJULve7jYRV3rfSbYA/edit)
+  - [ ] [~~1,3,4~~,5,6,7,8,9]
 - [ ] [Physics Study Ch 21](https://docs.google.com/document/d/1JX4J3CjCF9OobUxwsSfdl3E4tuZtMZcFp0g8jPKmp1c/edit)
 
 #### Saturday
