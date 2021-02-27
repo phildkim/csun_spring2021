@@ -35,13 +35,13 @@
 
 #### Friday
 
-- [ ] Comp 300: 11:00 - 1:45PM
+- [X] ~~Comp 300: 11:00 - 1:45PM~~
   - [ ] [Finish Comp 300 Essay #5](https://docs.google.com/document/d/1RxAGM3rwNtKEHA0ya-xSJxAhwSMWDap4xyQab0wvGIc/edit)
-- [ ] Go Home
+- [X] ~~Go Home~~
 - [ ] [Bio 106: Quiz 8](https://canvas.csun.edu/courses/91145/quizzes/267667)
 - [ ] [Bio 106: Quiz 9](https://canvas.csun.edu/courses/91145/quizzes/267657)
-- [ ] [Physics Practice Exam](https://docs.google.com/document/d/1IhAfLo_hjznWVY6u8tDw4UsYmSJULve7jYRV3rfSbYA/edit)
-  - [ ] [~~1,3,4~~,5,6,7,8,9]
+- [X] ~~[Physics Practice Exam](https://docs.google.com/document/d/1IhAfLo_hjznWVY6u8tDw4UsYmSJULve7jYRV3rfSbYA/edit)~~
+  - [X] [~~1,3,4,5,6,7,8,9~~]
 - [ ] [Physics Study Ch 21](https://docs.google.com/document/d/1JX4J3CjCF9OobUxwsSfdl3E4tuZtMZcFp0g8jPKmp1c/edit)
 
 #### Saturday
