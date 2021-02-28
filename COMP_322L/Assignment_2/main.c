@@ -47,10 +47,13 @@ void fifo() {
          2, fifo_total, 2, (float)fifo_total / num_process);
 }
 void sjf() {
+
+}
+void srt() {
   int i,t,r=0,min;
   printf("\nNumber of process: ");
   scanf("%d", &num_process);
-  node_ptr = (node *)(malloc((num_process*2+1) * sizeof(node)));
+  node_ptr = (node *)(malloc(((num_process*2)+1) * sizeof(node)));
   printf("\nEnter arrival and service time\n");
   for (i=0; i<num_process; i++) {
     printf("Process %c arrival and service time: ", 'A' + i);
@@ -70,7 +73,7 @@ void sjf() {
     }
   }
   printf("\nᵢ-------------------------------------------ᵢ"
-         "\n|     SJF (Shortest Job First) Schedule     |"
+         "\n|  SRT (Shortest Remaining Time) Schedule   |"
          "\n|-------------ᵢ--------------ᵢ--------------|"
          "\n|   Process   |    Arrival   |    Service   |");
   for (i = 0; i < num_process; i++)
@@ -78,9 +81,9 @@ void sjf() {
            "\n|      %c      |     %*dms     |     %*dms     |",
            'A' + i, 2, node_ptr[i].arrival, 2, node_ptr[i].service);
   printf("\n|-------------ᵢ--------------ᵢ--------------|"
-         "\n|                     SJF                   |"
+         "\n|                     SRT                   |"
          "\n|      Total turnaround time:     %*dms      |"
-         "\n|    Average turnaround time:   %*.2fms      |"
+         "\n|    Average turnaround time:   %*.2fms     |"
          "\nᵢ-------------------------------------------ᵢ",
          2, sjf_total, 2, (float)sjf_total / num_process);
 }
@@ -97,6 +100,7 @@ int main(void) {
         sjf();
         break;
       case 3:
+        srt();
         break;
       case 4:
         break;
