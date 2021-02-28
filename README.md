@@ -36,18 +36,17 @@
 #### Friday
 
 - [X] ~~Comp 300: 11:00 - 1:45PM~~
-  - [ ] [Finish Comp 300 Essay #5](https://docs.google.com/document/d/1RxAGM3rwNtKEHA0ya-xSJxAhwSMWDap4xyQab0wvGIc/edit)
 - [X] ~~Go Home~~
-- [ ] [Bio 106: Quiz 8](https://canvas.csun.edu/courses/91145/quizzes/267667)
-- [ ] [Bio 106: Quiz 9](https://canvas.csun.edu/courses/91145/quizzes/267657)
+- [X] ~~[Bio 106: Quiz 8](https://canvas.csun.edu/courses/91145/quizzes/267667)~~
+- [X] ~~[Bio 106: Quiz 9](https://canvas.csun.edu/courses/91145/quizzes/267657)~~
 - [X] ~~[Physics Practice Exam](https://docs.google.com/document/d/1IhAfLo_hjznWVY6u8tDw4UsYmSJULve7jYRV3rfSbYA/edit)~~
   - [X] [~~1,3,4,5,6,7,8,9~~]
-- [ ] [Physics Study Ch 21](https://docs.google.com/document/d/1JX4J3CjCF9OobUxwsSfdl3E4tuZtMZcFp0g8jPKmp1c/edit)
 
 #### Saturday
 
-- [ ] [Physics Study Ch 21,22](https://docs.google.com/document/d/1JX4J3CjCF9OobUxwsSfdl3E4tuZtMZcFp0g8jPKmp1c/edit)
-- [ ] [Physics 220B: Practice Exam Due @ 11:59PM](https://canvas.csun.edu/courses/90844/assignments/942453?module_item_id=3378692)
+- [ ] [Finish Comp 300 Essay #5](https://docs.google.com/document/d/1RxAGM3rwNtKEHA0ya-xSJxAhwSMWDap4xyQab0wvGIc/edit)
+- [ ] [Physics Study Ch 21,22,23](https://docs.google.com/document/d/1JX4J3CjCF9OobUxwsSfdl3E4tuZtMZcFp0g8jPKmp1c/edit)
+- [X] ~~[Physics 220B: Practice Exam Due @ 11:59PM](https://canvas.csun.edu/courses/90844/assignments/942453?module_item_id=3378692)~~
 
 #### Sunday
 
