@@ -50,7 +50,7 @@
 #### Sunday
 
 - [ ] [Physics Study Ch 21,22,23](https://docs.google.com/document/d/1JX4J3CjCF9OobUxwsSfdl3E4tuZtMZcFp0g8jPKmp1c/edit)
-- [X] [Bio106 Lab (Extra Credit Zoom): 4:00 - 5:00PM](https://csun.zoom.us/w/87830258549?tk=6a54MsoAKhQkxh9D_8pi-pR1XvYs1PSRB3hYvi_yuyo.DQIAAAAUcxdjdRZWM2xtcnNfdFJDT0dYOW9xRTJkT0xRAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=TFIzaTRhRFdwVnpSQlBhREF1WkVXUT09&uuid=WN_xIpxihTmSpuPnHK5bdal0Q)
+- [X] ~~[Bio106 Lab (Extra Credit Zoom): 4:00 - 5:00PM](https://csun.zoom.us/w/87830258549?tk=6a54MsoAKhQkxh9D_8pi-pR1XvYs1PSRB3hYvi_yuyo.DQIAAAAUcxdjdRZWM2xtcnNfdFJDT0dYOW9xRTJkT0xRAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=TFIzaTRhRFdwVnpSQlBhREF1WkVXUT09&uuid=WN_xIpxihTmSpuPnHK5bdal0Q)~~
 - [ ] Scholarship
 - [ ] Sleep @ 10:00PM & Wake up @ 6:00AM
 
