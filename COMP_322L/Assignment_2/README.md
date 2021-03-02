@@ -27,29 +27,34 @@ compute the average turnaround time,
 
 ## FIFO
 
-The FIFO (First-In-First-Out) algorithm, also known as FCFS
-(First-Come-First-Served), schedules processes strictly according
-to the process arrival time. The earlier the arrival, the higher
-the priority. Theoretically, multiple processes could have the
-same arrival time, in which case the arbitration rule can pick a
-process at random. In practice, all requests are processed
-sequentially and thus all processes have different arrival times.
+The FIFO (First-In-First-Out) algorithm, also known as FCFS (First-Come-First-Served), schedules processes strictly according to the process arrival time. The earlier the arrival, the higher the priority. Theoretically, multiple processes could have the same arrival time, in which case the arbitration rule can pick a process at random. In practice, all requests are processed sequentially and thus all processes have different arrival times.
 
-Process | Arrival Time | Service Time
----------|----------|---------
- A | 0 ms | 18 ms
- B | 2 ms | 7 ms
- C | 2 ms | 10 ms
+***
 
-A: 0-18ms
-B: 18-25ms
-C: 25-35ms
+1. Completion Time: Time at which process completes its execution.
+2. Turn Around Time: Time Difference between completion time and arrival time.
+   * Turn Around Time = Completion Time – Arrival Time
+3. Waiting Time(W.T): Time Difference between turn around time and burst time.
+4. Waiting Time = Turn Around Time – Burst Time
+5. Service time means amount of time after which a process can start execution.
+6. It is summation of burst time of previous processes (Processes that came before)
 
-Process | Waiting Time | Turnaround Time
----------|----------|---------
- A | 0 ms | 18 ms
- B | 16 ms | 23 ms
- C | 23 ms | 33 ms
+***
+
+```c
+int n,i;
+
+for (i=0; i<n; i++) {
+  wt[i] = bt[i] – at[i];
+}
+
+```
+
+Process | Arrival Time | Service Time | Turnaround Time
+---------|----------|---------|---------
+ A | 0 ms | 18 ms | 18 ms
+ B | 2 ms | 7 ms | 23 ms
+ C | 2 ms | 10 ms | 33 ms
 
 **Total turnaround time:** (18 + 23 + 33) = **74ms**
 
@@ -57,7 +62,21 @@ Process | Waiting Time | Turnaround Time
 
 ***
 
-## SJF
+Process | Arrival Time | Service Time | Turnaround Time
+---------|----------|---------|---------
+ A | 0 ms | 3 ms | 3 ms
+ B | 2 ms | 6 ms | 7 ms
+ C | 4 ms | 4 ms | 9 ms
+ D | 6 ms | 5 ms | 12 ms
+ E | 8 ms | 2 ms | 12 ms
+
+**Total turnaround time:** (3+7+9+12+12) = **43ms**
+
+**Average turnaround time:** (43/5) = **8.6ms**
+
+***
+
+## SJF (non-preemptive)
 
 The SJF (Shortest Job First) algorithm, also known as SJN
 (Shortest Job Next), schedules processes according to the total
@@ -66,58 +85,46 @@ higher the priority. If multiple processes have the same CPU time
 requirement, then the arbitration rule can select a process based
 on the arrival times.
 
-Process | Arrival Time | Service Time
----------|----------|---------
- A | 3 ms | 5 ms
- B | 0 ms | 4 ms
- C | 4 ms | 2 ms
- D | 5 ms | 4 ms
+**Non-preemptive**: Once selected for execution , a process continues to run until the end of its CPU burst .It is also known as Shortest Job First (SJF).
 
-B: 0-4ms
-C: 4-6ms
-D: 6-10
-A: 10-15ms
+1. Sort all the process according to the arrival time.
+2. Then select that process which has minimum arrival time and minimum Burst time.
+3. After completion of process make a pool of process which after till the completion of previous process and select that process among the pool which is having minimum Burst time.
 
-Process | Waiting Time | Turnaround Time
----------|----------|---------
- A | 7 ms | 12 ms
- B | 0 ms | 4 ms
- C | 0 ms | 2 ms
- D | 1 ms  | 5 ms
+* Completion Time: Time at which process completes its execution.
+* Turn Around Time: Time Difference between completion time and arrival time.
+  * Turn Around Time = Completion Time – Arrival Time
+* Waiting Time(W.T): Time Difference between turn around time and burst time.
+  * Waiting Time = Turn Around Time – Burst Time
 
-**Total turnaround time:** (12 + 4 + 2 + 5) = 23ms
-**Average turnaround time:** (23/4) = 5.75ms
+Process | Arrival Time | Service Time | Turnaround Time
+---------|----------|---------|---------
+ A | 3 ms | 2 ms | 2 ms
+ B | 6 ms | 3 ms | 5 ms
+ C | 4 ms | 4 ms | 6 ms
+
+**Total turnaround time:** (2+5+6) = 13
+
+**Average turnaround time:** (13/3) = 4.33ms
 
 ***
 
-## SRT
+## SRT (preemptive)
 
-The SRT (Shortest Remaining Time) algorithm schedules processes
-according to the remaining CPU time needed to complete the work.
-The shorter the remaining CPU time, the higher the priority. If
-multiple processes have the same remaining time requirement, then
-the arbitration rule can select a process based on the arrival
+The SRT (Shortest Remaining Time) algorithm schedules processes according to the remaining CPU time needed to complete the work. The shorter the remaining CPU time, the higher the priority. If multiple processes have the same remaining time requirement, then the arbitration rule can select a process based on the arrival
 times.
 
-Process | Arrival Time | Service Time
----------|----------|---------
- A | 1 ms | 6 ms
- B | 1 ms | 8 ms
- C | 2 ms | 7 ms
- D | 3 ms | 3 ms
+**Preemptive**: The process which is currently in execution , runs until it complete or a new process is added in the cpu Scheduler that requires smaller amount of time for execution. It is also known as shortest remaining time first(SRTF).
 
-A: 1-3ms
-D: 3-6ms
-A: 6-10
-C: 10-17ms
-B: 17-25ms
+***
 
-Process | Waiting Time | Turnaround Time
----------|----------|---------
- A | 3 ms | 9 ms
- B | 16 ms | 24 ms
- C | 8 ms | 15 ms
- D | 0 ms  | 3 ms
+Process | Arrival Time | Service Time | Turnaround Time
+---------|----------|---------|---------
+ A | 2 ms | 3 ms | 4 ms
+ B | 0 ms | 4 ms | 2 ms
+ C | 4 ms | 2 ms | 7 ms
+ D | 5 ms | 4 ms | 8 ms
 
-**Total turnaround time:** (9 + 24 + 15 + 3) = 51ms
-**Average turnaround time:** (51/4) = 12.75ms
+**Total turnaround time:** (4+2+7+8) = 21.00 ms
+
+**Average turnaround time:** (21/4) = 5.25 ms
