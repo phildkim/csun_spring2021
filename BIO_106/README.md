@@ -12,8 +12,8 @@
 - [ ] Origin of Life (Connect)
 - [ ] Quiz 10 (due March 7)
 - [X] ~~8.1 Evidence for Evolution (Part 1) (Lecture 22:12)~~
-- [ ] 8.2 Evidence for Evolution (Part 2) (Lecture 29:02)
-- [ ] Evidence for Evolution (I) (Reading)
+- [X] ~~8.2 Evidence for Evolution (Part 2) (Lecture 29:02)~~
+- [X] ~~Evidence for Evolution (I) (Reading)~~
 - [ ] Evidence for Evolution (I) (Connect)
 - [ ] Quiz 10.5 (due March 7)
 

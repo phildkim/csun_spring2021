@@ -8,12 +8,10 @@
 
 ***
 
-- [x] ~~Recitation 4: **2/19/2021 @ 11:59pm**~~
-- [X] ~~[Homework Ch 23](https://session.masteringphysics.com/myct/mastering#/): **Due 02/26/2021**~~
-  - ~~{2,3,5,6,8,9,11,(12),15,(16),17,19,20,21,22,24,26,27,28,29}~~
-- [ ] Practice Test
-- [ ] Practice Respondus LockDown Exam - Requires Respondus LockDown Browser
-- [ ] Midterm 1: **3/1/2021 @ 8:00am**
+- [ ] Ch 24 HW Due: **Sunday March 14 2021 11:59 PM**
+  - [ ] [1, ~~2~~, 3, 4, ~~6~~, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 22, 23]
+- [ ] Ch 25 HW Due: **Sunday March 21 2021 11:59 PM**
+  - [ ] [4, 5, 7, 8, 9, 12, 13, 14, 18, 19, 20, 21, 22, 23, 24, 25]
 - [ ] **SPRING BREAK: 3/15/21 - 3/19/21**
 
 ***
