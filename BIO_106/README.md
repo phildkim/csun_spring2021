@@ -1,35 +1,17 @@
 # BIO 106: Online class
 
-## Grade: 78.77%
-
-***
-
-### Inheritance - Feb. 13 - Feb. 28
-
-- [x] ~~6.1 Mendelian Genetics (Lecture 20:52)~~
-- [x] ~~6.2 Mendel's Principle of Segregation (Lecture 8:15)~~
-- [x] ~~Mendelian Genetics (Reading)~~
-- [x] ~~Inheritance (I) (Connect)~~
-- [x] ~~6.3 Mendel's Principle of Independent Assortment (Lecture 4:42)~~
-- [x] ~~6.4 Chromosome Theory of Inheritance (Lecture 8:01)~~
-- [x] ~~6.5 Beyond Mendel (Lecture 43:16)~~
-- [x] ~~6.6 Solving Genetics Problems (Problem set and Video of Solutions)~~
-- [x] ~~Chromosomes and Inheritance (Reading)~~
-- [x] ~~Inheritance (II) (Connect)~~
-- [x] ~~Quiz 7 (_8 questions, 10mins_) **Feb 28 at 11:59pm**~~
-- [X] ~~Quiz 8 (_9 questions, 15mins_) **Feb 28 at 11:59pm**~~
-- [X] ~~Quiz 9 (_2 Mendelian Genetics problems, 20mins_) **Feb 28 at 11:59pm**~~
+## Grade: 90.14%
 
 ***
 
 ### Origin of Life and Evidence for Evolution: Sept 27 - March 7
 
-- [ ] 7.0 Origin of Life (Lecture 32:14)
-- [ ] 7.1 Timeline of Earth (Lecture 12:46)
-- [ ] Origin of Life (Reading)
+- [X] ~~7.0 Origin of Life (Lecture 32:14)~~
+- [X] ~~7.1 Timeline of Earth (Lecture 12:46)~~
+- [X] ~~Origin of Life (Reading)~~
 - [ ] Origin of Life (Connect)
 - [ ] Quiz 10 (due March 7)
-- [ ] 8.1 Evidence for Evolution (Part 1) (Lecture 22:12)
+- [X] ~~8.1 Evidence for Evolution (Part 1) (Lecture 22:12)~~
 - [ ] 8.2 Evidence for Evolution (Part 2) (Lecture 29:02)
 - [ ] Evidence for Evolution (I) (Reading)
 - [ ] Evidence for Evolution (I) (Connect)

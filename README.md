@@ -30,7 +30,7 @@
 
 #### Tuesday
 
-- [ ] Comp322 Lab: Project #2 Due Mar 21 @ 11:59PM
+- [X] ~~Comp322 Lab: Project #2 Due Mar 21 @ 11:59PM~~
 
 #### Wednesday
 
@@ -47,6 +47,7 @@
   - [ ] [Quiz 10 Due @ 11:59PM](https://canvas.csun.edu/courses/91145/quizzes/267648)
   - [ ] [Quiz 10.5 Due @ 11:59PM](https://canvas.csun.edu/courses/91145/quizzes/267662)
 - [ ] **Bio106 Lab: Study for midterm**
+  - [ ] Bio106 Discussion Due Monday
 - [ ] [Comp300: Essay #6 Due @ 11:59PM](https://docs.google.com/document/d/1_qICcO-2zlUgyHDJyHt6eK3cREMXFZDWIJzsJ-tlBPc/edit)
 - [ ] [Comp300: Bibliographic Assignment Due Mar 14 @ 11:59PM](https://docs.google.com/document/d/1bEvjrZzd8rK3aCi-6D2LYhRRpUSAvsZ2I3KonbkhqgE/edit)
 

@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[table]{xcolor}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{changepage,threeparttable}
+\usepackage{booktabs,multirow}
+\usepackage{graphicx}
+\usepackage{soul}
+\graphicspath{{./images/}}
+\def\R#1{\(R_{\text{\tiny#1}}\)}
+\def\V#1{\(V_{\text{\tiny#1}}\)}
+\def\I#1{\(I_{\text{\tiny#1}}\)}
+\def\Rr#1{R_{\text{\tiny#1}}}
+\def\Vv#1{V_{\text{\tiny#1}}}
+\def\RDIV{\(\frac{R_{\text{1}}}{R_{\text{1}}+R_{\text{2}}}\)}
+\def\VDIV{\(\frac{V_{\text{1}}}{V_{\text{12}}}\)}
+\title{Lab 5: Voltage Divider}
+\author{Philip Kim}
+\date{\today}
+\begin{document}
+\maketitle
+\vspace*{-1cm}
+\begin{table}[!htp]\centering
+  \subsection*{Part 1}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
+  \multicolumn{7}{|c|}{\textbf{Table 1: Series Resistors}} \\\hline
+  \R{1} & \R{2} & \V{1} & V/DIV for \V{1} & \V{12} & \RDIV\ & \VDIV\ \\\hline
+  1k & 2k & 0 & 0 & 0 & 0 & 0 \\\hline
+  1k & 100 & 0 & 0 & 0 & 0 & 0 \\\hline
+  1k & 4.7k & 0 & 0 & 0 & 0 & 0 \\\hline
+  1k & 10k & 0 & 0 & 0 & 0 & 0 \\\hline
+  1k & 100k & 0 & 0 & 0 & 0 & 0 \\\hline
+  \end{tabular}
+\end{table}
+\newpage
+\begin{table}[!htp]\centering
+  \subsection*{Part 2}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
+  \multicolumn{10}{|c|}{\textbf{Table 2: Parallel Resistors}} \\\hline
+  \R{1} & \R{2} & \R{3} & \V{1} & V/DIV for \V{1} &  \I{1} = \I{23} & \V{123} & \V{23} & \R{23,expt} & \R{23,theory} \\\hline
+  1k & 2k & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\hline
+  1k & 100 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\hline
+  1k & 4.7k & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\hline
+  1k & 10k & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\hline
+  1k & 100k & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\hline
+  \end{tabular}
+\end{table}
+\end{document}
