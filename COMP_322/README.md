@@ -4,7 +4,7 @@
 
 ***
 
-- [ ] [Zybook Ch 3: Scheduling](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021/chapter/3/section/2)
+- [X] [Zybook Ch 3: Scheduling](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021/chapter/3/section/2)
 - [ ] [Zybook Ch 4: Concurrency](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021/chapter/4/section/2)
 - [ ] [Zybook Ch 5: Deadlock](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021/chapter/5/section/2)
 - [ ] [Zybook Ch 6: Memory Management](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021/chapter/6/section/1)

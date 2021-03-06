@@ -1,18 +1,16 @@
 # BIO 106L: Mo 02:00PM-04:45PM
 
-## Grade: 94.38%
-
-***
-
-### Week 5
-
-- [x] ~~Comparing two mosses~~
-- [ ] [Chapter 5 Discussion](https://canvas.csun.edu/courses/102340/discussion_topics/1057228?module_item_id=3294518): 2/25/2021
-- [X] ~~[Chapter 5 Quiz](https://canvas.csun.edu/courses/102340/quizzes/266491?module_item_id=3294519): 3/1/2021~~
+## Grade: 94.93%
 
 ***
 
 ### Week 6
+
+- [X] ~~Analysis of Lawns Lab Report~~
+
+- [ ] [Chapter 6 discussion](https://canvas.csun.edu/courses/102340/discussion_topics/1057232?module_item_id=3294528): **Due Monday (8th) at 1:59pm**
+
+- [ ] [Chapter 6 Quiz](https://canvas.csun.edu/courses/102340/quizzes/266495?module_item_id=3294529): **Due Monday (8th) at 1:59pm**
 
 ***
 

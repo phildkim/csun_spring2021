@@ -4,16 +4,6 @@
 
 ***
 
-- [ ] [Essay #5](https://docs.google.com/document/d/1RxAGM3rwNtKEHA0ya-xSJxAhwSMWDap4xyQab0wvGIc/edit): **Feb 28 by 11:59pm**
-  - [X] ~~[History of Cellphones](https://www.youtube.com/watch?v=nrdNdprcYls)~~
-  - [X] ~~[Are You Lost in the World, Like Me? Moby](https://www.youtube.com/watch?v=VASywEuqFd8)~~
-  - [X] ~~[Your phone is trying to control your life](https://www.pbs.org/newshour/show/phone-trying-control-life)~~
-  - [X] ~~[Antisocial Phone Tricks](https://www.ted.com/talks/renny_gleeson_our_antisocial_phone_tricks)~~
-  - [X] ~~[Your Phone Company is Watching..](https://www.ted.com/talks/malte_spitz_your_phone_company_is_watching?language=en)~~
-  - [X] ~~[Our Cell Phone Culture](http://thetechnologicalcitizen.com/?p=1175)~~
-
-***
-
 - [ ] [Essay #6](https://docs.google.com/document/d/1_qICcO-2zlUgyHDJyHt6eK3cREMXFZDWIJzsJ-tlBPc/edit): **Mar 7 by 11:59pm**
   - [ ] [California's New Net Neutrality Legislation](https://www.cnet.com/news/california-net-neutrality-law-sparks-justice-department-lawsuit/)
   - [ ] [Burger King Net Neutrality](https://www.youtube.com/watch?v=ltzy5vRmN8Q)
