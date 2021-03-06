@@ -9,12 +9,12 @@
 - [X] ~~7.0 Origin of Life (Lecture 32:14)~~
 - [X] ~~7.1 Timeline of Earth (Lecture 12:46)~~
 - [X] ~~Origin of Life (Reading)~~
-- [ ] Origin of Life (Connect)
+- [X] ~~Origin of Life (Connect)~~
 - [ ] Quiz 10 (due March 7)
 - [X] ~~8.1 Evidence for Evolution (Part 1) (Lecture 22:12)~~
 - [X] ~~8.2 Evidence for Evolution (Part 2) (Lecture 29:02)~~
 - [X] ~~Evidence for Evolution (I) (Reading)~~
-- [ ] Evidence for Evolution (I) (Connect)
+- [X] ~~Evidence for Evolution (I) (Connect)~~
 - [ ] Quiz 10.5 (due March 7)
 
 ***

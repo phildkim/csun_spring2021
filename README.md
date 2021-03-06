@@ -22,11 +22,7 @@
 
 - [ ] **BIO106 Lab: MIDTERM on Mar 8 @ 1:59PM**
 
-- [ ] [Bio106 Lab: Quiz 6 Due Mar 8 @ 1:59PM](https://canvas.csun.edu/courses/102340/quizzes/266495?module_item_id=3294529)
-
 - [ ] [Bio106 Lab: Lab Report Due Mar 22 @ 1:59PM](https://canvas.csun.edu/courses/102340/assignments/917216?module_item_id=3294526)
-
-- [ ] [Bio106 Lab: Discussion Due Mar 22 @ 1:59PM](https://canvas.csun.edu/courses/102340/discussion_topics/1057232?module_item_id=3294528)
 
 #### Tuesday
 
@@ -43,11 +39,12 @@
 #### Sunday
 
 - [ ] Bio106
-  - [ ] Section 7 & 8
+  - [X] ~~Section 7 & 8~~
   - [ ] [Quiz 10 Due @ 11:59PM](https://canvas.csun.edu/courses/91145/quizzes/267648)
   - [ ] [Quiz 10.5 Due @ 11:59PM](https://canvas.csun.edu/courses/91145/quizzes/267662)
 - [ ] **Bio106 Lab: Study for midterm**
   - [ ] Bio106 Discussion Due Monday
+  - [ ] [Bio106 Lab: Quiz 6 Due Mar 8 @ 1:59PM](https://canvas.csun.edu/courses/102340/quizzes/266495?module_item_id=3294529)
 - [ ] [Comp300: Essay #6 Due @ 11:59PM](https://docs.google.com/document/d/1_qICcO-2zlUgyHDJyHt6eK3cREMXFZDWIJzsJ-tlBPc/edit)
 - [ ] [Comp300: Bibliographic Assignment Due Mar 14 @ 11:59PM](https://docs.google.com/document/d/1bEvjrZzd8rK3aCi-6D2LYhRRpUSAvsZ2I3KonbkhqgE/edit)
 
