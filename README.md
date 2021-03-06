@@ -22,7 +22,7 @@
 
 - [ ] **BIO106 Lab: MIDTERM on Mar 8 @ 1:59PM**
 
-- [ ] [Bio106 Lab: Lab Report Due Mar 22 @ 1:59PM](https://canvas.csun.edu/courses/102340/assignments/917216?module_item_id=3294526)
+- [X] ~~[Bio106 Lab: Lab Report Due Mar 22 @ 1:59PM](https://canvas.csun.edu/courses/102340/assignments/917216?module_item_id=3294526)~~
 
 #### Tuesday
 

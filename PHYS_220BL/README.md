@@ -9,7 +9,7 @@
 - [X] ~~Lab 2: Simple DC Circuit~~
 - [x] ~~[Lab 3: The home lab kit](http://www.csun.edu/~hpostma/2021-1-220BL/lab03/lab03.html) Wednesday by 11:59pm~~
 - [X] ~~Lab 4: Resistor Network~~
-- [ ] Lab 5: [Voltage Divider](http://www.csun.edu/~hpostma/2021-1-220BL/lab05/lab05.html)
+- [X] ~~Lab 5: [Voltage Divider](http://www.csun.edu/~hpostma/2021-1-220BL/lab05/lab05.html)~~
 - [ ] **SPRING BREAK: 3/15/21 - 3/19/21**
 - [ ] **CESAR CHAVEZ: 3/31/21**
 - [ ] **_```10am @ CSUN 04/14/2021```_**
