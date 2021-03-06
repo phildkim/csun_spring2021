@@ -27,18 +27,18 @@
   \begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
   \multicolumn{7}{|c|}{\textbf{Table 1: Series Resistors}} \\\hline
   \R{1} & \R{2} & \V{1} & V/DIV for \V{1} & \V{12} & \RDIV\ & \VDIV\ \\\hline
-  1k & 2k & 0.68V & 1V & 2.02V & 0.33k & 0.34V \\\hline
-  1k & 100 & 1.82V & 1V & 1.98V & 0.91k & 0.92V \\\hline
-  1k & 4.7k & 0.40V & 1V & 2.02V & 0.18k & 0.2V \\\hline
-  1k & 10k & 0.28V & 1V & 2.02V & 0.09k & 0.14V \\\hline
-  1k & 100k & 0V & 0V & 0V & 0.01k & 0 \\\hline
+  1k & 2k & 0.68V & 1V & 1.98V & 0.33k & 0.34V \\\hline
+  1k & 100 & 1.78V & 1V & 1.98V & 0.91k & 0.90V \\\hline
+  1k & 4.7k & 0.36V & 1V & 1.98V & 0.18k & 0.18V \\\hline
+  1k & 10k & 0.24V & 1V & 1.98V & 0.09k & 0.12V \\\hline
+  1k & 100k & 0.16V & 1V & 1.98V & 0.0099k & 0.08V \\\hline
   \end{tabular}
   \begin{center}
     \subsection*{Picture 1: }
-    % \includegraphics[scale=0.079,height=4.5cm]{R1.jpeg}
-    % \includegraphics[scale=0.070,height=4.5cm]{R2.jpeg}
+    \includegraphics[width=8cm,height=4cm]{2k.jpeg}
+    \includegraphics[width=8cm,height=4cm]{v1.jpeg}
     \subsection*{Graph 1}
-    % \includegraphics[scale=0.18]{parallel.jpeg}
+    \includegraphics[scale=0.23]{series.jpg}
     \subsection*{Discussion 1}
     \begin{enumerate}
       \item What did you expect to see, and did you see it? If not, why not. If so, how well (quantitatively) did it fit your expectation?
@@ -50,22 +50,22 @@
 \end{table}
 \newpage
 \begin{table}[!htp]\centering
-  \subsection*{Part 2}
+  \subsection*{Part 2: \\\V{23}=\V{123} - \V{1}\\ \R{23,exp} = \V{23}/\I{23}}
   \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
   \multicolumn{10}{|c|}{\textbf{Table 2: Parallel Resistors}} \\\hline
   \R{1} & \R{2} & \R{3} & \V{1} & V/DIV for \V{1} &  \I{1} = \I{23} & \V{123} & \V{23} & \R{23,expt} & \R{23,theory} \\\hline
-  1k & 2k & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\hline
-  1k & 100 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\hline
-  1k & 4.7k & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\hline
-  1k & 10k & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\hline
-  1k & 100k & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\hline
+  1k & 2k & 2.2k & 0.97V & 1V & 0.97 & 1.98V & 1.01V & 1.04k & 1.05k \\\hline
+  1k & 2k & 100 & 1.90V & 1V & 1.90 & 1.98V & 0.08V & 0.04k & 95.24\(\Omega \) \\\hline
+  1k & 2k & 4.7k & 0.73V & 1V & 0.77V & 2.02V & 1.25V & 1.57k & 1.40k \\\hline
+  1k & 2k & 10k & V & 1V &  & 1.98V & V & k & 1.67k \\\hline
+  1k & 2k & 100k & V & 1V & 0 & 1.98V & V & k & 1.96k \\\hline
   \end{tabular}
   \begin{center}
     \subsection*{Picture 2: }
-    % \includegraphics[scale=0.079,height=4.5cm]{R1.jpeg}
-    % \includegraphics[scale=0.070,height=4.5cm]{R2.jpeg}
+    \includegraphics[width=8cm,height=4cm]{R23.jpeg}
+    \includegraphics[width=8cm,height=4cm]{VV1.jpeg}
     \subsection*{Graph 2}
-    % \includegraphics[scale=0.18]{parallel.jpeg}
+    \includegraphics[scale=0.23]{parallel.jpg}
     \subsection*{Discussion 2}
     \begin{enumerate}
       \item What did you expect to see, and did you see it? If not, why not. If so, how well (quantitatively) did it fit your expectation?
@@ -76,3 +76,4 @@
   \end{center}
 \end{table}
 \end{document}
+I₁
