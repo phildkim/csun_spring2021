@@ -43,22 +43,7 @@ npm run build && npm start // production server
 
 ***
 
-### BIO 106: (Grade: 90.14%)
-
-***
-
-### Origin of Life and Evidence for Evolution: Sept 27 - March 7
-
-- [X] ~~7.0 Origin of Life (Lecture 32:14)~~
-- [X] ~~7.1 Timeline of Earth (Lecture 12:46)~~
-- [X] ~~Origin of Life (Reading)~~
-- [X] ~~Origin of Life (Connect)~~
-- [ ] Quiz 10 (due March 7)
-- [X] ~~8.1 Evidence for Evolution (Part 1) (Lecture 22:12)~~
-- [X] ~~8.2 Evidence for Evolution (Part 2) (Lecture 29:02)~~
-- [X] ~~Evidence for Evolution (I) (Reading)~~
-- [X] ~~Evidence for Evolution (I) (Connect)~~
-- [ ] Quiz 10.5 (due March 7)
+### BIO 106: (Grade: 85.53%)
 
 ***
 
@@ -168,18 +153,6 @@ npm run build && npm start // production server
 ***
 
 ### COMP 300 (Grade: 94%): Fr 11:00AM-1:45PM
-
-***
-
-- [ ] [Essay #6](https://docs.google.com/document/d/1_qICcO-2zlUgyHDJyHt6eK3cREMXFZDWIJzsJ-tlBPc/edit): **Mar 7 by 11:59pm**
-  - [ ] [California's New Net Neutrality Legislation](https://www.cnet.com/news/california-net-neutrality-law-sparks-justice-department-lawsuit/)
-  - [ ] [Burger King Net Neutrality](https://www.youtube.com/watch?v=ltzy5vRmN8Q)
-  - [ ] [How the end of Net Neutrality may change the Internet](https://www.youtube.com/watch?v=HqXKEgTYZBQ)
-  - [ ] [Can You Hear me Now? 3/5/21](https://www.youtube.com/watch?v=aiZ8xwwycXA&t=38s)
-  - [ ] [Net Neutrality 101](https://en.wikipedia.org/wiki/Net_neutrality)
-  - [ ] [How Dumb Are We?](https://www.newsweek.com/how-ignorant-are-americans-66053)
-  - [ ] [Short Clip from Fahrenheit 451 (1966)](https://www.youtube.com/watch?v=M9n98SXNGl8)
-  - [ ] [Is It Time To Burn This Book? When Fahrenheit 451 becomes a comic book, it's time to worry.](https://slate.com/culture/2009/08/fahrenheit-451-in-comic-book-form.html)
 
 ***
 
