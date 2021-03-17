@@ -85,7 +85,8 @@ npm run build && npm start // production server
 ## COMP-300 (Grade: 94.5%)
 
 - [ ] [Bibliography](https://docs.google.com/document/d/1bEvjrZzd8rK3aCi-6D2LYhRRpUSAvsZ2I3KonbkhqgE/edit): **Mar 14 by 11:59pm**
-  - [ ] block clain
+  - [ ] [Guild](https://libguides.csun.edu/research-strategies/MLA)
+  - [ ] [Library database](https://library.csun.edu/)
 
 - [ ] [Essay #8](https://docs.google.com/document/d/1ehvn4SjkYt9i3pzapPz8mEfd9Kdycz6GXwFx8Iwp1bo/edit): **Mar 28 by 11:59pm**
   - [ ] [Intellectual Property Rights: Federalist Society](https://www.youtube.com/watch?v=BEV6hWog2Ww)
