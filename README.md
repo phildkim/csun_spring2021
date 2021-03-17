@@ -49,8 +49,8 @@ npm run build && npm start // production server
 
 ### Mechanisms of Evolution: March 6 - March 28
 
-- [ ] **SPRING BREAK: 3/15/21 - 3/19/21**
-- [ ] 9.0 Darwin and Natural Selection (Lecture 51:04)
+- [X] ~~**SPRING BREAK: 3/15/21 - 3/19/21**~~
+- [X] ~~9.0 Darwin and Natural Selection (Lecture 51:04)~~
 - [ ] Evidence for Evolution (II) (Reading)
 - [ ] Evidence for Evolution (II) (Connect)
 - [ ] Quiz 11 (due March 28)
