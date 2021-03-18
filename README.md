@@ -84,54 +84,21 @@ npm run build && npm start // production server
 
 ## COMP-300 (Grade: 94.5%)
 
-- [ ] [Bibliography](https://docs.google.com/document/d/1bEvjrZzd8rK3aCi-6D2LYhRRpUSAvsZ2I3KonbkhqgE/edit): **Mar 14 by 11:59pm**
-  - [ ] [Guild](https://libguides.csun.edu/research-strategies/MLA)
-  - [ ] [Library database](https://library.csun.edu/)
-
+- [X] ~~[Bibliography](https://docs.google.com/document/d/1bEvjrZzd8rK3aCi-6D2LYhRRpUSAvsZ2I3KonbkhqgE/edit): **Mar 14 by 11:59pm**~~
 - [ ] [Essay #8](https://docs.google.com/document/d/1ehvn4SjkYt9i3pzapPz8mEfd9Kdycz6GXwFx8Iwp1bo/edit): **Mar 28 by 11:59pm**
-  - [ ] [Intellectual Property Rights: Federalist Society](https://www.youtube.com/watch?v=BEV6hWog2Ww)
-  - [ ] [Blockathon: EU Intellectual Property Rights](https://www.youtube.com/watch?v=Sb3ecqzhW6g)
-  - [ ] [Social Media's New Intellectual Property Challenges](https://www.legalzoom.com/articles/social-medias-new-intellectual-property-challenges)
-  - [ ] [Plagiarism Lines Blur for Students in Digital Age](https://www.nytimes.com/2010/08/02/education/02cheat.html)
-  - [ ] [Fair use](https://en.wikipedia.org/wiki/Fair_use)
-
 - [ ] [Essay #9](https://docs.google.com/document/d/1giCKGmuenYdtZMsgJ3vwo2TFC5WRTbWg_mrmaVJskKI/edit): **Apr 4 by 11:59pm**
-  - [ ] [Hackers will pose a greater threat in 2018](https://www.youtube.com/watch?v=kCrV_hQ1W-Q)
-  - [ ] [Meet a 12-year-old hacker and cyber security expert](https://www.youtube.com/watch?v=7TpsYofbAPA)
-  - [ ] [How malware could disrupt midterm elections](https://www.youtube.com/watch?v=zfkCRY1YS-4)
-  - [ ] [10 Things to Remember When Connecting to Free Wi-Fi](https://www.youtube.com/watch?v=9KKwRoPzSzk)
-  - [ ] [Resolved: How to Keep Your Computer Safe, Clear and Backed Up](https://lifehacker.com/resolved-how-to-keep-your-computer-safe-clean-and-ba-5720731)
-
 - [ ] [Essay #10](https://docs.google.com/document/d/11VbYPGMEN0A4Y1FU0bfmJx0ifNgBckCr8ehmzDlm3iE/edit): **Apr 11 by 11:59pm**
-  - [ ] [Freedom vs Security: Freedom at any cost?](https://www.youtube.com/watch?v=zL2LMTRoWlA)
-  - [ ] [Edward Snowden - Patriot or Traitor?](https://www.youtube.com/watch?v=LCJ1SBEMU1s)
-  - [ ] [Hacker Wins Election As Pirate Party Leader | Freethink Coded](https://www.youtube.com/watch?v=RFrKYYNiyZE)
-  - [ ] [How can social media impact the government?](https://www.youtube.com/watch?v=wDT1c89uazk)
-  - [ ] [Impact of media evolution on politics](https://www.youtube.com/watch?v=vyIMg4F5axw)
-
 - [ ] [Essay #11](https://docs.google.com/document/d/1VtpzEuzsG8ikLe3jToRdPXhIdgqsC-a1CsZuw9NFytA/edit): **Apr 18 by 11:59pm**
-  - [ ] [The Big Bang Theory - The Friendship Algorithm](https://www.youtube.com/watch?v=k0xgjUhEG3U)
-  - [ ] [How to Use Flow Charts to Show how Processes Work](https://www.youtube.com/watch?v=ba5duMARdMc)
-  - [ ] [Algorithm Using pseudocode and flowchart](https://www.youtube.com/watch?v=-TSOy_-8h3k)
-  - [ ] [Toast, Anyone?](https://www.youtube.com/watch?v=wb46UVX9t1E&feature=related)
 - [ ] [Research Paper](https://docs.google.com/document/d/1M6orVz_O3qvcHRX4s2yfCgBHDjIFA7Z37FPuEicI-qo/edit): **Apr 25 by 11:59pm**
-
 - [ ] [Essay #12](https://docs.google.com/document/d/1Nx2MUAz1ecL4lXr_3KRATTrozLR3hOS4kbpEzKMYuSE/edit): **Apr 25 by 11:59pm**
-  - [ ] [What is an Algorithm?](https://www.youtube.com/watch?v=AVScy7YsKM0)
-  - [ ] [What is Pseudocode?](https://en.wikipedia.org/wiki/Pseudocode)
-  - [ ] [Pseudocode: Monopoly](https://www.wiley.com/college/busin/icmis/oakman/outline/chap05/slides/pseudo.htm)
-
 - [ ] [Essay #13](https://docs.google.com/document/d/1RUrrBidI0zVxYQ00QFuhMLoKcUnPHv4tIXzK7igGKzc/edit): **May 2 by 11:59pm**
-  - [ ] [3 Facts About Semiotics](https://www.youtube.com/watch?v=llZk-ejfDcA)
-  - [ ] [Semiotics](https://en.wikipedia.org/wiki/Semiotics)
-  - [ ] [What is Visual Programming?](https://en.wikipedia.org/wiki/Visual_programming_language)
-- [ ] Class Presentation (PowerPoint or Video): **May 5**
+- [ ] Class Presentation: **May 5**
 
 ***
 
 ## BIO-106 LAB: (Grade: 95.24%)
 
-- [ ] Analysis of Lawns Lab Report
+- [X] ~~Analysis of Lawns Lab Report~~
 
 ***
 
@@ -140,7 +107,7 @@ npm run build && npm start // production server
 ### Mechanisms of Evolution: March 6 - March 28
 
 - [X] ~~9.0 Darwin and Natural Selection (Lecture 51:04)~~
-- [ ] Evidence for Evolution (II) (Reading)
+- [X] ~~Evidence for Evolution (II) (Reading)~~
 - [ ] Evidence for Evolution (II) (Connect)
 - [ ] Quiz 11 (due March 28)
 - [ ] 10.1 Evolution by Natural Selection (Darwin's Finch - [ ] Case Example) (Lecture 24:13)
