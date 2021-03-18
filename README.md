@@ -108,17 +108,17 @@ npm run build && npm start // production server
 
 - [X] ~~9.0 Darwin and Natural Selection (Lecture 51:04)~~
 - [X] ~~Evidence for Evolution (II) (Reading)~~
-- [ ] Evidence for Evolution (II) (Connect)
-- [ ] Quiz 11 (due March 28)
-- [ ] 10.1 Evolution by Natural Selection (Darwin's Finch - [ ] Case Example) (Lecture 24:13)
+- [X] ~~Evidence for Evolution (II) (Connect)~~
+- [ ] 10.1 Evolution by Natural Selection (Darwin's Finch - Case Example) (Lecture 24:13)
 - [ ] 10.2 Evolution by Natural Selection (examples and limitations) (Lecture 39:38)
-- [ ] Quiz 12 (due March 28)
 - [ ] 11.1 Factors that Influence Allele Frequencies (Natural Selection, Genetic Drift, and Gene Flow) (Lecture 41:49)
 - [ ] 11.2 Factors that Influence Allele Frequencies (Mutation) (Lecture 10:43)
-- [ ] Quiz 13 (due March 28)
 - [ ] Factors that Influence Allele Frequencies (Reading)
 - [ ] Factors that Influence Allele Frequencies (Connect)
 - [ ] Genetic Drift Simulation (Connect)
+- [ ] Quiz 11 (due March 28)
+- [ ] Quiz 12 (due March 28)
+- [ ] Quiz 13 (due March 28)
 - [ ] Quiz 14 (due March 28)
 
 ***
