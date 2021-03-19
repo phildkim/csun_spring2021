@@ -43,6 +43,10 @@ npm run build && npm start // production server
 
 ***
 
+## WEDNESDAY: REGISTER SUMMER SCHOOL 10:30AM
+
+***
+
 ## PHYS-220B (Grade: 95.46\%)
 
 - [X] Ch25 03/28/21 @ 11:59 PM
@@ -111,11 +115,11 @@ npm run build && npm start // production server
 - [X] ~~Evidence for Evolution (II) (Connect)~~
 - [X] ~~10.1 Evolution by Natural Selection (Darwin's Finch - Case Example) (Lecture 24:13)~~
 - [X] ~~10.2 Evolution by Natural Selection (examples and limitations) (Lecture 39:38)~~
-- [ ] 11.1 Factors that Influence Allele Frequencies (Natural Selection, Genetic Drift, and Gene Flow) (Lecture 41:49)
-- [ ] 11.2 Factors that Influence Allele Frequencies (Mutation) (Lecture 10:43)
-- [ ] Factors that Influence Allele Frequencies (Reading)
-- [ ] Factors that Influence Allele Frequencies (Connect)
-- [ ] Genetic Drift Simulation (Connect)
+- [X] ~~11.1 Factors that Influence Allele Frequencies (Natural Selection, Genetic Drift, and Gene Flow) (Lecture 41:49)~~
+- [X] ~~11.2 Factors that Influence Allele Frequencies (Mutation) (Lecture 10:43)~~
+- [X] ~~Factors that Influence Allele Frequencies (Reading)~~
+- [X] ~~Factors that Influence Allele Frequencies (Connect)~~
+- [X] ~~Genetic Drift Simulation (Connect)~~
 - [ ] Quiz 11 (due March 28)
 - [ ] Quiz 12 (due March 28)
 - [ ] Quiz 13 (due March 28)
