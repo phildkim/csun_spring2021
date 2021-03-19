@@ -1,4 +1,5 @@
 .vscode
+.DS_Store
+.MISC
 README.html
 update.sh
-.DS_Store
