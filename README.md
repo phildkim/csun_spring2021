@@ -43,16 +43,16 @@ npm run build && npm start // production server
 
 ***
 
-## WEDNESDAY: REGISTER SUMMER SCHOOL 10:30AM
+## WEDNESDAY: Register Summer School @ 10:30AM
 
 ***
 
-## PHYS-220B (Grade: 95.46\%)
+## PHYS-220B (Grade: 95.46\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
-- [X] Ch25 03/28/21 @ 11:59 PM
-  - [ ] [(16, 17, 18, 21, 22, 24, 25)](https://canvas.csun.edu/courses/90844/modules/items/3378729)
+- [X] ~~Ch24 03/17/21 @ 11:59 PM~~
+- [X] ~~Ch25 03/28/21 @ 11:59 PM~~
 - [ ] Ch26 04/04/21 @ 11:59 PM
-  - [ ] [(2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 23, 25)](https://canvas.csun.edu/courses/90844/modules/items/3378729)
+  - [ ] [[ 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 23, 25 ]](https://canvas.csun.edu/courses/90844/modules/items/3378729)
 - [ ] **MIDTERM** (CH: 24, 25, 26)
 
 ***
@@ -60,47 +60,47 @@ npm run build && npm start // production server
 ## PHYS-220B LAB (Grade: 100\%)
 
 - [ ] Lab 7: [DIY Capacitors](https://www.csun.edu/~hpostma/2021-1-220BL/lab07/lab07.html)
-- [ ] Lab _@ CSUN, 10AM 04/14/21_
-- [ ] Lab _@ CSUN, 11AM 05/12/21_
+- [ ] Lab 10: _@ CSUN, **10AM - 04/14/21**_
+- [ ] Lab 11: _@ CSUN, **11AM - 05/12/21**_
 
 ***
 
-## COMP-322: (Grade: N/A%)
+## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/84109956590?pwd=enVXbisxMUFIazQ1bElJem9GUkJtdz09)
 
 - [X] ~~Ch3 Zybook Due Mar 21 (3.2.1 - 3.2.4, 3.3.1 - 3.3.5, 3.4.1 - 3.4.2, 3.5.1)~~
 - [ ] [Ch4 Zybook](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021)
 
 ***
 
-## COMP-322 LAB: (Grade: N/A%)
+## COMP-322 LAB: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/85037971220?pwd=Vk5JbnBLQVlpU3ZQL0Z6R0dXbW1JZz09)
 
 - [X] ~~Project 2 Due Mar 21: (fifo, sjf, srt)~~
 - [ ] Project 3
 
 ***
 
-## COMP-491 LAB: (Grade: 100%)
+## COMP-491 LAB: (Grade: 100%), [Zoom](https://csun.zoom.us/j/4853398877?pwd=NHd2T292blFlc2pZMmpTMENncFdBZz09)
 
 - [ ] Lab 3
 - [ ] Lab 4
 
 ***
 
-## COMP-300 (Grade: 94.5%)
+## COMP-300 (Grade: 94.5%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
 
 - [X] ~~[Bibliography](https://docs.google.com/document/d/1bEvjrZzd8rK3aCi-6D2LYhRRpUSAvsZ2I3KonbkhqgE/edit): **Mar 14 by 11:59pm**~~
 - [ ] [Essay #8](https://docs.google.com/document/d/1ehvn4SjkYt9i3pzapPz8mEfd9Kdycz6GXwFx8Iwp1bo/edit): **Mar 28 by 11:59pm**
 - [ ] [Essay #9](https://docs.google.com/document/d/1giCKGmuenYdtZMsgJ3vwo2TFC5WRTbWg_mrmaVJskKI/edit): **Apr 4 by 11:59pm**
 - [ ] [Essay #10](https://docs.google.com/document/d/11VbYPGMEN0A4Y1FU0bfmJx0ifNgBckCr8ehmzDlm3iE/edit): **Apr 11 by 11:59pm**
 - [ ] [Essay #11](https://docs.google.com/document/d/1VtpzEuzsG8ikLe3jToRdPXhIdgqsC-a1CsZuw9NFytA/edit): **Apr 18 by 11:59pm**
-- [ ] [Research Paper](https://docs.google.com/document/d/1M6orVz_O3qvcHRX4s2yfCgBHDjIFA7Z37FPuEicI-qo/edit): **Apr 25 by 11:59pm**
 - [ ] [Essay #12](https://docs.google.com/document/d/1Nx2MUAz1ecL4lXr_3KRATTrozLR3hOS4kbpEzKMYuSE/edit): **Apr 25 by 11:59pm**
+  - [ ] [_Research Paper_](https://docs.google.com/document/d/1M6orVz_O3qvcHRX4s2yfCgBHDjIFA7Z37FPuEicI-qo/edit): **Apr 25 by 11:59pm**
 - [ ] [Essay #13](https://docs.google.com/document/d/1RUrrBidI0zVxYQ00QFuhMLoKcUnPHv4tIXzK7igGKzc/edit): **May 2 by 11:59pm**
-- [ ] Class Presentation: **May 5**
+  - [ ] _Class Presentation_: **May 14, 2021**
 
 ***
 
-## BIO-106 LAB: (Grade: 95.24%)
+## BIO-106 LAB: (Grade: 95.24%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
 - [X] ~~Analysis of Lawns Lab Report~~
 
@@ -110,22 +110,10 @@ npm run build && npm start // production server
 
 ### Mechanisms of Evolution: March 6 - March 28
 
-- [X] ~~9.0 Darwin and Natural Selection (Lecture 51:04)~~
-- [X] ~~Evidence for Evolution (II) (Reading)~~
-- [X] ~~Evidence for Evolution (II) (Connect)~~
-- [X] ~~10.1 Evolution by Natural Selection (Darwin's Finch - Case Example) (Lecture 24:13)~~
-- [X] ~~10.2 Evolution by Natural Selection (examples and limitations) (Lecture 39:38)~~
-- [X] ~~11.1 Factors that Influence Allele Frequencies (Natural Selection, Genetic Drift, and Gene Flow) (Lecture 41:49)~~
-- [X] ~~11.2 Factors that Influence Allele Frequencies (Mutation) (Lecture 10:43)~~
-- [X] ~~Factors that Influence Allele Frequencies (Reading)~~
-- [X] ~~Factors that Influence Allele Frequencies (Connect)~~
-- [X] ~~Genetic Drift Simulation (Connect)~~
 - [ ] Quiz 11 (due March 28)
 - [ ] Quiz 12 (due March 28)
 - [ ] Quiz 13 (due March 28)
 - [ ] Quiz 14 (due March 28)
-
-***
 
 ### Population Genetics: March 27 - Apr. 4
 
@@ -135,22 +123,18 @@ npm run build && npm start // production server
 - [ ] Hardy-Weinberg (I) (Connect)
 - [ ] Hardy-Weinberg (II) (Connect)
 - [ ] Quiz 15 (due Apr. 4)
-- [ ] Quiz 16 (due Apr. 4). Note: this is a set of HW problems. There are no time limit restrictions but must complete by deadline).
-
-***
+- [ ] Quiz 16 (due Apr. 4). Note: no limit.
 
 ### Speciation: Apr. 3 - Apr. 11
 
-- [ ] 13.1 Speciation (What is a species? Morphological - [ ] and Biological species concepts) (Lecture 22.04)
-- [ ] 13.2 Speciation (phylogenetic species concept) (Lecture 15:35)
-- [ ] 13.3 Speciation (Macroevolution) (Lecture 13:08)
-- [ ] 13.4 Speciation (Macroevolution on a grand scale) (Lecture 16:27)
+- [ ] 13.1 Speciation (Lecture 22.04)
+- [ ] 13.2 Speciation (Lecture 15:35)
+- [ ] 13.3 Speciation (Lecture 13:08)
+- [ ] 13.4 Speciation (Lecture 16:27)
 - [ ] Speciation (Reading)
 - [ ] Speciation (Connect)
 - [ ] Quiz 17 (due Apr. 11)
 - [ ] Quiz 18 (due Apr. 11)
-
-***
 
 ### Taxonomy and Systematics: Apr. 10 - Apr. 18
 
@@ -160,10 +144,8 @@ npm run build && npm start // production server
 - [ ] Systematics (Reading)
 - [ ] Systematics and Phylogenies (Connect)
 - [ ] Tree of Life (Connect)
-- [ ] Quiz 19 (Apr. 18) (This quiz only has questions from earlier sections so you can do this at any time)
+- [ ] Quiz 19 (Apr. 18)
 - [ ] Quiz 20 (Apr. 18)
-
-***
 
 ### Ecology: Apr. 17 - Apr. 25
 
@@ -172,14 +154,12 @@ npm run build && npm start // production server
 - [ ] Environment (Reading)
 - [ ] Environment (Connect)
 - [ ] Quiz 21 (due Apr. 25)
-- [ ] Quiz 22 (due Apr. 25) (This quiz only has questions from earlier sections so you can do this at any time)
-
-***
+- [ ] Quiz 22 (due Apr. 25)
 
 ### Population Ecology: April 24 - May 2
 
-- [ ] 16.1 Population Ecology (Geometric Population Growth) (Lecture 17:37)
-- [ ] 16.2 Population Ecology (Continuous Population Growth) (Lecture 19:43)
+- [ ] 16.1 Population Ecology (Lecture 17:37)
+- [ ] 16.2 Population Ecology (Lecture 19:43)
 - [ ] 16.3 Population Outbreaks and Population Regulation (Lecture 30:28)
 - [ ] 16.4 Population Dynamics (Lecture 22:55)
 - [ ] Population Ecology (Reading)
@@ -187,8 +167,6 @@ npm run build && npm start // production server
 - [ ] Population Growth (Connect)
 - [ ] Quiz 23 (Due May 2) (will require calculator)
 - [ ] Quiz 24 (Due May 2)
-
-***
 
 ### Behavioral Ecology: May 1 - May 9
 
@@ -198,8 +176,6 @@ npm run build && npm start // production server
 - [ ] Behavioral Ecology (Connect)
 - [ ] Quiz 25 (Due May 9)
 - [ ] Quiz 26 (Due May 9)
-
-***
 
 ### Communities and Ecosystems: May 8 - May 14
 
