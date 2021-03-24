@@ -107,8 +107,8 @@ npm run build && npm start // production server
 
 ### Mechanisms of Evolution: March 6 - March 28
 
-- [ ] Quiz 11 (due March 28)
-- [ ] Quiz 12 (due March 28)
+- [X] ~~Quiz 11 (due March 28)~~
+- [X] ~~Quiz 12 (due March 28)~~
 - [ ] Quiz 13 (due March 28)
 - [ ] Quiz 14 (due March 28)
 
