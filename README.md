@@ -53,6 +53,7 @@ npm run build && npm start // production server
 - [X] ~~Ch25 03/28/21 @ 11:59 PM~~
 - [ ] Ch26 04/04/21 @ 11:59 PM
   - [ ] [[ 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 23, 25 ]](https://canvas.csun.edu/courses/90844/modules/items/3378729)
+- [ ] Recitation 6
 - [ ] **MIDTERM** (CH: 24, 25, 26)
 
 ***
@@ -75,13 +76,12 @@ npm run build && npm start // production server
 ## COMP-322 LAB: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/85037971220?pwd=Vk5JbnBLQVlpU3ZQL0Z6R0dXbW1JZz09)
 
 - [X] ~~Project 2 Due Mar 21: (fifo, sjf, srt)~~
-- [ ] Project 3
 
 ***
 
 ## COMP-491 LAB: (Grade: 100%), [Zoom](https://csun.zoom.us/j/4853398877?pwd=NHd2T292blFlc2pZMmpTMENncFdBZz09)
 
-- [ ] Lab 3
+- [ ] Lab 3: Security
 - [ ] Lab 4
 
 ***
