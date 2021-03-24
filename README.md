@@ -47,10 +47,8 @@ npm run build && npm start // production server
 
 ***
 
-## PHYS-220B (Grade: 95.46\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
+## PHYS-220B (Grade: 95.55\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
-- [X] ~~Ch24 03/17/21 @ 11:59 PM~~
-- [X] ~~Ch25 03/28/21 @ 11:59 PM~~
 - [ ] Ch26 04/04/21 @ 11:59 PM
   - [ ] [[ 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 18, 20, 22, 23, 25 ]](https://canvas.csun.edu/courses/90844/modules/items/3378729)
 - [ ] Recitation 6
@@ -68,14 +66,12 @@ npm run build && npm start // production server
 
 ## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/89771303712?pwd=M0hRa01HdVE2UHVsNnlTSzg1c292UT09)
 
-- [X] ~~Ch3 Zybook Due Mar 21 (3.2.1 - 3.2.4, 3.3.1 - 3.3.5, 3.4.1 - 3.4.2, 3.5.1)~~
 - [ ] [Ch4 Zybook](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021)
+- [ ] Midterm
 
 ***
 
 ## COMP-322 LAB: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/85037971220?pwd=Vk5JbnBLQVlpU3ZQL0Z6R0dXbW1JZz09)
-
-- [X] ~~Project 2 Due Mar 21: (fifo, sjf, srt)~~
 
 ***
 
@@ -86,9 +82,8 @@ npm run build && npm start // production server
 
 ***
 
-## COMP-300 (Grade: 94.5%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
+## COMP-300 (Grade: 95.93%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
 
-- [X] ~~[Bibliography](https://docs.google.com/document/d/1bEvjrZzd8rK3aCi-6D2LYhRRpUSAvsZ2I3KonbkhqgE/edit): **Mar 14 by 11:59pm**~~
 - [ ] [Essay #8](https://docs.google.com/document/d/1ehvn4SjkYt9i3pzapPz8mEfd9Kdycz6GXwFx8Iwp1bo/edit): **Mar 28 by 11:59pm**
 - [ ] [Essay #9](https://docs.google.com/document/d/1giCKGmuenYdtZMsgJ3vwo2TFC5WRTbWg_mrmaVJskKI/edit): **Apr 4 by 11:59pm**
 - [ ] [Essay #10](https://docs.google.com/document/d/11VbYPGMEN0A4Y1FU0bfmJx0ifNgBckCr8ehmzDlm3iE/edit): **Apr 11 by 11:59pm**
@@ -108,7 +103,7 @@ npm run build && npm start // production server
 
 ***
 
-## BIO-106: (Grade: 85.55%)
+## BIO-106: (Grade: 84.55%)
 
 ### Mechanisms of Evolution: March 6 - March 28
 
