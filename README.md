@@ -65,7 +65,7 @@ npm run build && npm start // production server
 
 ***
 
-## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/84109956590?pwd=enVXbisxMUFIazQ1bElJem9GUkJtdz09)
+## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/89771303712?pwd=M0hRa01HdVE2UHVsNnlTSzg1c292UT09)
 
 - [X] ~~Ch3 Zybook Due Mar 21 (3.2.1 - 3.2.4, 3.3.1 - 3.3.5, 3.4.1 - 3.4.2, 3.5.1)~~
 - [ ] [Ch4 Zybook](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021)
@@ -102,7 +102,9 @@ npm run build && npm start // production server
 
 ## BIO-106 LAB: (Grade: 95.24%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
-- [X] ~~Analysis of Lawns Lab Report~~
+- [ ] Ch 7 Quiz
+- [ ] Ch 7 Discussion: A Coevolutionary Arms Race
+- [ ] Moth Evolution Simulation Lab Report
 
 ***
 
