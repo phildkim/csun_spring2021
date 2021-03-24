@@ -50,9 +50,9 @@ npm run build && npm start // production server
 ## PHYS-220B (Grade: 95.55\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
 - [ ] Ch26 04/04/21 @ 11:59 PM
-  - [ ] [[ 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 18, 20, 22, 23, 25 ]](https://canvas.csun.edu/courses/90844/modules/items/3378729)
+  - [ ] [[ 7, 10, 11, 12, 14, 15, 18, 20, 22, 23, 25 ]](https://canvas.csun.edu/courses/90844/modules/items/3378729)
 - [ ] Recitation 6
-- [ ] **MIDTERM** (CH: 24, 25, 26)
+- [ ] **MIDTERM** (CH: 24, 25, 26, 27)
 
 ***
 
