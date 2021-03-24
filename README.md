@@ -52,7 +52,7 @@ npm run build && npm start // production server
 - [X] ~~Ch24 03/17/21 @ 11:59 PM~~
 - [X] ~~Ch25 03/28/21 @ 11:59 PM~~
 - [ ] Ch26 04/04/21 @ 11:59 PM
-  - [ ] [[ 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 23, 25 ]](https://canvas.csun.edu/courses/90844/modules/items/3378729)
+  - [ ] [[ 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 18, 20, 22, 23, 25 ]](https://canvas.csun.edu/courses/90844/modules/items/3378729)
 - [ ] Recitation 6
 - [ ] **MIDTERM** (CH: 24, 25, 26)
 
