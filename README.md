@@ -78,7 +78,9 @@ npm run build && npm start // production server
 ## COMP-491 LAB: (Grade: 100%), [Zoom](https://csun.zoom.us/j/4853398877?pwd=NHd2T292blFlc2pZMmpTMENncFdBZz09)
 
 - [ ] Lab 3: Security
-- [ ] Lab 4
+  - [ ] [password hash](https://www.npmjs.com/package/bcrypt)
+  - [ ] And add the password comparison check into the /auth/login endpoint
+  - [ ] Basically just need to compare the input pw hash equals what's on the db.. exit and don't give them a JWT if it doesn't match
 
 ***
 
