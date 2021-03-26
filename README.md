@@ -43,10 +43,6 @@ npm run build && npm start // production server
 
 ***
 
-## WEDNESDAY: Register Summer School @ 10:30AM
-
-***
-
 ## PHYS-220B (Grade: 95.55\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
 - [ ] Ch26 04/04/21 @ 11:59 PM
@@ -68,7 +64,8 @@ npm run build && npm start // production server
 
 ## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/89771303712?pwd=M0hRa01HdVE2UHVsNnlTSzg1c292UT09)
 
-- [ ] [Ch4 Zybook](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021)
+- [X] ~~[Ch4 Zybook](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021)~~
+- [ ] [Ch5 Zybook](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021)
 - [ ] Midterm
 
 ***
@@ -102,19 +99,12 @@ npm run build && npm start // production server
 ## BIO-106 LAB: (Grade: 95.24%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
 - [ ] Ch 7 Quiz
-- [ ] Ch 7 Discussion: A Coevolutionary Arms Race
+- [X] ~~Ch 7 Discussion: A Coevolutionary Arms Race~~
 - [ ] Moth Evolution Simulation Lab Report
 
 ***
 
-## BIO-106: (Grade: 84.55%)
-
-### Mechanisms of Evolution: March 6 - March 28
-
-- [X] ~~Quiz 11 (due March 28)~~
-- [X] ~~Quiz 12 (due March 28)~~
-- [ ] Quiz 13 (due March 28)
-- [ ] Quiz 14 (due March 28)
+## BIO-106: (Grade: 88.06%)
 
 ### Population Genetics: March 27 - Apr. 4
 
