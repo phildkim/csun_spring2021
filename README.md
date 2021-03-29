@@ -45,8 +45,8 @@ npm run build && npm start // production server
 
 ## PHYS-220B (Grade: 95.55\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
-- [ ] Ch26 04/04/21 @ 11:59 PM
-  - [ ] [[ 7, 10, 11, 12, 14, 15, 18, 20, 22, 23, 25 ]](https://canvas.csun.edu/courses/90844/modules/items/3378729)
+- [X] ~~Ch26 04/04/21 @ 11:59 PM~~
+  - [ ] [[ 7, 11, 18, 20 ]](https://canvas.csun.edu/courses/90844/modules/items/3378729)
 - [X] ~~Recitation 6: Due 3/26/2021 @ 11:59 PM~~
 - [ ] **MIDTERM** (CH: 24, 25, 26, 27)
 
@@ -85,7 +85,7 @@ npm run build && npm start // production server
 
 ## COMP-300 (Grade: 95.93%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
 
-- [ ] [Essay #8](https://docs.google.com/document/d/1ehvn4SjkYt9i3pzapPz8mEfd9Kdycz6GXwFx8Iwp1bo/edit): **Mar 28 by 11:59pm**
+- [X] ~~[Essay #8](https://docs.google.com/document/d/1ehvn4SjkYt9i3pzapPz8mEfd9Kdycz6GXwFx8Iwp1bo/edit): **Mar 28 by 11:59pm**~~
 - [ ] [Essay #9](https://docs.google.com/document/d/1giCKGmuenYdtZMsgJ3vwo2TFC5WRTbWg_mrmaVJskKI/edit): **Apr 4 by 11:59pm**
 - [ ] [Essay #10](https://docs.google.com/document/d/11VbYPGMEN0A4Y1FU0bfmJx0ifNgBckCr8ehmzDlm3iE/edit): **Apr 11 by 11:59pm**
 - [ ] [Essay #11](https://docs.google.com/document/d/1VtpzEuzsG8ikLe3jToRdPXhIdgqsC-a1CsZuw9NFytA/edit): **Apr 18 by 11:59pm**
@@ -96,9 +96,9 @@ npm run build && npm start // production server
 
 ***
 
-## BIO-106 LAB: (Grade: 95.24%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
+## BIO-106 LAB: (Grade: 97.06%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
-- [ ] Ch 7 Quiz
+- [X] ~~Ch 7 Quiz~~
 - [X] ~~Ch 7 Discussion: A Coevolutionary Arms Race~~
 - [ ] Moth Evolution Simulation Lab Report
 
@@ -109,7 +109,7 @@ npm run build && npm start // production server
 ### Population Genetics: March 27 - Apr. 4
 
 - [ ] 12.1 Hardy-Weinberg (Lecture 34:52)
-- [X] 12.2 Solving Hardy-Weinberg Problems
+- [X] ~~12.2 Solving Hardy-Weinberg Problems~~
 - [ ] Hardy-Weinberg Principle (Reading)
 - [ ] Hardy-Weinberg (I) (Connect)
 - [ ] Hardy-Weinberg (II) (Connect)
