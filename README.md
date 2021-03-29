@@ -100,7 +100,7 @@ npm run build && npm start // production server
 
 - [X] ~~Ch 7 Quiz~~
 - [X] ~~Ch 7 Discussion: A Coevolutionary Arms Race~~
-- [ ] Moth Evolution Simulation Lab Report
+- [X] ~~Moth Evolution Simulation Lab Report~~
 
 ***
 
