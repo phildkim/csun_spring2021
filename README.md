@@ -47,7 +47,6 @@ npm run build && npm start // production server
 
 - [X] ~~Ch26 04/04/21 @ 11:59 PM~~
   - [ ] [[ 7, 11, 18, 20 ]](https://canvas.csun.edu/courses/90844/modules/items/3378729)
-- [X] ~~Recitation 6: Due 3/26/2021 @ 11:59 PM~~
 - [ ] **MIDTERM** (CH: 24, 25, 26, 27)
 
 ***
@@ -64,7 +63,6 @@ npm run build && npm start // production server
 
 ## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/89771303712?pwd=M0hRa01HdVE2UHVsNnlTSzg1c292UT09)
 
-- [X] ~~[Ch4 Zybook](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021)~~
 - [ ] [Ch5 Zybook](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021)
 - [ ] Midterm
 
@@ -85,7 +83,6 @@ npm run build && npm start // production server
 
 ## COMP-300 (Grade: 95.93%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
 
-- [X] ~~[Essay #8](https://docs.google.com/document/d/1ehvn4SjkYt9i3pzapPz8mEfd9Kdycz6GXwFx8Iwp1bo/edit): **Mar 28 by 11:59pm**~~
 - [ ] [Essay #9](https://docs.google.com/document/d/1giCKGmuenYdtZMsgJ3vwo2TFC5WRTbWg_mrmaVJskKI/edit): **Apr 4 by 11:59pm**
 - [ ] [Essay #10](https://docs.google.com/document/d/11VbYPGMEN0A4Y1FU0bfmJx0ifNgBckCr8ehmzDlm3iE/edit): **Apr 11 by 11:59pm**
 - [ ] [Essay #11](https://docs.google.com/document/d/1VtpzEuzsG8ikLe3jToRdPXhIdgqsC-a1CsZuw9NFytA/edit): **Apr 18 by 11:59pm**
@@ -98,9 +95,9 @@ npm run build && npm start // production server
 
 ## BIO-106 LAB: (Grade: 97.06%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
-- [X] ~~Ch 7 Quiz~~
-- [X] ~~Ch 7 Discussion: A Coevolutionary Arms Race~~
-- [X] ~~Moth Evolution Simulation Lab Report~~
+- [ ] Ch 8 Quiz
+- [ ] Ch 8 Discussion
+- [ ] Analysis of Coral Growth Lab Report
 
 ***
 
