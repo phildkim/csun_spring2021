@@ -41,7 +41,7 @@ y = [BMEAN, OMEAN, GMEAN, RMEAN]; % yaxis - mean
 m = [BSTDDEV, OSTDDEV, GSTDDEV, RSTDDEV]; % standard deviation
 e = [BSTDERR, OSTDERR, GSTDERR, RSTDERR]; % standard error
 
-h = figure(1);
+figure(1);
 hold on;
 box on;
 b = bar(x, y, 0.5, 'FaceColor', col(4, :));

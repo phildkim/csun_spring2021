@@ -1,108 +1,154 @@
 \documentclass{article}
-\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry}
-\usepackage[dvipsnames]{xcolor}
-\usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{geometry}
 \usepackage{graphicx}
-\usepackage{
-  amssymb,
-  amsmath,
-  amsthm
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\geometry{
+  left=0.5in,
+  top=0.2in,
+  right=0.5in,
+  bottom=0.5in
 }
-\graphicspath{{./images/}}
-\definecolor{BLUE}{HTML}{0072BD}
-\definecolor{ORANGE}{HTML}{EDB120}
-\definecolor{GREEN}{HTML}{77AC30}
-\definecolor{RED}{HTML}{A2142F}
-\def\B#1{\textcolor{BLUE}{#1}}
-\def\O#1{\textcolor{ORANGE}{#1}}
-\def\G#1{\textcolor{GREEN}{#1}}
-\def\R#1{\textcolor{RED}{#1}}
-\def\C#1{\(#1^\circ C\)}
+\sisetup{
+  round-mode = places, % Rounds numbers
+  round-precision = 2, % to 2 places
+}
+\graphicspath{{./images/}} % image path
+\definecolor{R}{HTML}{6495ed} % cornflowerblue
+\definecolor{G}{HTML}{20b2aa} % lightseagreen
+\definecolor{B}{HTML}{cd5c5c} % indianred
+\definecolor{A}{HTML}{663399} % rebeccapurple
+\def\ONE{\textcolor{R}{26}}
+\def\TWO{\textcolor{G}{28}}
+\def\THR{\textcolor{B}{30}}
+\def\FOR{\textcolor{A}{26\text{-}30}}
 
-\title{Intermediate Disturbance Hypothesis Lab Report}
+\def\TEMPERATURE#1{\textbf{#1}}
+\def\BOX#1#2{\textcolor{#2}{#1}}
+\def\MG{\scriptstyle{mg/cm^2}}
+\def\C{\scriptstyle{\text{\textdegree{C}}}}
+
+\def\I#1#2#3{\hspace*{#2}\textbf{#1}\hspace*{#3}}
+\def\TC{\(\left(\vcenter{\hbox{\(\scriptstyle{\text{\textdegree{C}}}\)}}\right)\)\hspace*{1.5em}}
+\def\WT#1#2{\hspace*{#1}\(\left(\vcenter{\hbox{\(\scriptstyle{mg/cm^2}\)}}\right)\)\hspace*{#2}}
+
+
+
+
+
+% equation new command
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+
+% title, name, date
+\title{Analysis of Coral Growth Lab Report}
 \author{Philip Kim}
 \date{\today}
+
 \begin{document}
 \maketitle
-\begin{table}[h]
-  \begin{center}
-    \textbf{Coral growth in temperature regimes:} \C{\B{26}}, \C{\O{28}}, \C{\G{30}}, \& \C{\R{26}-\R{30}}
-    \begin{tabular}{|c|c|c|c|c|}\hline
-      \# & Treatment (\(^\circ C\)) & Initial \((mg/cm^2)\) & Final \((mg/cm^2)\) & Change \((mg/cm^2)\) \\\hline
-      01 & \B{26} & 552 & 563 & 11 \\\hline % 1
-      02 & \B{26} & 341 & 352 & 11 \\\hline
-      03 & \B{26} & 461 & 467 & 06 \\\hline
-      04 & \B{26} & 430 & 437 & 07 \\\hline
-      05 & \B{26} & 312 & 320 & 08 \\\hline
-      06 & \B{26} & 364 & 374 & 10 \\\hline
-      07 & \B{26} & 468 & 479 & 11 \\\hline
-      08 & \B{26} & 449 & 460 & 11 \\\hline
-      09 & \B{26} & 398 & 415 & 17 \\\hline
-      10 & \B{26} & 394 & 401 & 07 \\\hline
-      11 & \B{26} & 360 & 369 & 09 \\\hline % 12
-      12 & \O{28} & 517 & 528 & 11 \\\hline % 13
-      13 & \O{28} & 428 & 443 & 15 \\\hline
-      14 & \O{28} & 407 & 415 & 08 \\\hline
-      15 & \O{28} & 441 & 452 & 11 \\\hline
-      16 & \O{28} & 472 & 488 & 16 \\\hline
-      17 & \O{28} & 383 & 391 & 08 \\\hline
-      18 & \O{28} & 466 & 479 & 13 \\\hline
-      19 & \O{28} & 345 & 354 & 09 \\\hline
-      20 & \O{28} & 382 & 393 & 11 \\\hline
-      21 & \O{28} & 494 & 503 & 09 \\\hline % 22
-      22 & \G{30} & 573 & 585 & 12 \\\hline % 23
-      23 & \G{30} & 354 & 369 & 15 \\\hline
-      24 & \G{30} & 532 & 545 & 13 \\\hline
-      25 & \G{30} & 393 & 410 & 17 \\\hline
-      26 & \G{30} & 269 & 277 & 08 \\\hline
-      27 & \G{30} & 517 & 526 & 09 \\\hline
-      28 & \G{30} & 469 & 484 & 15 \\\hline
-      29 & \G{30} & 306 & 322 & 16 \\\hline
-      30 & \G{30} & 431 & 446 & 15 \\\hline % 31
-      31 & \R{26}-\R{30} & 306 & 312 & 06 \\\hline % 32
-      32 & \R{26}-\R{30} & 372 & 378 & 06 \\\hline
-      33 & \R{26}-\R{30} & 333 & 344 & 11 \\\hline
-      34 & \R{26}-\R{30} & 567 & 578 & 11 \\\hline
-      35 & \R{26}-\R{30} & 379 & 392 & 13 \\\hline
-      36 & \R{26}-\R{30} & 490 & 505 & 15 \\\hline
-      37 & \R{26}-\R{30} & 391 & 401 & 10 \\\hline
-      38 & \R{26}-\R{30} & 509 & 523 & 14 \\\hline
-      39 & \R{26}-\R{30} & 369 & 377 & 08 \\\hline
-      40 & \R{26}-\R{30} & 337 & 351 & 14 \\\hline
-      41 & \R{26}-\R{30} & 365 & 373 & 08 \\\hline % 42
-    \end{tabular}
-  \end{center}
-\end{table}
-\newpage
 
-\begin{table}[h]
-  \begin{center}
-    \begin{tabular}{|c|c|c|c|c|}\hline
-      Treatment (\(^\circ C\)) & Average Change & Standard Deviation & Sample Size & Standard Error \(\pm \)\\\hline
-      \B{26} & \B{09.8182} & \B{3.0271} & \B{11} & \B{0.9127} \\\hline
-      \O{28} & \O{11.1000} & \O{2.8067} & \O{10} & \O{0.8876} \\\hline
-      \G{30} & \G{13.3333} & \G{3.1225} & \G{09} & \G{1.0408} \\\hline
-      \R{26}-\R{30} & \R{10.5455} & \R{3.2362} & \R{11} & \R{0.9757} \\\hline
-    \end{tabular}
-  \end{center}
-\end{table}
-
+% Dataset Table: Treatment, Initial, Final, Change
+\begin{longtable}[c]{|c|r|r|r|r|}
+  \caption*{\textbf{Corals and Temperature}}\label{tab:table1}\\
+  \toprule
+  \textbf{\#} & \TEMPERATURE{Treatment} & \I{Initial}{0.5em}{1.7em} & \I{Final}{0.5em}{1.8em} & \I{Change}{1em}{1.4em} \\
+  & \TC\ & \WT{1em}{1em} & \WT{1em}{1.1em} & \WT{1em}{1.2em}\\
+    \midrule\endfirsthead\toprule%
+    \textbf{\#} & \TEMPERATURE{Treatment} & \I{Initial}{0.5em}{1.7em} & \I{Final}{0.5em}{1.8em} & \I{Change}{1em}{1.4em} \\
+  & \TC\ & \WT{1em}{1em} & \WT{1em}{1.1em} & \WT{1em}{1.2em}\\
+  \midrule\endhead%
+    1 & \ONE\ & 552 & 563 & 11\\\midrule
+    2 & \ONE\ & 341 & 352 & 11\\\midrule
+    3 & \ONE\ & 461 & 467 & 6\\\midrule
+    4 & \ONE\ & 430 & 437 & 7\\\midrule
+    5 & \ONE\ & 312 & 320 & 8\\\midrule
+    6 & \ONE\ & 364 & 374 & 10\\\midrule
+    7 & \ONE\ & 468 & 479 & 11\\\midrule
+    8 & \ONE\ & 449 & 460 & 11\\\midrule
+    9 & \ONE\ & 398 & 415 & 17\\\midrule
+    10 & \ONE\ & 394 & 401 & 7\\\midrule
+    11 & \ONE\ & 360 & 369 & 9\\
+    \midrule%
+    12 & \TWO\ & 517 & 528 & 11\\\midrule
+    13 & \TWO\ & 428 & 443 & 15\\\midrule
+    14 & \TWO\ & 407 & 415 & 8\\\midrule
+    15 & \TWO\ & 441 & 452 & 11\\\midrule
+    16 & \TWO\ & 472 & 488 & 16\\\midrule
+    17 & \TWO\ & 383 & 391 & 8\\\midrule
+    18 & \TWO\ & 466 & 479 & 13\\\midrule
+    19 & \TWO\ & 345 & 354 & 9\\\midrule
+    20 & \TWO\ & 382 & 393 & 11\\\midrule
+    21 & \TWO\ & 494 & 503 & 9\\
+    \midrule%
+    22 & \THR\ & 573 & 585 & 12\\\midrule
+    23 & \THR\ & 354 & 369 & 15\\\midrule
+    24 & \THR\ & 532 & 545 & 13\\\midrule
+    25 & \THR\ & 393 & 410 & 17\\\midrule
+    26 & \THR\ & 269 & 277 & 8\\\midrule
+    27 & \THR\ & 517 & 526 & 9\\\midrule
+    28 & \THR\ & 469 & 484 & 15\\\midrule
+    29 & \THR\ & 306 & 322 & 16\\\midrule
+    30 & \THR\ & 431 & 446 & 15\\
+    \midrule%
+    31 & \FOR\ & 306 & 312 & 06\\\midrule
+    32 & \FOR\ & 372 & 378 & 06\\\midrule
+    33 & \FOR\ & 333 & 344 & 11\\\midrule
+    34 & \FOR\ & 567 & 578 & 11\\\midrule
+    35 & \FOR\ & 379 & 392 & 13\\\midrule
+    36 & \FOR\ & 490 & 505 & 15\\\midrule
+    37 & \FOR\ & 391 & 401 & 10\\\midrule
+    38 & \FOR\ & 509 & 523 & 14\\\midrule
+    39 & \FOR\ & 369 & 377 & 08\\\midrule
+    40 & \FOR\ & 337 & 351 & 14\\\midrule
+    41 & \FOR\ & 365 & 373 & 08\\
+    \bottomrule
+\end{longtable}
+\text{\\}
 \begin{center}
-  % \includegraphics[width=\textwidth]{idh.png}
-  \fbox{\begin{minipage}{45em}
+  \subsection*{Sample Sizes (Denoted as N):}
+  \(N_{\ONE\C}\)~=~\BOX{\boxed{11}}{R},~~\(N_{\TWO\C}\)~=~\BOX{\boxed{9}}{G},~~\(N_{\THR\C}\)~=~\BOX{\boxed{8}}{B},~~\(N_{\FOR\C}\)~=~\BOX{\boxed{11}}{A}
+  \subsection*{Average of Change (Denoted as MEAN):}
+  \(\overline{X}_{\ONE\C} =\frac{X_1 +\cdots + X_{11}}{N_{\ONE\C}}\),\\
+  =~\BOX{\boxed{9.82}}{R}\\\text{}\\
+  \(\overline{X}_{\TWO\C} =\frac{X_{12} +\cdots + X_{23}}{N_{\TWO\C}}\),\\
+  =~\BOX{\boxed{11.10}}{G}\\\text{}\\
+  \(\overline{X}_{\THR\C} =\frac{X_{24} +\cdots + X_{32}}{N_{\THR\C}}\),\\
+  =~\BOX{\boxed{13.33}}{B}\\\text{}\\
+  \(\overline{X}_{\FOR\C} =\frac{X_{33} +\cdots + X_{41}}{N_{\FOR\C}}\),\\
+  =~\BOX{\boxed{10.55}}{A}\\
+  \subsection*{Standard Deviations (Denoted as SD):}
+  \(\sigma_{\ONE\C} =\sqrt{\frac{\left|X_1 - \overline{X}_{\FOR\C}\right|^2 +\cdots +\left|X_{11} - \overline{X}_{\FOR\C}\right|^2}{N_{\ONE\C} - 1}}\),\\
+  =~\BOX{\boxed{3.03}}{R}\\\text{}\\
+  \subsection*{Standard Errors (Denoted as \(\pm \)SE):}
+  \(\epsilon_{\ONE\C} =\frac{\sigma_{\ONE\C}}{\sqrt{N_{\ONE\C}}}\),\\
+  =~\BOX{\boxed{0.9127}}{R}
+\end{center}
+\newpage
+\begin{center}
+  % BLUE, GREEN, RED, PURPLE
+  \includegraphics[width=\textwidth]{graph.jpg}
+  \fbox{\begin{minipage}{50em}\text{}
     \begin{enumerate}
       \item What was the mean \(\pm \) standard error of coral growth (= change mg/cm2) at each of the four temperature categories?
       \begin{itemize}
-        \item \C{\B{26}}: \boxed{09.82~(mg/cm^2)~\pm~0.91}
-        \item \C{\O{28}}: \boxed{11.10~(mg/cm^2)~\pm~0.89}
-        \item \C{\G{30}}: \boxed{13.33~(mg/cm^2)~\pm~1.04}
-        \item \C{\R{26}-\R{30}}: \boxed{10.55~(mg/cm^2)~\pm~0.98}
+        \item~~\quad{\(\ONE\C \)}~=~\BOX{\boxed{09.82~(mg/cm^2)~\pm~0.91}}{R}
+        \item~~\quad{\(\TWO\C \)}~=~\BOX{\boxed{11.10~(mg/cm^2)~\pm~0.89}}{G}
+        \item~~\quad{\(\THR\C \)}~=~\BOX{\boxed{13.33~(mg/cm^2)~\pm~1.04}}{B}
+        \item \(\FOR\C \)~=~\BOX{\boxed{10.55~(mg/cm^2)~\pm~0.98}}{A}
       \end{itemize}
-      \item Remember that the average water temperature of the coral's natural habitat was \C{28}. What would happen if global climate change causes the average seawater temperature to increase to \C{30}?
+      \item What would happen if global climate change causes the average seawater temperature to increase to 30?
       \begin{itemize}
         \item
       \end{itemize}
+      \text{}
     \end{enumerate}
   \end{minipage}}
 \end{center}
