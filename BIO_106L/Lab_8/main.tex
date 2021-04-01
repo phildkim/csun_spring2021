@@ -28,8 +28,9 @@
 \def\BOX#1#2{\bf\textcolor{#2}{#1}}
 \def\TEMPERATURE#1{\textbf{#1}}
 \def\MG{\scriptstyle{mg/cm^2}}
+\def\PM{\textcolor{black}{\pm}}
 \def\I#1#2#3{\hspace*{#2}\textbf{#1}\hspace*{#3}}
-\def\TC{\(\left(\vcenter{\hbox{\(\scriptstyle{\text{\textdegree{C}}}\)}}\right)\)\hspace*{1.5em}}
+\def\TC{\(\left(\vcenter{\hbox{\(\scriptstyle{\text{\textdegree{C}}}\)}}\right)\)\hspace*{3em}}
 \def\WT#1#2{\hspace*{#1}\(\left(\vcenter{\hbox{\(\scriptstyle{mg/cm^2}\)}}\right)\)\hspace*{#2}}
 \def\ONE{\bf\textcolor{R}{26}}
 \def\TWO{\bf\textcolor{G}{28}}
@@ -49,14 +50,33 @@
 \date{\today}
 \begin{document}
 \maketitle
+\vspace*{-1cm}
 % Dataset Table: Treatment, Initial, Final, Change
 \begin{longtable}[c]{|c|r|r|r|r|}
   \toprule
-  \textbf{\#} & \TEMPERATURE{TREATMENT} & \I{INITIAL}{1em}{1.3em} & \I{FINAL}{0.5em}{1.8em} & \I{CHANGE}{1em}{1.4em} \\
-  & \TC\ & \WT{1em}{1em} & \WT{1em}{1.1em} & \WT{1em}{1.2em}\\
-    \midrule\endfirsthead\toprule%
-    \textbf{\#} & \TEMPERATURE{TREATMENT} & \I{INITIAL}{1em}{1.3em} & \I{FINAL}{0.5em}{1.8em} & \I{CHANGE}{1em}{1.4em} \\
-  & \TC\ & \WT{1em}{1em} & \WT{1em}{1.1em} & \WT{1em}{1.2em}\\
+  \textbf{\#} &
+  \TEMPERATURE{TREATMENT} &
+  \TEMPERATURE{\textcolor{white}{TREATMENT}} &
+  \TEMPERATURE{\textcolor{white}{TREATMENT}} &
+  \TEMPERATURE{\textcolor{white}{TREATMENT}}\\
+  &
+  \TC\ &
+  \WT{0em}{1.8em} &
+  \WT{0em}{1.8em} &
+  \WT{0em}{1.8em}\\
+  \midrule\endfirsthead%
+
+  \toprule
+  \textbf{\#} &
+  \TEMPERATURE{TREATMENT} &
+  \TEMPERATURE{\textcolor{white}{TREATMENT}} &
+  \TEMPERATURE{\textcolor{white}{TREATMENT}} &
+  \TEMPERATURE{\textcolor{white}{TREATMENT}}\\
+  &
+  \TC\ &
+  \WT{0em}{1.8em} &
+  \WT{0em}{1.8em} &
+  \WT{0em}{1.8em}\\
   \midrule\endhead%
     1 & \ONE\ & 552 & 563 & 11\\\midrule
     2 & \ONE\ & 341 & 352 & 11\\\midrule
@@ -104,22 +124,32 @@
     41 & \FOR\ & 365 & 373 & 8\\
   \bottomrule
 \end{longtable}
-\text{\\}
 \begin{center}
-  \text{Sample Size, N}\\
-  \text{Final -\ Initial, CHANGE (C)}\\
-  \text{Average Change, MEAN (\(\overline{C}\))}\\
-  \text{Standard Deviation, STD (\(\sigma \))}\\
-  \text{Standard Error, ERR (\(\epsilon \))}
+  \text{Sample Size, \textbf{N}}\\
+  \text{Final -\ Initial, \textbf{CHANGE} (\textbf{C})}\\
+  \text{Average Change, \textbf{MEAN} (\(\bf\overline{C}\))}\\
+  \text{Standard Deviation, \textbf{STD} (\(\bf\sigma \))}\\
+  \text{Standard Error, \textbf{ERR} (\(\bf\epsilon \))}
 \end{center}
 \begin{center}
   \begin{tabular}{*{4}{|c|}}\toprule
     \I{N}{0em}{0em} &\I{MEAN}{0em}{0em} &\I{STD}{0em}{0em} &\I{ERR}{0em}{0em}\\\midrule
-    \RONE=~\BOX{11}{R} &\MEAN{R}{01}{11}{11}~=~\BOX{09.82}{R} &\STD{R}{01}{11}{11}~=~\BOX{03.03}{R} &\ERR{R}{01}{11}{11}~=~\BOX{00.91}{R}\\\midrule
-    \RTWO=~\BOX{10}{G} &\MEAN{G}{12}{21}{10}~=~\BOX{11.10}{G} &\STD{G}{12}{21}{10}~=~\BOX{02.81}{G} &\ERR{G}{12}{21}{10}~=~\BOX{00.89}{G}\\\midrule
-    \RTHR=~\BOX{09}{B} &\MEAN{B}{22}{30}{09}~=~\BOX{13.33}{B} &\STD{B}{22}{30}{09}~=~\BOX{03.12}{B} &\ERR{B}{22}{30}{09}~=~\BOX{01.04}{B}\\\midrule
-    \RFOR=~\BOX{11}{A} &\MEAN{A}{31}{41}{11}~=~\BOX{10.55}{A} &\STD{A}{31}{41}{11}~=~\BOX{03.24}{A} &\ERR{A}{31}{41}{11}~=~\BOX{00.98}{A}\\\bottomrule
+    \RONE=~\BOX{11}{R} &\MEAN{R}{01}{11}{11}~=~\BOX{09.82}{R} &\STD{R}{01}{11}{11}~=~\BOX{03.03}{R} &\ERR{R}{01}{11}{11}~=~\BOX{~0.91}{R}\\\midrule
+    \RTWO=~\BOX{10}{G} &\MEAN{G}{12}{21}{10}~=~\BOX{11.10}{G} &\STD{G}{12}{21}{10}~=~\BOX{02.81}{G} &\ERR{G}{12}{21}{10}~=~\BOX{~0.89}{G}\\\midrule
+    \RTHR=~\BOX{09}{B} &\MEAN{B}{22}{30}{09}~=~\BOX{13.33}{B} &\STD{B}{22}{30}{09}~=~\BOX{03.12}{B} &\ERR{B}{22}{30}{09}~=~\BOX{~1.04}{B}\\\midrule
+    \RFOR=~\BOX{11}{A} &\MEAN{A}{31}{41}{11}~=~\BOX{10.55}{A} &\STD{A}{31}{41}{11}~=~\BOX{03.24}{A} &\ERR{A}{31}{41}{11}~=~\BOX{~~.98}{A}\\\bottomrule
   \end{tabular}
+  \includegraphics[width=\textwidth]{graph.jpg}
+  \fbox{\begin{minipage}{53em}
+    \begin{enumerate}
+      \item What was the mean \(\pm \) standard error of coral growth at each of the four temperature categories?
+      \item[] {\BOX{26}{R}\C~=~\BOX{\boxed{09.82~\PM0.91}}{R},
+      \BOX{28}{G}\C~=~\BOX{\boxed{11.10~\PM0.84}}{G},
+      \BOX{30}{B}\C~=~\BOX{\boxed{13.33~\PM1.04}}{B},
+      \BOX{26\text{-}30}{A}\C~=~\BOX{\boxed{10.55~\PM0.98}}{A}}
+      \item What would happen if global climate change causes the average seawater temperature to increase to 30\C?\
+      \item[] By analyzing the bar graph above, {\THR\C} is significantly different with all of the temperature regimes since the error bar does not overlap with any the other temperature regimes. This means the corals growth rate at {\THR\C} is significantly the highest. If global climate change causes the average seawater to increase from {\ONE\C} to {\THR\C}, then it would be safe to assume that corals in the ocean would significantly increase.
+    \end{enumerate}
+  \end{minipage}}
 \end{center}
-
 \end{document}
