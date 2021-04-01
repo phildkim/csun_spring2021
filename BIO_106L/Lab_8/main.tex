@@ -17,52 +17,45 @@
   bottom=0.5in
 }
 \sisetup{
-  round-mode = places, % Rounds numbers
-  round-precision = 2, % to 2 places
+  round-mode=places, % Rounds numbers
+  round-precision=2, % to 2 places
 }
 \graphicspath{{./images/}} % image path
 \definecolor{R}{HTML}{6495ed} % cornflowerblue
 \definecolor{G}{HTML}{20b2aa} % lightseagreen
 \definecolor{B}{HTML}{cd5c5c} % indianred
 \definecolor{A}{HTML}{663399} % rebeccapurple
-\def\ONE{\textcolor{R}{26}}
-\def\TWO{\textcolor{G}{28}}
-\def\THR{\textcolor{B}{30}}
-\def\FOR{\textcolor{A}{26\text{-}30}}
-
+\def\BOX#1#2{\bf\textcolor{#2}{#1}}
 \def\TEMPERATURE#1{\textbf{#1}}
-\def\BOX#1#2{\textcolor{#2}{#1}}
 \def\MG{\scriptstyle{mg/cm^2}}
-\def\C{\scriptstyle{\text{\textdegree{C}}}}
-
 \def\I#1#2#3{\hspace*{#2}\textbf{#1}\hspace*{#3}}
 \def\TC{\(\left(\vcenter{\hbox{\(\scriptstyle{\text{\textdegree{C}}}\)}}\right)\)\hspace*{1.5em}}
 \def\WT#1#2{\hspace*{#1}\(\left(\vcenter{\hbox{\(\scriptstyle{mg/cm^2}\)}}\right)\)\hspace*{#2}}
-
-
-
-
-
-% equation new command
-\newcommand{\beq}{\begin{equation}}
-\newcommand{\eeq}{\end{equation}}
-
+\def\ONE{\bf\textcolor{R}{26}}
+\def\TWO{\bf\textcolor{G}{28}}
+\def\THR{\bf\textcolor{B}{30}}
+\def\FOR{\bf\textcolor{A}{26\text{-}30}}
+\def\C{\(\scriptstyle{\text{\textdegree{C}}}\)}
+\def\RONE{\(\ONE\scriptstyle{\text{\textdegree{C}}}_{\{\BOX{01}{R} - \BOX{11}{R}\}}\)}
+\def\RTWO{\(\TWO\scriptstyle{\text{\textdegree{C}}}_{\{\BOX{12}{G} - \BOX{21}{G}\}}\)}
+\def\RTHR{\(\THR\scriptstyle{\text{\textdegree{C}}}_{\{\BOX{22}{B} - \BOX{30}{B}\}}\)}
+\def\RFOR{\(\FOR\scriptstyle{\text{\textdegree{C}}}_{\{\BOX{31}{G} - \BOX{41}{A}\}}\)}
+\def\MEAN#1#2#3#4{\(\tfrac{C_{\BOX{#2}{#1}}+\cdots+C_{\BOX{#3}{#1}}}{\BOX{#4}{#1}}\)}
+\def\STD#1#2#3#4{\(\sqrt{\tfrac{\left|C_{\BOX{#2}{#1}} -\overline{C}\right|^2+\cdots+\left|C_{\BOX{#3}{#1}} -\overline{C}\right|^2}{\BOX{#4}{#1} - 1}}\)}
+\def\ERR#1#2#3#4{\(\tfrac{\overline{\sigma}_{\{\BOX{#2}{#1} - \BOX{#3}{#1}\}}}{\sqrt{\BOX{#4}{#1}}}\)}
 % title, name, date
 \title{Analysis of Coral Growth Lab Report}
 \author{Philip Kim}
 \date{\today}
-
 \begin{document}
 \maketitle
-
 % Dataset Table: Treatment, Initial, Final, Change
 \begin{longtable}[c]{|c|r|r|r|r|}
-  \caption*{\textbf{Corals and Temperature}}\label{tab:table1}\\
   \toprule
-  \textbf{\#} & \TEMPERATURE{Treatment} & \I{Initial}{0.5em}{1.7em} & \I{Final}{0.5em}{1.8em} & \I{Change}{1em}{1.4em} \\
+  \textbf{\#} & \TEMPERATURE{TREATMENT} & \I{INITIAL}{1em}{1.3em} & \I{FINAL}{0.5em}{1.8em} & \I{CHANGE}{1em}{1.4em} \\
   & \TC\ & \WT{1em}{1em} & \WT{1em}{1.1em} & \WT{1em}{1.2em}\\
     \midrule\endfirsthead\toprule%
-    \textbf{\#} & \TEMPERATURE{Treatment} & \I{Initial}{0.5em}{1.7em} & \I{Final}{0.5em}{1.8em} & \I{Change}{1em}{1.4em} \\
+    \textbf{\#} & \TEMPERATURE{TREATMENT} & \I{INITIAL}{1em}{1.3em} & \I{FINAL}{0.5em}{1.8em} & \I{CHANGE}{1em}{1.4em} \\
   & \TC\ & \WT{1em}{1em} & \WT{1em}{1.1em} & \WT{1em}{1.2em}\\
   \midrule\endhead%
     1 & \ONE\ & 552 & 563 & 11\\\midrule
@@ -76,7 +69,7 @@
     9 & \ONE\ & 398 & 415 & 17\\\midrule
     10 & \ONE\ & 394 & 401 & 7\\\midrule
     11 & \ONE\ & 360 & 369 & 9\\
-    \midrule%
+  \midrule%
     12 & \TWO\ & 517 & 528 & 11\\\midrule
     13 & \TWO\ & 428 & 443 & 15\\\midrule
     14 & \TWO\ & 407 & 415 & 8\\\midrule
@@ -87,7 +80,7 @@
     19 & \TWO\ & 345 & 354 & 9\\\midrule
     20 & \TWO\ & 382 & 393 & 11\\\midrule
     21 & \TWO\ & 494 & 503 & 9\\
-    \midrule%
+  \midrule%
     22 & \THR\ & 573 & 585 & 12\\\midrule
     23 & \THR\ & 354 & 369 & 15\\\midrule
     24 & \THR\ & 532 & 545 & 13\\\midrule
@@ -97,59 +90,36 @@
     28 & \THR\ & 469 & 484 & 15\\\midrule
     29 & \THR\ & 306 & 322 & 16\\\midrule
     30 & \THR\ & 431 & 446 & 15\\
-    \midrule%
-    31 & \FOR\ & 306 & 312 & 06\\\midrule
-    32 & \FOR\ & 372 & 378 & 06\\\midrule
+  \midrule%
+    31 & \FOR\ & 306 & 312 & 6\\\midrule
+    32 & \FOR\ & 372 & 378 & 6\\\midrule
     33 & \FOR\ & 333 & 344 & 11\\\midrule
     34 & \FOR\ & 567 & 578 & 11\\\midrule
     35 & \FOR\ & 379 & 392 & 13\\\midrule
     36 & \FOR\ & 490 & 505 & 15\\\midrule
     37 & \FOR\ & 391 & 401 & 10\\\midrule
     38 & \FOR\ & 509 & 523 & 14\\\midrule
-    39 & \FOR\ & 369 & 377 & 08\\\midrule
+    39 & \FOR\ & 369 & 377 & 8\\\midrule
     40 & \FOR\ & 337 & 351 & 14\\\midrule
-    41 & \FOR\ & 365 & 373 & 08\\
-    \bottomrule
+    41 & \FOR\ & 365 & 373 & 8\\
+  \bottomrule
 \end{longtable}
 \text{\\}
 \begin{center}
-  \subsection*{Sample Sizes (Denoted as N):}
-  \(N_{\ONE\C}\)~=~\BOX{\boxed{11}}{R},~~\(N_{\TWO\C}\)~=~\BOX{\boxed{9}}{G},~~\(N_{\THR\C}\)~=~\BOX{\boxed{8}}{B},~~\(N_{\FOR\C}\)~=~\BOX{\boxed{11}}{A}
-  \subsection*{Average of Change (Denoted as MEAN):}
-  \(\overline{X}_{\ONE\C} =\frac{X_1 +\cdots + X_{11}}{N_{\ONE\C}}\),\\
-  =~\BOX{\boxed{9.82}}{R}\\\text{}\\
-  \(\overline{X}_{\TWO\C} =\frac{X_{12} +\cdots + X_{23}}{N_{\TWO\C}}\),\\
-  =~\BOX{\boxed{11.10}}{G}\\\text{}\\
-  \(\overline{X}_{\THR\C} =\frac{X_{24} +\cdots + X_{32}}{N_{\THR\C}}\),\\
-  =~\BOX{\boxed{13.33}}{B}\\\text{}\\
-  \(\overline{X}_{\FOR\C} =\frac{X_{33} +\cdots + X_{41}}{N_{\FOR\C}}\),\\
-  =~\BOX{\boxed{10.55}}{A}\\
-  \subsection*{Standard Deviations (Denoted as SD):}
-  \(\sigma_{\ONE\C} =\sqrt{\frac{\left|X_1 - \overline{X}_{\FOR\C}\right|^2 +\cdots +\left|X_{11} - \overline{X}_{\FOR\C}\right|^2}{N_{\ONE\C} - 1}}\),\\
-  =~\BOX{\boxed{3.03}}{R}\\\text{}\\
-  \subsection*{Standard Errors (Denoted as \(\pm \)SE):}
-  \(\epsilon_{\ONE\C} =\frac{\sigma_{\ONE\C}}{\sqrt{N_{\ONE\C}}}\),\\
-  =~\BOX{\boxed{0.9127}}{R}
+  \text{Sample Size, N}\\
+  \text{Final -\ Initial, CHANGE (C)}\\
+  \text{Average Change, MEAN (\(\overline{C}\))}\\
+  \text{Standard Deviation, STD (\(\sigma \))}\\
+  \text{Standard Error, ERR (\(\epsilon \))}
 \end{center}
-\newpage
 \begin{center}
-  % BLUE, GREEN, RED, PURPLE
-  \includegraphics[width=\textwidth]{graph.jpg}
-  \fbox{\begin{minipage}{50em}\text{}
-    \begin{enumerate}
-      \item What was the mean \(\pm \) standard error of coral growth (= change mg/cm2) at each of the four temperature categories?
-      \begin{itemize}
-        \item~~\quad{\(\ONE\C \)}~=~\BOX{\boxed{09.82~(mg/cm^2)~\pm~0.91}}{R}
-        \item~~\quad{\(\TWO\C \)}~=~\BOX{\boxed{11.10~(mg/cm^2)~\pm~0.89}}{G}
-        \item~~\quad{\(\THR\C \)}~=~\BOX{\boxed{13.33~(mg/cm^2)~\pm~1.04}}{B}
-        \item \(\FOR\C \)~=~\BOX{\boxed{10.55~(mg/cm^2)~\pm~0.98}}{A}
-      \end{itemize}
-      \item What would happen if global climate change causes the average seawater temperature to increase to 30?
-      \begin{itemize}
-        \item
-      \end{itemize}
-      \text{}
-    \end{enumerate}
-  \end{minipage}}
+  \begin{tabular}{*{4}{|c|}}\toprule
+    \I{N}{0em}{0em} &\I{MEAN}{0em}{0em} &\I{STD}{0em}{0em} &\I{ERR}{0em}{0em}\\\midrule
+    \RONE=~\BOX{11}{R} &\MEAN{R}{01}{11}{11}~=~\BOX{09.82}{R} &\STD{R}{01}{11}{11}~=~\BOX{03.03}{R} &\ERR{R}{01}{11}{11}~=~\BOX{00.91}{R}\\\midrule
+    \RTWO=~\BOX{10}{G} &\MEAN{G}{12}{21}{10}~=~\BOX{11.10}{G} &\STD{G}{12}{21}{10}~=~\BOX{02.81}{G} &\ERR{G}{12}{21}{10}~=~\BOX{00.89}{G}\\\midrule
+    \RTHR=~\BOX{09}{B} &\MEAN{B}{22}{30}{09}~=~\BOX{13.33}{B} &\STD{B}{22}{30}{09}~=~\BOX{03.12}{B} &\ERR{B}{22}{30}{09}~=~\BOX{01.04}{B}\\\midrule
+    \RFOR=~\BOX{11}{A} &\MEAN{A}{31}{41}{11}~=~\BOX{10.55}{A} &\STD{A}{31}{41}{11}~=~\BOX{03.24}{A} &\ERR{A}{31}{41}{11}~=~\BOX{00.98}{A}\\\bottomrule
+  \end{tabular}
 \end{center}
+
 \end{document}
