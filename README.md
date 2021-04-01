@@ -47,7 +47,8 @@ npm run build && npm start // production server
 
 - [X] ~~Ch26 04/04/21 @ 11:59 PM~~
   - [ ] [[ 7, 18, 20 ]](https://canvas.csun.edu/courses/90844/modules/items/3378729)
-- [ ] **MIDTERM** (CH: 24, 25, 26, 27)
+- [ ] Practice Exam 2
+- [ ] **MIDTERM: APRIL 7 @ 8:00 - 9:15 AM** (CH: 24, 25, 26, 27)
 
 ***
 
@@ -97,7 +98,7 @@ npm run build && npm start // production server
 
 - [ ] Ch 8 Quiz
 - [ ] Ch 8 Discussion
-- [ ] Analysis of Coral Growth Lab Report
+- [X] ~~Analysis of Coral Growth Lab Report~~
 
 ***
 
@@ -105,7 +106,7 @@ npm run build && npm start // production server
 
 ### Population Genetics: March 27 - Apr. 4
 
-- [ ] 12.1 Hardy-Weinberg (Lecture 34:52)
+- [X] ~~12.1 Hardy-Weinberg (Lecture 34:52)~~
 - [X] ~~12.2 Solving Hardy-Weinberg Problems~~
 - [ ] Hardy-Weinberg Principle (Reading)
 - [ ] Hardy-Weinberg (I) (Connect)
