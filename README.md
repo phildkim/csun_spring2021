@@ -46,7 +46,7 @@ npm run build && npm start // production server
 ## PHYS-220B (Grade: 95.55\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
 - [X] ~~Ch26 04/04/21 @ 11:59 PM~~
-  - [ ] [[ 7, 18, 20 ]](https://canvas.csun.edu/courses/90844/modules/items/3378729)
+  - [ ] [[ 20 ]](https://canvas.csun.edu/courses/90844/modules/items/3378729)
 - [ ] Practice Exam 2: Apr 6 at 12pm
 - [ ] **MIDTERM: APRIL 7 @ 8:00 - 9:15 AM** (CH: 24, 25, 26, 27)
 
@@ -97,7 +97,7 @@ npm run build && npm start // production server
 ## BIO-106 LAB: (Grade: 97.06%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
 - [ ] Ch 8 Quiz
-- [ ] Ch 8 Discussion
+- [X] Ch 8 Discussion
 - [X] ~~Analysis of Coral Growth Lab Report~~
 
 ***
