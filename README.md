@@ -62,7 +62,7 @@ npm run build && npm start // production server
 
 ***
 
-## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/89771303712?pwd=M0hRa01HdVE2UHVsNnlTSzg1c292UT09)
+## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/89815022379?pwd=b2dJVllxQnZ2VDViTWJza2dSN2VrQT09)
 
 - [ ] [Ch5 Zybook](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021)
 - [ ] Midterm
