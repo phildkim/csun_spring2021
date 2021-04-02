@@ -47,7 +47,7 @@ npm run build && npm start // production server
 
 - [X] ~~Ch26 04/04/21 @ 11:59 PM~~
   - [ ] [[ 7, 18, 20 ]](https://canvas.csun.edu/courses/90844/modules/items/3378729)
-- [ ] Practice Exam 2
+- [ ] Practice Exam 2: Apr 6 at 12pm
 - [ ] **MIDTERM: APRIL 7 @ 8:00 - 9:15 AM** (CH: 24, 25, 26, 27)
 
 ***
@@ -108,9 +108,9 @@ npm run build && npm start // production server
 
 - [X] ~~12.1 Hardy-Weinberg (Lecture 34:52)~~
 - [X] ~~12.2 Solving Hardy-Weinberg Problems~~
-- [ ] Hardy-Weinberg Principle (Reading)
-- [ ] Hardy-Weinberg (I) (Connect)
-- [ ] Hardy-Weinberg (II) (Connect)
+- [X] ~~Hardy-Weinberg Principle (Reading)~~
+- [X] ~~Hardy-Weinberg (I) (Connect)~~
+- [X] ~~Hardy-Weinberg (II) (Connect)~~
 - [ ] Quiz 15 (due Apr. 4)
 - [ ] Quiz 16 (due Apr. 4). Note: no limit.
 
