@@ -43,7 +43,7 @@ npm run build && npm start // production server
 
 ***
 
-## PHYS-220B (Grade: 95.55\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
+## PHYS-220B (Grade: 95.89\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
 - [X] ~~Ch26 04/04/21 @ 11:59 PM~~
 - [ ] Practice Exam 2: Apr 6 at 12pm
@@ -81,7 +81,7 @@ npm run build && npm start // production server
 
 ***
 
-## COMP-300 (Grade: 95.93%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
+## COMP-300 (Grade: 95.88%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
 
 - [ ] [Essay #9](https://docs.google.com/document/d/1giCKGmuenYdtZMsgJ3vwo2TFC5WRTbWg_mrmaVJskKI/edit): **Apr 4 by 11:59pm**
 - [ ] [Essay #10](https://docs.google.com/document/d/11VbYPGMEN0A4Y1FU0bfmJx0ifNgBckCr8ehmzDlm3iE/edit): **Apr 11 by 11:59pm**
@@ -93,7 +93,7 @@ npm run build && npm start // production server
 
 ***
 
-## BIO-106 LAB: (Grade: 97.06%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
+## BIO-106 LAB: (Grade: 97.58%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
 - [ ] Ch 8 Quiz
 - [X] Ch 8 Discussion
@@ -101,7 +101,7 @@ npm run build && npm start // production server
 
 ***
 
-## BIO-106: (Grade: 88.06%)
+## BIO-106: (Grade: 88.09%)
 
 ### Population Genetics: March 27 - Apr. 4
 
