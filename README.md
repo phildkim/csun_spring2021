@@ -77,9 +77,8 @@ npm run build && npm start // production server
 
 ***
 
-## COMP-300 (Grade: 95.88%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
+## COMP-300 (Grade: 95.75%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
 
-- [ ] [Essay #9](https://docs.google.com/document/d/1giCKGmuenYdtZMsgJ3vwo2TFC5WRTbWg_mrmaVJskKI/edit): **Apr 4 by 11:59pm**
 - [ ] [Essay #10](https://docs.google.com/document/d/11VbYPGMEN0A4Y1FU0bfmJx0ifNgBckCr8ehmzDlm3iE/edit): **Apr 11 by 11:59pm**
 - [ ] [Essay #11](https://docs.google.com/document/d/1VtpzEuzsG8ikLe3jToRdPXhIdgqsC-a1CsZuw9NFytA/edit): **Apr 18 by 11:59pm**
 - [ ] [Essay #12](https://docs.google.com/document/d/1Nx2MUAz1ecL4lXr_3KRATTrozLR3hOS4kbpEzKMYuSE/edit): **Apr 25 by 11:59pm**
@@ -89,11 +88,11 @@ npm run build && npm start // production server
 
 ***
 
-## BIO-106 LAB: (Grade: 97.58%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
+## BIO-106 LAB: (Grade: 98.61%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
-- [ ] Ch 8 Quiz
-- [X] Ch 8 Discussion
-- [X] ~~Analysis of Coral Growth Lab Report~~
+- [ ] Ch 9 Quiz
+- [ ] Ch 9 Discussion
+- [ ] Analysis of C. elegans on Drugs Lab Report
 
 ***
 
