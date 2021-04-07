@@ -45,8 +45,7 @@ npm run build && npm start // production server
 
 ## PHYS-220B (Grade: 95.89\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
-- [ ] Practice Exam 2: Apr 6 at 12pm
-- [ ] **MIDTERM: APRIL 7 @ 8:00 - 9:15 AM** (CH: 24, 25, 26, 27)
+- [ ] **MIDTERM: APRIL 7 @ 8:00 - 9:15 AM** (CH: 24, 25, 26)
 
 ***
 
@@ -62,12 +61,15 @@ npm run build && npm start // production server
 
 ## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/89815022379?pwd=b2dJVllxQnZ2VDViTWJza2dSN2VrQT09)
 
-- [ ] [Ch5 Zybook](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021)
+- [ ] [Ch5 Zybook](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021): **Due on Apr 18 by 11:59pm**
+  - [ ] [ 4.1.1, 4.1.4, 4.2.1, 4.2.4, 4.2.6, 4.2.8, 4.3.1, 4.3.2, 4.4.1, 4.4.4, 4.4.7, 4.5.1, 4.5.3, 4.5.6 ]
 - [ ] Midterm
 
 ***
 
 ## COMP-322 LAB: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/85037971220?pwd=Vk5JbnBLQVlpU3ZQL0Z6R0dXbW1JZz09)
+
+- [ ] Project 4: Banker's Algorithm **Due on Apr 25 by 11:59pm**
 
 ***
 
