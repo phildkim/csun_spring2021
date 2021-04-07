@@ -45,8 +45,6 @@ npm run build && npm start // production server
 
 ## PHYS-220B (Grade: 95.89\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
-- [ ] **MIDTERM: APRIL 7 @ 8:00 - 9:15 AM** (CH: 24, 25, 26)
-
 ***
 
 ## PHYS-220B LAB (Grade: 100\%)
