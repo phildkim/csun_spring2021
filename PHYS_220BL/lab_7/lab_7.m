@@ -46,12 +46,18 @@ hold off;
 % (393.78 + 415.89 + 415.89) / 3
 % 408.52
 
+
+
 N=[1,2,3,4];
 XC=[260.55,304.10,348.25,408.52];
 SLOPE=sum(XC)/length(N);
 ERROR=sqrt(sum(abs(XC-SLOPE).^2)/(length(N)-1));
 P=polyfit(N,XC,1);
 F=P(1)*N+P(2);
+EPSILON=sqrt(sum((XC-P(1)*N-P(2)).^2)/(length(N)-2));
+DELTA=length(N)*sum(N.^2)-(sum(N))^2;
+SIGMAA=sqrt(length(N)*EPSILON^2/DELTA);
+SIGMAB=sqrt(EPSILON^2*sum(N.^2)/DELTA);
 figure(1);
 hold on;
 box on;
