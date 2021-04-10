@@ -49,9 +49,7 @@ npm run build && npm start // production server
 
 ## PHYS-220B LAB (Grade: 100\%)
 
-- [X] ~~Lab 7: [DIY Capacitors](https://www.csun.edu/~hpostma/2021-1-220BL/lab07/lab07.html)~~
-  - [ ] Offset and Error
-  - [ ] Expectation
+- [ ] Lab 8: [The RC Filter](https://www.csun.edu/~hpostma/2021-1-220BL/lab08/lab08.html)
 - [ ] Lab 10: _@ CSUN, **10AM - 04/14/21**_
 - [ ] Lab 11: _@ CSUN, **11AM - 05/12/21**_
 
@@ -100,10 +98,10 @@ npm run build && npm start // production server
 
 ### Speciation: Apr. 3 - Apr. 11
 
-- [ ] 13.1 Speciation (Lecture 22.04)
-- [ ] 13.2 Speciation (Lecture 15:35)
-- [ ] 13.3 Speciation (Lecture 13:08)
-- [ ] 13.4 Speciation (Lecture 16:27)
+- [X] ~~13.1 Speciation (Lecture 22.04)~~
+- [X] ~~13.2 Speciation (Lecture 15:35)~~
+- [X] ~~13.3 Speciation (Lecture 13:08)~~
+- [X] ~~13.4 Speciation (Lecture 16:27)~~
 - [ ] Speciation (Reading)
 - [ ] Speciation (Connect)
 - [ ] Quiz 17 (due Apr. 11)

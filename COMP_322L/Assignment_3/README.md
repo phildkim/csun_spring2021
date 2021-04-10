@@ -6,6 +6,8 @@
 
 ### **Implement and experiment with the Banker's algorithm presented in the section titled Dynamic deadlock avoidance.**
 
+[Resource](https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system-2/)
+
 ***
 
 ### **Description:**
