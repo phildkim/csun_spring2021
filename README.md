@@ -57,9 +57,9 @@ npm run build && npm start // production server
 
 ## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/89815022379?pwd=b2dJVllxQnZ2VDViTWJza2dSN2VrQT09)
 
+- [ ] **Midterm**
 - [ ] [Ch4 Zybook](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021): **Due on Apr 18 by 11:59pm**
   - [ ] [ 4.1.1, 4.1.4, 4.2.1, 4.2.4, 4.2.6, 4.2.8, 4.3.1, 4.3.2, 4.4.1, 4.4.4, 4.4.7, 4.5.1, 4.5.3, 4.5.6 ]
-- [ ] Midterm
 
 ***
 
