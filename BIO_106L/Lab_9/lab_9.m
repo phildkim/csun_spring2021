@@ -10,8 +10,8 @@ STDERRa=2*(STDDEVa./sqrt(Na));
 STDERRb=2*(STDDEVb./sqrt(Nb));
 col(1, :) = [0.3010 0.7450 0.9330]; % blue
 col(2, :) = [0.4660 0.6740 0.1880]; % green
-x = categorical({'Drug A - Control A', 'Drug B - Control B'}); % xaxis
-x = reordercats(x, {'Drug A - Control A', 'Drug B - Control B'}); % specified order
+x = categorical({'Ethanol', 'Caffeine'}); % xaxis
+x = reordercats(x, {'Ethanol', 'Caffeine'}); % specified order
 
 y = [MEANa, MEANb]; % yaxis - mean
 m = [STDDEVa, STDDEVb]; % standard deviation
@@ -27,5 +27,5 @@ errorbar(x, y, -e, e, 'linestyle', 'none', 'CapSize', 20, 'LineWidth', 4, 'Color
 fontSize = 24;
 set(gca, 'fontSize', fontSize);
 xlabel('Drug Types');
-ylabel('Average Number of Changes');
+ylabel('Drug Effect Means');
 hold off;

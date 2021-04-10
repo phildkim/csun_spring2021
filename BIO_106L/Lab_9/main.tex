@@ -20,6 +20,10 @@
   round-mode=places, % Rounds numbers
   round-precision=2, % to 2 places
 }
+\definecolor{B}{HTML}{6495ed} % cornflowerblue
+\definecolor{G}{HTML}{20b2aa} % lightseagreen
+\def\DA#1{\textcolor{B}{\textbf{#1}}}
+\def\DB#1{\textcolor{G}{\textbf{#1}}}
 \def\A#1{\textbf{#1}}
 \def\B#1#2#3{\hspace*{#2}\textbf{#1}\hspace*{#3}}
 \graphicspath{{./images/}} % image path
@@ -37,9 +41,9 @@
     \A{\textcolor{white}{Drug A -\ Control A}} &
     \A{\textcolor{white}{Drug A -\ Control A}}\\
     \textbf{\#} &
-    \B{Drug A}{0em}{3em} &
-    \B{Control A}{0em}{2em} &
-    \B{Drug A -\ Control A}{0em}{0em}\\
+    \B{Drug \DA{A}}{0em}{3em} &
+    \B{Control \DA{A}}{0em}{2em} &
+    \B{Drug \DA{A} -\ Control \DA{A}}{0em}{0em}\\
     \textbf{\textcolor{white}{\#}} &
     \textbf{\textcolor{white}{\#}} &
     \textbf{\textcolor{white}{\#}} &
@@ -71,6 +75,37 @@
       10 & 0.00 & 11.00 & -11.00\\
     \bottomrule
   \end{longtable}
+  % Drug A Effect:
+  %   mean: -3.64
+  %   stddev: 9.04
+  %   n: 10
+  %   stderr: 2.86
+  %   2*stderr: 5.72 (95% ci)
+  %   mean+2*stderr: 2.08 (upper ci)
+  %   mean-2*stderr: -9.36 (lower ci)
+  % Drug A Graph:
+  %   mean: -3.64
+  %   2*stderr: 5.72 (95% ci)
+  %   ci overlaps with 0, therefore drug a has no significant difference on C. elegans
+  \begin{center}
+    \subsection*{Drug \DA{A} Effect:}
+    \begin{align*}
+      N&= 10 \\
+      \overline{\DA{A}}&=\tfrac{\DA{A}_1 + \DA{A}_2 + \cdots + \DA{A}_N}{N}\\
+      &=\boxed{ - 3.64}\\
+      \sigma_{\DA{A}}&= \sqrt{\tfrac{\left|\DA{A}_1 - \overline{\DA{A}}\right|^2 + \cdots + \left|\DA{A}_N - \overline{\DA{A}}\right|^2}{N - 1}}\\
+      &=\boxed{9.04}\\
+      \epsilon_{\DA{A}}&= \tfrac{\sigma_{\DA{A}}}{\sqrt{N}}\\
+      &=\boxed{2.86}\\
+      \mathcal{CI}_{\DA{A}}&= 2\cdot \epsilon_{\DA{A}}\\
+      &=\boxed{5.72~(95\%~\mathcal{CI}_{\DA{A}})}\\
+      Upper~\mathcal{CL}_{\DA{A}}&=\overline{\DA{A}} +\left(2\cdot \epsilon_{\DA{A}}\right)\\
+      &=\boxed{2.08}\\
+      Lower~\mathcal{CL}_{\DA{A}}&=\overline{\DA{A}} -\left(2\cdot \epsilon_{\DA{A}}\right)\\
+      &=\boxed{ - 9.36}\\
+    \end{align*}
+  \end{center}
+  \newpage
   \begin{longtable}[c]{|c|r|r|r|}
     \toprule
     \textbf{\textcolor{white}{\#}} &
@@ -78,9 +113,9 @@
     \A{\textcolor{white}{Drug B -\ Control B}} &
     \A{\textcolor{white}{Drug v -\ Control B}}\\
     \textbf{\#} &
-    \B{Drug B}{0em}{3em} &
-    \B{Control B}{0em}{2em} &
-    \B{Drug B -\ Control B}{0em}{0em}\\
+    \B{Drug \DB{B}}{0em}{3em} &
+    \B{Control \DB{B}}{0em}{2em} &
+    \B{Drug \DB{B} -\ Control \DB{B}}{0em}{0em}\\
     \textbf{\textcolor{white}{\#}} &
     \textbf{\textcolor{white}{\#}} &
     \textbf{\textcolor{white}{\#}} &
@@ -112,23 +147,49 @@
       10 & 35.50 & 16.90 & 18.60\\
     \bottomrule
   \end{longtable}
-  \begin{align*}
-    n&= 10 \\
-    \overline{x}&=\tfrac{x_1 + x_2 + \cdots + x_n}{n}\\
-    \sigma_x&= \sqrt{\tfrac{\left|x_1 - \overline{x}\right|^2 + \cdots + \left|x_n - \overline{x}\right|^2}{n - 1}}\\
-    \epsilon_x&= 2\times\left(\tfrac{\sigma_x}{\sqrt{n}}\right)
-  \end{align*}
+  % Drug B Effect:
+  %   mean: 12.04
+  %   stddev: 10.92
+  %   n: 10
+  %   stderr: 3.45
+  %   2*stderr: 6.90 (95% ci)
+  %   mean+2*stderr: 18.83 (upper ci)
+  %   mean-2*stderr: 5.12 (lower ci)
+  % Drug B Graph:
+  %   mean: 12.02
+  %   2*stderr: 6.90 (95% ci)
+  %   ci does not overlaps with 0, therefore drug b has a positive significant difference on C. elegans
+  \begin{center}
+    \subsection*{Drug \DB{B} Effect:}
+    \begin{align*}
+      N&= 10 \\
+      \overline{\DB{B}}&=\tfrac{\DB{B}_1 + \DB{B}_2 + \cdots + \DB{B}_N}{N}\\
+      &=\boxed{12.04}\\
+      \sigma_{\DB{B}}&= \sqrt{\tfrac{\left|\DB{B}_1 - \overline{\DB{B}}\right|^2 + \cdots + \left|\DB{B}_N - \overline{\DB{B}}\right|^2}{N - 1}}\\
+      &=\boxed{10.92}\\
+      \epsilon_{\DB{B}}&= \tfrac{\sigma_{\DB{B}}}{\sqrt{N}}\\
+      &=\boxed{3.45}\\
+      \mathcal{CI}_{\DB{B}}&= 2\cdot \epsilon_{\DB{B}}\\
+      &=\boxed{6.90~(95\%~\mathcal{CI}_{\DB{B}})}\\
+      Upper~\mathcal{CL}_{\DB{B}}&=\overline{\DB{B}} +\left(2\cdot \epsilon_{\DB{B}}\right)\\
+      &=\boxed{18.83}\\
+      Lower~\mathcal{CL}_{\DB{B}}&=\overline{\DB{B}} -\left(2\cdot \epsilon_{\DB{B}}\right)\\
+      &=\boxed{5.12}\\
+    \end{align*}
+  \end{center}
   \includegraphics[width=\textwidth]{graph.jpg}
+  \text{}\\
   \fbox{\begin{minipage}{53em}
     \begin{enumerate}
       \item What was your hypothesis?
-      \item[] a
-      \item Does the data support your hypothesis? In other words, what were the results of the experiment? Did Drug A have a significant positive or negative effect? Did Drug B have a significant positive or negative effect? (Significance = the confidence intervals do not extend past 0)
-      \item[] b
+      \item[-] My hypothesis on C. elegans on ethanol and caffeine would have a similar effect as humans would since we\\share a common ancestor. For humans, ethanol is a downer while caffeine is a upper. I would expect drug \DA{A}\\to be on the negative side of the graph and drug \DB{B} to be on the positive side of the graph with both drugs to\\have significant differences.
+      \item Does the data support your hypothesis? In other words, what were the results of the experiment? Did Drug \DA{A}\\have a significant positive or negative effect? Did Drug \DB{B} have a significant positive or negative effect?
+      \item[-] Drug \DA{A}'s confidence interval overlaps with zero, therefore ethanol has no significant difference on C. elegans.
+      \item[-] Drug \DB{B}'s confidence interval do not overlap with zero, therefor caffeine has a significant difference on C. elegans.
       \item If the data does not show significance, why might this be?
-      \item[] c
-      \item (In reference to experiment video) Do you think it's an issue that Robyn knew which side of the slide was the control and which side contained the drug? Could this influence results?
-      \item[] d
+      \item[-] Drug \DA{A} has no significant difference on C. elegans because
+      \item Do you think it's an issue that Robyn knew which side of the slide was the control and which side contained\\the drug? Could this influence results?
+      \item[-] d
     \end{enumerate}
   \end{minipage}}
 \end{center}
