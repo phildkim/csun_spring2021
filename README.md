@@ -57,9 +57,9 @@ npm run build && npm start // production server
 
 ## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/89815022379?pwd=b2dJVllxQnZ2VDViTWJza2dSN2VrQT09)
 
-- [ ] **Midterm**
-- [ ] [Ch4 Zybook](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021): **Due on Apr 18 by 11:59pm**
-  - [ ] [ 4.1.1, 4.1.4, 4.2.1, 4.2.4, 4.2.6, 4.2.8, 4.3.1, 4.3.2, 4.4.1, 4.4.4, 4.4.7, 4.5.1, 4.5.3, 4.5.6 ]
+- [X] ~~**Midterm**~~
+- [X] ~~[Ch4 Zybook](https://learn.zybooks.com/zybook/CSUNCOMP322ZamanifarSpring2021): **Due on Apr 18 by 11:59pm**~~
+  - [X] ~~[ 4.1.1, 4.1.4, 4.2.1, 4.2.4, 4.2.6, 4.2.8, 4.3.1, 4.3.2, 4.4.1, 4.4.4, 4.4.7, 4.5.1, 4.5.3, 4.5.6 ]~~
 
 ***
 
@@ -95,17 +95,6 @@ npm run build && npm start // production server
 ***
 
 ## BIO-106: (Grade: 89.71%)
-
-### Speciation: Apr. 3 - Apr. 11
-
-- [X] ~~13.1 Speciation (Lecture 22.04)~~
-- [X] ~~13.2 Speciation (Lecture 15:35)~~
-- [X] ~~13.3 Speciation (Lecture 13:08)~~
-- [X] ~~13.4 Speciation (Lecture 16:27)~~
-- [ ] Speciation (Reading)
-- [ ] Speciation (Connect)
-- [ ] Quiz 17 (due Apr. 11)
-- [ ] Quiz 18 (due Apr. 11)
 
 ### Taxonomy and Systematics: Apr. 10 - Apr. 18
 
