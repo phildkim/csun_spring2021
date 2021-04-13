@@ -1,68 +1,52 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-/**
- *  i: process number
- *  j: resource number
- *  k: number of units
- */
 struct node {
-  int n,m;
+  int n, m;
 }*ptr = NULL;
 typedef struct node node;
+int *R;
+int **P;
 
-/**
- *  Number of units of each resource:
- *    - R[m], where m is the number of resources
- *
- *  Number of units of resource Rⱼ:
- *    - R[j], each entry records units of resources Rⱼ
- *
- *  Mximum claims:
- *    - P[n][m],
- *    - P[i][j], records the max number of units of Rⱼ that Pᵢ requests
- *
- *  Reads the description of a system:
- *    - number of processes (i)
- *    - number of resources (j)
- *    - numbers of units within each resource (k)
- *    - maximum claims of each process
- *
- *  Create the current representation of the system (the set of arrays),
- *  then enters an interactive session during which the user inputs:
- *    - request(i, j, k)
- *    - release(i, j, k)
- *
- *  Program responds whether the request:
- *    - granted
- *    - denied
- */
 
-int main(int argc, char *argv[]) {
-  int n, m, i, j;
-  printf("Number of resources:\t");
-  scanf("%d", &m);
-  printf("Number of processes:\t");
-  scanf("%d", &n);
-  ptr = (node *)malloc(m * sizeof(node));
-  for (i = 0; i < m; i++) {
-    printf("Unit of Resource[%d]:\t",i);
-    scanf("%d", &ptr[i].m);
+void description() {
+  int i, j, p, r;
+  printf("\nDynamic Deadlock Avoidance using Banker’s Algorithm");
+  printf("\nThe number of processes:\t");
+  scanf("%d", &p);
+  printf("The number of resources:\t");
+  scanf("%d", &r);
+  R = (int *)malloc(r *sizeof(*R));
+  for (i = 0; i < r; i++) {
+    printf("The number of units for R[%d]:\t", i + 1);
+    scanf("%d", &R[i]);
   }
-  int P[n][m];
-  for (i = 0; i < m; i++) {
-    for (j = 0; j < n; j++) {
-      printf("Maximum claims of Process[%d][%d]", i, j);
+  P = (int **)malloc(p * sizeof(*P));
+  for (i = 0; i < p; i++)
+    P[i] = (int*)malloc(p *sizeof(**P));
+  for (i = 0; i < p; i++) {
+    for (j = 0; j < r; j++) {
+      printf("The maximum claims of P[%d][%d]:\t", i + 1, j + 1);
       scanf("%d", &P[i][j]);
     }
   }
-  int *process = &P[0][0];
-  for (i = 0; i < m; i++) {
-    for (j = 0; j < n; j++) {
-      printf("%d ", *(process + i * n + j));
-    }
+  for (i = 0; i < p; i++) {
+    for (j = 0; j < r; j++)
+      printf("%d ", P[i][j]);
     printf("\n");
   }
-
+}
+// R[m] = number of units of each resource, m is number of resources
+// R[j] = number of units Rⱼ
+// P[n][m] = max claims
+// P[i][j] = max Rⱼ that Pᵢ requests
+int main() {
+  description();
   return 0;
 }
+/* 1) Develop an interactive program that first reads the description of a system from the command line or from a file. The description consists of the number of processes, the number of resources, the numbers of units within each resource, and the maximum claims of each process. Using the given information, the program creates the current representation of the system (the set of arrays). */
+
+/* 2) The program then enters an interactive session during which the user inputs commands of the form: request(i, j, k) or release(i, j, k), where i is a process number, j is a resource number, and k is the number of units of Rⱼ the process pᵢ is requesting or releasing. For each request operation, the program responds whether the request has been granted or denied. */
+
+/* The number of units of each resource is represented as a one-dimensional array R[m], where m is the number of resources and each entry R[j] records the number of units of resource Rⱼ. */
+
+/* The maximum claims are represented as a two-dimensional array P[n][m] where each entry P[i][j] contains an integer that records the maximum number of units of resource Rⱼ that process Pᵢ will ever request. */
