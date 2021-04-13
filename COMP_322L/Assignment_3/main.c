@@ -4,12 +4,20 @@ struct node {
   int n, m;
 }*ptr = NULL;
 typedef struct node node;
+
 int *R;
 int **P;
-
-
+int p,r;
+void prt(int **arr) {
+  int i,j;
+  for (i = 0; i < p; i++) {
+    for (j = 0; j < r; j++)
+      printf("%d ", arr[i][j]);
+    printf("\n");
+  }
+}
 void description() {
-  int i, j, p, r;
+  int i, j;
   printf("\nDynamic Deadlock Avoidance using Banker’s Algorithm");
   printf("\nThe number of processes:\t");
   scanf("%d", &p);
@@ -29,12 +37,9 @@ void description() {
       scanf("%d", &P[i][j]);
     }
   }
-  for (i = 0; i < p; i++) {
-    for (j = 0; j < r; j++)
-      printf("%d ", P[i][j]);
-    printf("\n");
-  }
+  prt(P);
 }
+
 // R[m] = number of units of each resource, m is number of resources
 // R[j] = number of units Rⱼ
 // P[n][m] = max claims
