@@ -1,13 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * struct node
+ *    2D Dynamically Allocated Memory
+ *    P: max resources for each process
+ *    R: available resources
+ *    A: allocated resource
+ *    N: P - A
+ */
 struct node {
-  int **P;// processes
-  int **R;// resources
-  int **A; // allocated resource
-  int **N; // needed resource
+  int **P, **R, **A, **N;
 } *ptr = NULL;
 typedef struct node node;
-
+/**
+ * garbage collection
+ */
+void collection() {
+  if (ptr != NULL)
+    free((void*)ptr);
+}
+/**
+ * print 2D dynamic array
+ */
 void print(const char* str, int **arr, int n, int m) {
   int i, j;
   printf("\n%s", str);
@@ -18,7 +32,12 @@ void print(const char* str, int **arr, int n, int m) {
   }
   printf("\n");
 }
-
+/**
+ * initialize dynamic arrays by either command line or user input.
+ *    Example:
+ *        $ gcc main.c
+ *        $ ./a.out test.txt
+ */
 void init(struct node *p, FILE *system, int n, int m) {
   int i, j, k;
   p->P = (int **)malloc(n * sizeof(*p->P));//maximum
@@ -29,6 +48,7 @@ void init(struct node *p, FILE *system, int n, int m) {
     p->A[i] = (int *)malloc(n * sizeof(**p->A));
     p->N[i] = (int *)malloc(n * sizeof(**p->N));
   }
+  // allocated
   for (i = 0; i < n; i++)
     for (j = 0; j < m; j++)
       system != NULL ? fscanf(system, "%d", &p->A[i][j]) : scanf("%d", &p->A[i][j]);
@@ -36,6 +56,7 @@ void init(struct node *p, FILE *system, int n, int m) {
     fscanf(system, "%d", &n);
     fscanf(system, "%d", &m);
   }
+  // maximum
   for (i = 0; i < n; i++)
     for (j = 0; j < m; j++)
       system != NULL ? fscanf(system, "%d", &p->P[i][j]) : scanf("%d", &p->P[i][j]);
@@ -48,16 +69,20 @@ void init(struct node *p, FILE *system, int n, int m) {
     printf("m: ");
     scanf("%d", &m);
   }
+  // available resources
   p->R = (int **)malloc(k * sizeof(*p->R));
   for (i = 0; i < m; i++)
     p->R[i] = (int *)malloc(m * sizeof(**p->R));
   for (i = 0; i < m; i++)
     system != NULL ? fscanf(system, "%d", &p->R[0][i]) : scanf("%d", &p->R[0][i]);
+  // needed resources
   for (i = 0; i < n; i++)
     for (j = 0; j < m; j++)
       p->N[i][j] = p->P[i][j] - p->A[i][j];
 }
-
+/**
+ *
+ */
 int respond(struct node* p, int a[], int n, int m) {
   int i, j, k, x = 0;
   int F[n], W[1][n];
@@ -88,7 +113,9 @@ int respond(struct node* p, int a[], int n, int m) {
   }
   return 0;
 }
-
+/**
+ *
+ */
 int banker(struct node* p, int n, int m) {
   int i, j, a[n];
   j = respond(p, a, n, m);
@@ -103,7 +130,9 @@ int banker(struct node* p, int n, int m) {
     return 0;
   }
 }
-
+/**
+ *
+ */
 void request(struct node* p, int pid, int n, int m) {
   int req[1][n];
   int i;
@@ -135,10 +164,6 @@ void request(struct node* p, int pid, int n, int m) {
   }
 }
 
-void collection() {
-  if (ptr != NULL)
-    free((void*)ptr);
-}
 
 int main(int argc, char **argv) {
   int b, n, m, ch, pid;
