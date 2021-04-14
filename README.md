@@ -43,13 +43,12 @@ npm run build && npm start // production server
 
 ***
 
-## PHYS-220B (Grade: 95.89\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
+## PHYS-220B (Grade: 87.22\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
 ***
 
 ## PHYS-220B LAB (Grade: 100\%)
 
-- [ ] Lab 8: [The RC Filter](https://www.csun.edu/~hpostma/2021-1-220BL/lab08/lab08.html)
 - [ ] Lab 10: _@ CSUN, **10AM - 04/14/21**_
 - [ ] Lab 11: _@ CSUN, **11AM - 05/12/21**_
 
@@ -67,13 +66,12 @@ npm run build && npm start // production server
 
 ## COMP-491 LAB: (Grade: 100%), [Zoom](https://csun.zoom.us/j/4853398877?pwd=NHd2T292blFlc2pZMmpTMENncFdBZz09)
 
-- [ ] Lab 4
+- [X] ~~Lab 4~~
 
 ***
 
-## COMP-300 (Grade: 95.75%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
+## COMP-300 (Grade: 95.58%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
 
-- [ ] [Essay #10](https://docs.google.com/document/d/11VbYPGMEN0A4Y1FU0bfmJx0ifNgBckCr8ehmzDlm3iE/edit): **Apr 11 by 11:59pm**
 - [ ] [Essay #11](https://docs.google.com/document/d/1VtpzEuzsG8ikLe3jToRdPXhIdgqsC-a1CsZuw9NFytA/edit): **Apr 18 by 11:59pm**
 - [ ] [Essay #12](https://docs.google.com/document/d/1Nx2MUAz1ecL4lXr_3KRATTrozLR3hOS4kbpEzKMYuSE/edit): **Apr 25 by 11:59pm**
   - [ ] [_Research Paper_](https://docs.google.com/document/d/1M6orVz_O3qvcHRX4s2yfCgBHDjIFA7Z37FPuEicI-qo/edit): **Apr 25 by 11:59pm**
@@ -82,15 +80,14 @@ npm run build && npm start // production server
 
 ***
 
-## BIO-106 LAB: (Grade: 98.61%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
+## BIO-106 LAB: (Grade: 98.82%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
-- [ ] Ch 9 Quiz
-- [ ] Ch 9 Discussion
-- [ ] Analysis of C. elegans on Drugs Lab Report
+- [ ] Ch 10 Quiz
+- [ ] Ch 10 Discussion
 
 ***
 
-## BIO-106: (Grade: 89.71%)
+## BIO-106: (Grade: 89.63%)
 
 ### Taxonomy and Systematics: Apr. 10 - Apr. 18
 
