@@ -1,9 +1,26 @@
-#include <pthread.h>
+/**
+ * To use command line:
+ *    $ gcc main.c
+ *    $ ./a.out test.txt
+ *
+ * Textfile format:
+ * 3          // Process
+ * 4          // Resource
+ * 1 2 5 1    // P[1] allocated resource
+ * 1 1 3 3    // P[2] allocated resource
+ * 1 2 1 0    // P[3] allocated resource
+ * 3          // Process
+ * 4          // Resource
+ * 3 3 2 2    // P[1] maximum resource
+ * 1 2 3 4    // P[2] maximum resource
+ * 1 3 5 0    // P[3] maximum resource
+ * 1          // Process
+ * 4          // Resource
+ * 3 0 1 2    // R[1] available resource
+ */
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-#include <unistd.h>
 struct node {
   int **allocated;
   int **maximum;
@@ -11,18 +28,20 @@ struct node {
   int *available;
 } *ptr = NULL;
 typedef struct node node;
-pthread_mutex_t locked;
-pthread_cond_t condition;
-const char *str = "Enter the ";
-int *state_safe;
-int n, m, t = 0;
-
-void collection() {
-  if (ptr != NULL)
-    free((void*)ptr);
+void init(FILE *s, int **arr, int n, int m) {
+  int i, j;
+  for (i = 0; i < n; i++) {
+    for (j = 0; j < m; j++) {
+      if (s == NULL) {
+        printf("P[%d] - Resource[%c]: ", i + 1, j + 'A');
+        scanf("%d", &arr[i][j]);
+      } else {
+        fscanf(s, "%d", &arr[i][j]);
+      }
+    }
+  }
 }
-
-void print(int** arr) {
+void print(int **arr, int n, int m) {
   int i, j;
   printf("\n\t\b\b");
   for (int i = 0; i < m; i++)
@@ -35,191 +54,118 @@ void print(int** arr) {
   }
   printf("\n");
 }
-
-void process_desc(const char *str, FILE *sys, int **arr) {
-  int i, j;
-  printf("%s\n", str);
-  for (i = 0; i < n; i++) {
-    for (j = 0; j < m; j++) {
-      if (sys == NULL) {
-        printf("P[%d] - Resource[%c]: ", i + 1, j + 'A');
-        scanf("%d", &arr[i][j]);
-      } else {
-        fscanf(sys, "%d", &arr[i][j]);
-      }
-    }
-  }
+void collection() {
+  if (ptr != NULL)
+    free((void *)ptr);
 }
-
-void resource_desc(const char *str, FILE *sys, int *arr) {
-  int i, j;
-  printf("%s\n", str);
-  for (int i = 0; i < m; i++) {
-    if (sys == NULL) {
-      printf("Resource[%c]: ", i + 'A');
-      scanf("%d", &arr[i]);
-    } else {
-      fscanf(sys, "%d", &arr[i]);
-    }
-  }
-}
-
-void *request(void *arg) {
-  int p = *((int *)arg);
-  pthread_mutex_lock(&locked);
-  while (p != state_safe[t])
-    pthread_cond_wait(&condition, &locked);
-  printf("\n\nProcess[%d]", p + 1);
-  printf("\nAllocated resources: ");
-  for (int i = 0; i < m; i++)
-    printf("%3d", ptr->allocated[p][i]);
-  printf("\nRequired resources:  ");
-  for (int i = 0; i < m; i++)
-    printf("%3d", ptr->required[p][i]);
-  printf("\nProcess resouces Rᵢ");
-  sleep(2);
-  printf("\n....");
-  sleep(2);
-  printf("\n....");
-  sleep(2);
-  printf("\n....");
-  printf("\nReleased resources: ");
-  for (int i = 0; i < m; i++)
-    ptr->available[i] += ptr->allocated[p][i];
-  printf("\nAvailable resources: ");
-  for (int i = 0; i < m; i++)
-    printf("%3d", ptr->available[i]);
-  sleep(1);
-  t++;
-  pthread_cond_broadcast(&condition);
-  pthread_mutex_unlock(&locked);
-  pthread_exit(NULL);
-}
-
-bool banker(struct node *arr) {
-  int tmp[m];
-  for (int i = 0; i < m; i++)
-    tmp[i] = arr->available[i];
-  bool found[n];
-  for (int i = 0; i < n; i++)
-    found[i] = false;
-  int k = 0;
-  // Algorithm to find the whether request has been granted or denied
-  while (k < n) {
-    bool granted = false;
-    for (int i = 0; i < n; i++) {
-      if (!found[i]) {
-        bool state = true;
-        for (int j = 0; j < m; j++)
-          if (arr->required[i][j] > tmp[j]) {
-            state = false;
-            break;
-          }
-          if (state) {
-            for (int j = 0; j < m; j++)
-              tmp[j] += arr->allocated[i][j];
-            state_safe[k] = i;
-            found[i] = true;
-            ++k;
-            granted = true;
-          }
-      }
-    }
-    if (!granted) {
-      for (int k = 0; k < n; k++)
-        state_safe[k] = -1;
-      return false; // denied
-    }
-  }
-  return true; // granted
-}
-
 int main(int argc, char **argv) {
+  int i, j, k, n, m, t;
   FILE *sys = fopen(argv[1], "r");
-  int i, j, k;
-  // read system description from command line or console input
-  if (sys != NULL) {
-    fscanf(sys, "%d", &n);
-    fscanf(sys, "%d", &m);
-  } else {
+  if (!argv[1]) {
     printf("Enter the number of processes in system:\t");
     scanf("%d", &n);
     printf("Enter the number of resource types:\t\t");
     scanf("%d", &m);
+    // allocate dynamic memory of struct node
+    ptr = (struct node *)malloc(n * sizeof(struct node));
+    // available system resources
+    ptr->available = (int *)malloc(m * sizeof(ptr->available));
+    printf("\nEnter available resources:\n");
+    for (i = 0; i < m; i++){
+      printf("Resource[%c]: ", i + 'A');
+      scanf("%d", &ptr->available[i]);
+    }
+    // allocated system resources
+    printf("\nEnter allocated resources:\n");
+    ptr->allocated = (int **)malloc(n * sizeof(*ptr->allocated));
+    for (i = 0; i < n; i++)
+      ptr->allocated[i] = (int *)malloc(n * sizeof(**ptr->allocated));
+    init(sys, ptr->allocated, n, m);
+    // maximum system resources
+    printf("\nEnter maximum resources:\n");
+    ptr->maximum = (int **)malloc(n * sizeof(*ptr->maximum));
+    for (i = 0; i < n; i++)
+      ptr->maximum[i] = (int *)malloc(n * sizeof(**ptr->maximum));
+    init(sys, ptr->maximum, n, m);
+  } else {
+    fscanf(sys, "%d", &n);
+    fscanf(sys, "%d", &m);
+    // allocate dynamic memory of struct node
+    ptr = (struct node *)malloc(n * sizeof(struct node));
+    ptr->allocated = (int **)malloc(n * sizeof(*ptr->allocated));
+    for (i = 0; i < n; i++)
+      ptr->allocated[i] = (int *)malloc(n * sizeof(**ptr->allocated));
+    init(sys, ptr->allocated, n, m);
+    fscanf(sys, "%d", &n);
+    fscanf(sys, "%d", &m);
+    ptr->maximum = (int **)malloc(n * sizeof(*ptr->maximum));
+    for (i = 0; i < n; i++)
+      ptr->maximum[i] = (int *)malloc(n * sizeof(**ptr->maximum));
+    init(sys, ptr->maximum, n, m);
+    fscanf(sys, "%d", &t);
+    fscanf(sys, "%d", &m);
+    ptr->available = (int *)malloc(t * sizeof(ptr->available));
+    for (i = 0; i < m; i++)
+      fscanf(sys, "%d", &ptr->available[i]);
+    fclose(sys);
   }
-  // allocate dynamic memory of struct node
-  ptr = (struct node *)malloc(n * sizeof(struct node));
-  // initialize available system resources
-  ptr->available = (int *)malloc(m * sizeof(ptr->available));
-  str = "\nEnter available system resources:";
-  resource_desc(str, sys, ptr->available);
-  // initialize allocated system resources
-  ptr->allocated = (int **)malloc(n * sizeof(*ptr->allocated));
-  for (i = 0; i < n; i++)
-    ptr->allocated[i] = (int *)malloc(n * sizeof(**ptr->allocated));
-  str = "\nEnter allocated system resources:";
-  process_desc(str, sys, ptr->allocated);
-  // initialize maximum system resources
-  ptr->maximum = (int **)malloc(n * sizeof(*ptr->maximum));
-  for (i = 0; i < n; i++)
-    ptr->maximum[i] = (int *)malloc(n * sizeof(**ptr->maximum));
-  str = "\nEnter maximum system resources:";
-  process_desc(str, sys, ptr->maximum);
-  // initialize required system resources
+  // required system resources
   ptr->required = (int **)malloc(n * sizeof(*ptr->required));
   for (i = 0; i < n; i++)
     ptr->required[i] = (int *)malloc(n * sizeof(**ptr->required));
-  for (i = 0; i < n; i++) {
+  for (i = 0; i < n; i++)
     for (j = 0; j < m; j++)
       ptr->required[i][j] = ptr->maximum[i][j] - ptr->allocated[i][j];
-  }
-  // close system file
-  fclose(sys);
-  // print available system resources
-  printf("\nAvailable system resources\n");
-  for (int i = 0; i < m; i++)
-    printf("%*c", 4, i + 'A');
+  // print Available, Allocated, Maximum, Required
+  printf("\nAvailable System Sources:\n\t");
+  for (i = 0; i < m; i++)
+    printf("%*d", 3, ptr->available[i]);
   printf("\n");
+  printf("\nAllocated System Sources:");
+  print(ptr->allocated, n, m);
+  printf("Maximum System Sources:");
+  print(ptr->maximum, n, m);
+  printf("Required System Sources:");
+  print(ptr->required, n, m);
+  // check request has been granted or denied
+  int safeSequence[n], work[m], count = 0;
+  bool finish[n];
+  for (i = 0; i < n; i++)
+    finish[i] = 0;
   for (int i = 0; i < m; i++)
-    printf("%*s%d", 3, "", ptr->available[i]);
-  // print allocated system resources
-  printf("\n\nAllocated system resources");
-  print(ptr->allocated);
-  // print maximum system resources
-  printf("Maximum system resources");
-  print(ptr->maximum);
-  // print required system resources
-  printf("Required system resources");
-  print(ptr->required);
-  // return denied if unsafe
-  state_safe = (int *)malloc(n * sizeof(*state_safe));
-  for (int i = 0; i < n; i++)
-    state_safe[i] = -1;
-  if (!banker(ptr)) {
-    printf("Request denied\n");
-    exit(-1);
+    work[i] = ptr->available[i];
+  while (count < n) {
+    bool found = false;
+    for (int p = 0; p < n; p++) {
+      if (finish[p] == 0) {
+        for (j = 0; j < m; j++)
+          if (ptr->required[p][j] > work[j])
+            break;
+        if (j == m) {
+          for (k = 0; k < m; k++)
+            work[k] += ptr->allocated[p][k];
+          safeSequence[count++] = p;
+          // Mark this p as finished
+          finish[p] = 1;
+          found = true;
+        }
+      }
+    }
+    // If safe sequence not found.
+    if (found == false) {
+      printf("Request has been denied\n");
+      exit(-1);
+    }
   }
-  // return granted if safe and sequence processes
-  printf("Request granted\n");
-  printf("\nSequence processes: ");
-  for (int i = 0; i < n; i++)
-    printf("%-3d", state_safe[i] + 1);
-  // pthread to simulate deadlock avoidance
-  printf("\nExecute process");
-  sleep(3);
-  pthread_t processes[n];
-  pthread_attr_t attr;
-  pthread_attr_init(&attr);
-  int pid[n];
-  for (int i = 0; i < n; i++)
-    pid[i] = i;
-  for (int i = 0; i < n; i++)
-    pthread_create(&processes[i], &attr, request, (void *)(&pid[i]));
-  for (int i = 0; i < n; i++)
-    pthread_join(processes[i], NULL);
-  printf("\n\nExecuting Processes Complete\n\n");
-  // deallocate dynamic memory
-  free(state_safe);
+  printf("Request has been granted\n");
+  for (int i = 0; i < n - 1; i++)
+    printf("P[%d] -> ", safeSequence[i]);
+  printf("P[%d]", safeSequence[n - 1]);
+      printf("\n");
   collection();
   return 0;
 }
+// test0 = P1 -> P3 -> P4 -> P2 -> P0
+// test1 = P1 -> P3 -> P4 -> P0 -> P2
+// test2 = P1 -> P3 -> P4 -> P0 -> P2
+// test3 = P1 -> P3 -> P2 -> P0 -> P4
