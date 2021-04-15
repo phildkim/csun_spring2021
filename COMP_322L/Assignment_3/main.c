@@ -1,67 +1,277 @@
 #include <stdio.h>
 #include <stdlib.h>
-struct node {
-  int *R;
-  int **P;
-} *ptr = NULL;
-typedef struct node node;
+#include <stdbool.h>
+#include <unistd.h>
+#include <pthread.h>
+#include <time.h>
 /**
- *  Let (n) be the number of processes in the system and (m) be the number of resource types.
- *
- *  - Available:
- *      A vector of length m indicates the number of available resources of each type.
- *      If Available[j] = k, there are k instances of resource type Rⱼ available.
- *
- *  - Maximum:
- *      An (n × m) matrix defines the maximum demand of each process.
- *      If Max[i,j] = k, then Pᵢ may request at most k instances of resource type Rⱼ.
- *
- *  - Allocation:
- *      An (n × m) matrix defines the number of resources of each type currently allocated to each process.
- *      If Allocation[i,j] = k, then process Pᵢ is currently allocated k instances of resource type Rⱼ.
- *
- *  - Required: (Required[i,j] = Maximum[i,j] - Allocation[i,j])
- *      An (n × m) matrix indicates the remaining resource need of each process.
- *      If Need[i,j] = k, then Pᵢ may need k more instances of resource type Rⱼ to complete the task.
- *
- *  @ Safe and Unsafe States:
- *      Any state where no such set exists is an unsafe state.
- *      If requests by the processes allow each to acquire its maximum resources, then terminate.
- *
- *  @ Requests: (Banker's algorithm to determine if it is safe to grant the request)
- *      1. Can the request be granted?
- *          If not, the request is impossible and must either be denied or put on a waiting list
- *      2. Assume that the request is granted
- *      3. Is the new state safe?
- *          If so grant the request
- *          If not, either deny the request or put it on a waiting list
- *
- *      Final example: from the state we started at, assume that process 2 requests 1 unit of resource B.
- *          1. There are enough resources
- *          2. Assuming the request is granted, the new state would be:
- *               Available system resources:
- *               A B C D
- *          Free 3 0 1 2
- *
- *              Processes (currently allocated resources):
- *              A B C D
- *         P1   1 2 5 1
- *         P2   1 1 3 3
- *         P3   1 2 1 0
- *
- *              Processes (maximum resources):
- *              A B C D
- *         P1   3 3 2 2
- *         P2   1 2 3 4
- *         P3   1 3 5 0
+ * stuct process:
+ *  Dynamically Allocated 2D Array
  */
-int main(int argc, char **argv) {
+struct process {
+  int **allocated;
+  int **maximum;
+  int **required;
+} *P = NULL;
+/**
+ * stuct resource:
+ *  Dynamically Allocated Array
+ */
+struct resource {
+  int *available;
+} *R = NULL;
+typedef struct node process;
+typedef struct node resource;
+/**
+ *  A mutex has two possible states:
+ *    - unlocked (not owned by any thread)
+ *    - locked (owned by one thread)
+ *  A mutex can never be owned by two different threads simultaneously.
+ *  A thread attempting to lock that is already locked is suspended until the owning thread unlocks.
+ */
+pthread_mutex_t denied;
+pthread_cond_t condition;
+int n, m, thread = 0;
+int *safe;
+/**
+ *  Garbage Collection
+ */
+void collection() {
+  if (P!=NULL)
+    free((void *)P);
+  if (R != NULL)
+    free((void*)R);
+}
+/**
+ *  Print Dynamically Allocated 2D Array
+ */
+void printmat(const char* str, int** arr) {
+  int i, j;
+  printf("\n%s:", str);
+  printf("\n\t\b\b");
+  for (int i = 0; i < m; i++)
+    printf("%3c", i + 'A');
+  printf("\n");
+  for (i = 0; i < n; i++) {
+    for (j = 0; j < m; j++)
+      j == 0 ? printf("P[%d]:%*s%d", i + 1, 3, "", arr[i][j]) : printf("%*d", 3, arr[i][j]);
+    printf("\n");
+  }
+  printf("\n");
+}
+/**
+ * Print Dynamically Allocated Array
+ */
+void printarr(const char* str, int *arr) {
+  int i, j;
+  printf("%s:\n", str);
+  for (int i = 0; i < m; i++)
+    printf("%*c", 3, i+'A');
+  printf("\n");
+  for (int i = 0; i < m; i++)
+    printf("%*d", 3, arr[i]);
+  printf("\n\n");
+}
+/**
+ * Initialized Allocated Dynamic Memory with System Info.
+ *    - total system resources
+ *    - available system resources
+ *    - currently allocated resources
+ *    - maximum resources
+ *    - required resources
+ */
+void init(struct process *P, struct resource *R, FILE *system) {
+  const char *str = "resources";
+  int i, j;
+  /**
+   *  If Available[i] = k,
+   *  then k instances of resource Rᵢ are available.
+   */
+  printf("Enter available system resources:\n");
+  R->available = (int *)malloc(m * sizeof(R->available));
+  for (int i = 0; i < m; i++) {
+    if (system == NULL)
+        printf("Process[%d] - Resource[%c]: ", i + 1, j + 'A');
+    system != NULL ? fscanf(system, "%d", &R->available[i]) : scanf("%d", &R->available[i]);
+  }
+  str = "Available system resources";
+  printarr(str, R->available);
+  /**
+   *  If allocated[i,j] = k,
+   *  then Pᵢ is currently allocated k instances of resource type Rⱼ.
+   */
+  printf("Enter processes (currently allocated resources):\n");
+  P->allocated = (int **)malloc(n * sizeof(*P->allocated));
+  for (i = 0; i < n; i++)
+    P->allocated[i] = (int *)malloc(n * sizeof(**P->allocated));
+  for (i = 0; i < n; i++) {
+    for (j = 0; j < m; j++) {
+      if (system == NULL)
+        printf("Process[%d] - Resource[%c]: ", i + 1, j + 'A');
+      system != NULL ? fscanf(system, "%d", &P->allocated[i][j]) : scanf("%d", &P->allocated[i][j]);
+    }
+  }
+  str = "Currently allocated resources";
+  printmat(str, P->allocated);
+  /**
+   *  If maximum[i,j] = k,
+   *  then process Pᵢ can request maximum k instances of resource type Rⱼ.
+   */
+  printf("Enter processes (maximum resources):\n");
+  P->maximum = (int **)malloc(n * sizeof(*P->maximum));
+  for (i = 0; i < n; i++)
+    P->maximum[i] = (int *)malloc(n * sizeof(**P->maximum));
+  for (i = 0; i < n; i++) {
+    for (j = 0; j < m; j++) {
+      if (system == NULL)
+        printf("Process[%d] - Resource[%c]: ", i + 1, j + 'A');
+      system != NULL ? fscanf(system , "%d", &P->maximum[i][j]) : scanf("%d", &P->maximum[i][j]);
+    }
+  }
+  str = "Maximum resources";
+  printmat(str, P->maximum);
+  /**
+   *  If required[i,j] = k,
+   *  then process Pᵢ may need k more instances of resource type Rⱼ to complete the task.
+   */
+  P->required = (int **)malloc(n * sizeof(*P->required));
+  for (i = 0; i < n; i++)
+    P->required[i] = (int *)malloc(n * sizeof(**P->required));
+  for (i = 0; i < n; i++) {
+    for (j = 0; j < m; j++)
+      P->required[i][j] = P->maximum[i][j] - P->allocated[i][j];
+  }
+  str = "Required resources";
+  printmat(str, P->required);
+}
+/**
+ * For each request operation, checks request if granted or denied.
+ */
+bool request(struct process *P, struct resource *R) {
+  int tmp[m];
+  for (int i = 0; i < m; i++)
+    tmp[i] = R->available[i];
+  bool found[n];
+  for (int i = 0; i < n; i++)
+    found[i] = false;
+  int k = 0;
+  // Algorithm to find the whether request has been granted or denied
+  while (k < n) {
+    bool granted = false;
+    for (int i = 0; i < n; i++) {
+      if (!found[i]) {
+        bool state = true;
+        for (int j = 0; j < m; j++)
+          if (P->required[i][j] > tmp[j]) {
+            state = false;
+            break;
+          }
+          if (state) {
+            for (int j = 0; j < m; j++)
+              tmp[j] += P->allocated[i][j];
+            safe[k] = i;
+            found[i] = true;
+            ++k;
+            granted = true;
+          }
+      }
+    }
+    if (!granted) {
+      for (int k = 0; k < n; k++)
+        safe[k] = -1;
+      return false; // denied
+    }
+  }
+  return true; // granted
+}
+/**
+ * Dynamic deadlock avoidance simulation
+ */
+void *respond(void *arg) {
+  int p = *((int *)arg);
+  pthread_mutex_lock(&denied);
+  // condition check
+  while (p != safe[thread])
+    pthread_cond_wait(&condition, &denied);
+  // process
+  printf("\n--> Process %d", p + 1);
+  printf("\n\tAllocated: ");
+  for (int i = 0; i < m; i++)
+    printf("%3d", P->allocated[p][i]);
+  printf("\n\tRequired:  ");
+  for (int i = 0; i < m; i++)
+    printf("%3d", P->required[p][i]);
+  printf("\n\tAvailable: ");
+  for (int i = 0; i < m; i++)
+    printf("%3d", R->available[i]);
+  printf("\nProcessing Pᵢ ...");
+  sleep(2);
+  printf("\n              ...");
+  sleep(1);
+  printf("\n              ...");
+  sleep(3);
+  printf("\nResource Released");
+  for (int i = 0; i < m; i++)
+    R->available[i] += P->allocated[p][i];
+  printf("\n\tAvailable: ");
+  for (int i = 0; i < m; i++)
+    printf("%3d", R->available[i]);
+  printf("\n\n");
+  sleep(1);
+  thread++;
+  pthread_cond_broadcast(&condition);
+  pthread_mutex_unlock(&denied);
+  pthread_exit(NULL);
+}
 
-  printf("Total system resources are:\t");
-  printf("Available system resources are:\t");
-  printf("Processes (currently allocated resources):\t");
-  printf("Processes (maximum resources):\t");
-  printf("Required = maximum resources - currently allocated resources
-        \nProcesses (possibly needed resources):\t");
+int main(int argc, char **argv) {
+  srand(time(NULL));
+  int i, j, k;
+  FILE *system = fopen(argv[1], "r");
+  if (system != NULL) {
+    // if command line used
+    fscanf(system, "%d", &n);
+    fscanf(system, "%d", &m);
+  } else {
+    // console user input
+    printf("Enter the number of processes in system:\t");
+    scanf("%d", &n);
+    printf("Enter the number of resource types:\t\t");
+    scanf("%d", &m);
+  }
+  R = (struct resource *)malloc(m * sizeof(struct resource));
+  P = (struct process *)malloc(n * sizeof(struct process));
+  // initialize dynamic allocated arrays with system information
+  init(P, R, system);
+  fclose(system);
+  // check whether the request has been granted or denied
+  safe = (int *)malloc(n * sizeof(*safe));
+  for (int i = 0; i < n; i++)
+    safe[i] = -1;
+  if (!request(P, R)) {
+    printf("Request has been denied.\n");
+    exit(-1);
+  }
+  printf("Request has been granted.\n");
+  printf("Safe Sequence Found: ");
+  for (int i = 0; i < n; i++) {
+    printf("%-3d", safe[i] + 1);
+  }
+  printf("\nExecuting Processes...\n");
+  sleep(1);
+  // pthread to simulate dynamic deadlock avoidance
+  pthread_t processes[n];
+  pthread_attr_t attr;
+  pthread_attr_init(&attr);
+  int processNumber[n];
+  for (int i = 0; i < n; i++)
+    processNumber[i] = i;
+  for (int i = 0; i < n; i++)
+    pthread_create(&processes[i], &attr, respond, (void *)(&processNumber[i]));
+  for (int i = 0; i < n; i++)
+    pthread_join(processes[i], NULL);
+  printf("Executing Processes Complete\n");
+  free(safe);
+  collection();
   return 0;
 }
