@@ -17,6 +17,11 @@
  * 1          // Process
  * 4          // Resource
  * 3 0 1 2    // R[1] available resource
+ *
+ * test0 = denied
+ * test1 = P1 -> P3 -> P4 -> P0 -> P2
+ * test2 = P1 -> P3 -> P4 -> P0 -> P2
+ * test3 = P1 -> P3 -> P2 -> P0 -> P4
  */
 #include <stdbool.h>
 #include <stdio.h>
@@ -165,7 +170,3 @@ int main(int argc, char **argv) {
   collection();
   return 0;
 }
-// test0 = P1 -> P3 -> P4 -> P2 -> P0
-// test1 = P1 -> P3 -> P4 -> P0 -> P2
-// test2 = P1 -> P3 -> P4 -> P0 -> P2
-// test3 = P1 -> P3 -> P2 -> P0 -> P4
