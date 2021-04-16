@@ -1,7 +1,7 @@
 /**
  * To use command line:
  *    $ gcc main.c
- *    $ ./a.out test.txt
+ *    $ ./a.out test0.txt
  *
  * Textfile format:
  * 3          // Process
@@ -18,10 +18,10 @@
  * 4          // Resource
  * 3 0 1 2    // R[1] available resource
  *
- * test0 = denied
- * test1 = P1 -> P3 -> P4 -> P0 -> P2
- * test2 = P1 -> P3 -> P4 -> P0 -> P2
- * test3 = P1 -> P3 -> P2 -> P0 -> P4
+ * test0.txt = denied
+ * test1.txt = P1 -> P3 -> P4 -> P0 -> P2
+ * test2.txt = P1 -> P3 -> P4 -> P0 -> P2
+ * test3.txt = P1 -> P3 -> P2 -> P0 -> P4
  */
 #include <stdbool.h>
 #include <stdio.h>
@@ -125,8 +125,7 @@ int main(int argc, char **argv) {
   printf("\nAvailable System Sources:\n\t");
   for (i = 0; i < m; i++)
     printf("%*d", 3, ptr->available[i]);
-  printf("\n");
-  printf("\nAllocated System Sources:");
+  printf("\n\nAllocated System Sources:");
   print(ptr->allocated, n, m);
   printf("Maximum System Sources:");
   print(ptr->maximum, n, m);
