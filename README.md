@@ -49,7 +49,7 @@ npm run build && npm start // production server
 
 ## PHYS-220B LAB (Grade: 100\%)
 
-- [ ] Lab 10: _@ CSUN, **10AM - 04/14/21**_
+- [X] ~~Lab 10: _@ CSUN, **10AM - 04/14/21**_~~
 - [ ] Lab 11: _@ CSUN, **11AM - 05/12/21**_
 
 ***
@@ -60,7 +60,7 @@ npm run build && npm start // production server
 
 ## COMP-322 LAB: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/85037971220?pwd=Vk5JbnBLQVlpU3ZQL0Z6R0dXbW1JZz09)
 
-- [ ] Project 4: Banker's Algorithm **Due on Apr 25 by 11:59pm**
+- [X] ~~Project 4: Banker's Algorithm **Due on Apr 25 by 11:59pm**~~
 
 ***
 
@@ -72,7 +72,6 @@ npm run build && npm start // production server
 
 ## COMP-300 (Grade: 95.58%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
 
-- [ ] [Essay #11](https://docs.google.com/document/d/1VtpzEuzsG8ikLe3jToRdPXhIdgqsC-a1CsZuw9NFytA/edit): **Apr 18 by 11:59pm**
 - [ ] [Essay #12](https://docs.google.com/document/d/1Nx2MUAz1ecL4lXr_3KRATTrozLR3hOS4kbpEzKMYuSE/edit): **Apr 25 by 11:59pm**
   - [ ] [_Research Paper_](https://docs.google.com/document/d/1M6orVz_O3qvcHRX4s2yfCgBHDjIFA7Z37FPuEicI-qo/edit): **Apr 25 by 11:59pm**
 - [ ] [Essay #13](https://docs.google.com/document/d/1RUrrBidI0zVxYQ00QFuhMLoKcUnPHv4tIXzK7igGKzc/edit): **May 2 by 11:59pm**
@@ -80,29 +79,19 @@ npm run build && npm start // production server
 
 ***
 
-## BIO-106 LAB: (Grade: 98.82%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
+## BIO-106 LAB: (Grade: 98.59%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
-- [ ] Ch 10 Quiz
-- [ ] Ch 10 Discussion
+- [ ] Ch 11 Quiz
+- [ ] Ch 11 Discussion
+- [ ] Simulation 5: Scientific Method with Pillbugs
 
 ***
 
 ## BIO-106: (Grade: 89.63%)
 
-### Taxonomy and Systematics: Apr. 10 - Apr. 18
-
-- [ ] 14.1 Taxonomy and Systematics (Nomenclature) (Lecture 12:47 )
-- [ ] 14.2 Classification Systems (Lecture 16:22)
-- [ ] 14.3 Tree of Life (Lecture 12:38)
-- [ ] Systematics (Reading)
-- [ ] Systematics and Phylogenies (Connect)
-- [ ] Tree of Life (Connect)
-- [ ] Quiz 19 (Apr. 18)
-- [ ] Quiz 20 (Apr. 18)
-
 ### Ecology: Apr. 17 - Apr. 25
 
-- [ ] 15.1 Ecology as a Science (Lecture 15:41)
+- [X] ~~15.1 Ecology as a Science (Lecture 15:41)~~
 - [ ] 15.2 Ecological Interactions (Lecture 24:20)
 - [ ] Environment (Reading)
 - [ ] Environment (Connect)
