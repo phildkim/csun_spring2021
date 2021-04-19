@@ -247,11 +247,11 @@ int main(int argc, char **argv) {
   pthread_t processes[n];
   pthread_attr_t attr;
   pthread_attr_init(&attr);
-  int processNumber[n];
+  int pid[n];
   for (i = 0; i < n; i++)
-    processNumber[i] = i;
+    pid[i] = i;
   for (i = 0; i < n; i++)
-    pthread_create(&processes[i], &attr, processCode, (void *)(&processNumber[i]));
+    pthread_create(&processes[i], &attr, processCode, (void *)(&pid[i]));
   for (i = 0; i < n; i++)
     pthread_join(processes[i], NULL);
   printf("\nAll Processes Complete\n\nREQUEST GRANTED\n\nSafe Sequence:\n");
