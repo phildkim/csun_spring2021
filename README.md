@@ -95,7 +95,7 @@ npm run build && npm start // production server
 - [X] ~~15.1 Ecology as a Science (Lecture 15:41)~~
 - [X] ~~15.2 Ecological Interactions (Lecture 24:20)~~
 - [X] ~~Environment (Reading)~~
-- [ ] Environment (Connect)
+- [X] ~~Environment (Connect)~~
 - [ ] Quiz 21 (due Apr. 25)
 - [ ] Quiz 22 (due Apr. 25)
 
