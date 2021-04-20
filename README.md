@@ -61,6 +61,7 @@ npm run build && npm start // production server
 ## COMP-322 LAB: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/85037971220?pwd=Vk5JbnBLQVlpU3ZQL0Z6R0dXbW1JZz09)
 
 - [X] ~~Project 4: Banker's Algorithm **Due on Apr 25 by 11:59pm**~~
+- [ ] Project 5: Memory allocation strategies
 
 ***
 
@@ -92,8 +93,8 @@ npm run build && npm start // production server
 ### Ecology: Apr. 17 - Apr. 25
 
 - [X] ~~15.1 Ecology as a Science (Lecture 15:41)~~
-- [ ] 15.2 Ecological Interactions (Lecture 24:20)
-- [ ] Environment (Reading)
+- [X] ~~15.2 Ecological Interactions (Lecture 24:20)~~
+- [X] ~~Environment (Reading)~~
 - [ ] Environment (Connect)
 - [ ] Quiz 21 (due Apr. 25)
 - [ ] Quiz 22 (due Apr. 25)
