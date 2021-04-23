@@ -78,6 +78,9 @@ npm run build && npm start // production server
   - [ ] [_Research Paper_](https://docs.google.com/document/d/1M6orVz_O3qvcHRX4s2yfCgBHDjIFA7Z37FPuEicI-qo/edit): **Apr 25 by 11:59pm**
 - [ ] [Essay #13](https://docs.google.com/document/d/1RUrrBidI0zVxYQ00QFuhMLoKcUnPHv4tIXzK7igGKzc/edit): **May 2 by 11:59pm**
   - [ ] _Class Presentation_: **May 14, 2021**
+  - [ ] GitHub
+  - [ ] LeetCode
+  - [ ] Senior Project?
 
 ***
 

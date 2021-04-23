@@ -21,12 +21,24 @@ void init_fit() {
 		scanf("%d", &ptr->data[i]);
 }
 /**
+ * @brief print
+ * @note
+ * @retval None
+ */
+void print() {
+	int i;
+	for (i = 0; i < size; i++)
+		printf("%*d", 3, ptr->data[i]);
+	printf("\n");
+}
+/**
  * @brief first-fit
  * @note
  * @retval None
  */
 void first_fit() {
-	printf("first-fit\n");
+	printf("first-fit:\n");
+	print();
 }
 /**
  * @brief next-fit
@@ -34,7 +46,8 @@ void first_fit() {
  * @retval None
  */
 void next_fit() {
-	printf("next-fit\n");
+	printf("next-fit:\n");
+	print();
 }
 /**
  * @brief best-fit
@@ -42,7 +55,8 @@ void next_fit() {
  * @retval None
  */
 void best_fit() {
-	printf("best-fit\n");
+	printf("best-fit:\n");
+	print();
 }
 /**
  * @brief worst-fit
@@ -50,19 +64,8 @@ void best_fit() {
  * @retval None
  */
 void worst_fit() {
-	printf("worst-fit\n");
-}
-/**
- * @brief print
- * @note
- * @retval None
- */
-void print(int size) {
-	int i;
-	printf("Data:\n");
-	for (i = 0; i < size; i++)
-		printf("%*d", 3, ptr->data[i]);
-	printf("\n");
+	printf("worst-fit:\n");
+	print();
 }
 /**
  * @brief garbage collection
@@ -75,8 +78,8 @@ void collection() {
 }
 int main(void) {
 	int n;
-	while (n != 6) {
-		printf("\n1. initialize\n2. first-fit\n3. next-fit\n4. best-fit \n5. worst-fit\n6. print\n7. quit\nEnter #:\t");
+	while (n != 7) {
+		printf("\n1. initialize\n2. first-fit\n3. next-fit\n4. best-fit \n5. worst-fit\n6. print\n7. quit\nEnter #: ");
 		scanf("%d", &n);
 		switch (n) {
 			case 1:
@@ -95,7 +98,7 @@ int main(void) {
 				worst_fit();
 				break;
 			case 6:
-				print(size);
+				print();
 				break;
 		}
 	}
