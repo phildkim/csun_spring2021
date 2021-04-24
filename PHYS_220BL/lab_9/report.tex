@@ -9,7 +9,7 @@
 \usepackage{graphicx}
 \usepackage{soul}
 \graphicspath{{./images/}}
-\def\F#1{\(\bf#1\)}
+\def\F#1{\(#1\)}
 \title{Lab 9: RC Discharge}
 \author{Philip Kim}
 \date{\today}
@@ -20,35 +20,35 @@
   \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
     \multicolumn{11}{|c|}{\textbf{Table 1: Discharge}} \\\hline
     \F{R}&\F{C}&\F{f (Hz)}&\F{V_{min} (V)}&\F{t_{srn} (DIV)}&\F{SEC/DIV}&\F{t_{srn} (s)}&\F{V_{srn} (DIV)}&\F{V/DIV}&\F{V_{srn}}&\F{V_{dischg} (V)}\\\hline
-    \F{100\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{100\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{100\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{100\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{100\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
 
-    \F{150\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{150\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{150\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{150\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{150\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
+    \F{100\Omega}&\F{0.22\mu{F}}&4.024kHz&-0.55V& &50us& & &0.2V& & \\\hline
+    \F{100\Omega}&\F{0.22\mu{F}}&4.024kHz& & &50us& & &0.2V& & \\\hline
+    \F{100\Omega}&\F{0.22\mu{F}}&4.024kHz& & &50us& & &0.2V& & \\\hline
+    \F{100\Omega}&\F{0.22\mu{F}}&4.024kHz& & &50us& & &0.2V& & \\\hline
+    \F{100\Omega}&\F{0.22\mu{F}}&4.024kHz& & &50us& & &0.2V& & \\\hline
 
-    \F{270\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{270\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{270\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{270\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{270\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
+    \F{150\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
+    \F{150\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
+    \F{150\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
+    \F{150\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
+    \F{150\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
 
-    \F{47\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{47\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{47\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{47\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
-    \F{47\Omega}&\F{0.22\mu{F}}& & &50us& & & &0.2V& & \\\hline
+    \F{270\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
+    \F{270\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
+    \F{270\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
+    \F{270\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
+    \F{270\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
+
+    \F{47\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
+    \F{47\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
+    \F{47\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
+    \F{47\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
+    \F{47\Omega}&\F{0.22\mu{F}}& & & &50us& & &0.2V& & \\\hline
   \end{tabular}
 \end{table}
 \begin{center}
-  \subsection*{\F{V_{discharge}} Setup}
-  setup
-  % \includegraphics[scale=0.066]{Vrc.jpeg}
+  \subsection*{Setup}
+  \includegraphics[scale=0.066]{setup1.jpeg}
 \end{center}
 \begin{center}
   \subsection*{Graph 1}
