@@ -8,12 +8,11 @@
 
 #### CSUN Email: [philip.kim.657@my.csun.edu](https://mail.google.com/mail/u/0/?ogbl#inbox)
 
-#### CSUN UserID: pdk55536
+<!-- #### CSUN UserID: pdk55536
 
 #### CSUN Student ID: 108508736
 
-#### CSUN Password: \<Neg4life>
-
+#### CSUN Password: \<Neg4life> -->
 ***
 
 ```bash

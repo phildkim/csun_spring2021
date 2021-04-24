@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[table]{xcolor}
+\usepackage{siunitx}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\geometry{
+  left=0.5in,
+  top=0.2in,
+  right=0.5in,
+  bottom=0.5in
+}
+\sisetup{
+  round-mode=places, % Rounds numbers
+  round-precision=2, % to 2 places
+}
+\definecolor{B}{HTML}{6495ed} % cornflowerblue
+\definecolor{G}{HTML}{20b2aa} % lightseagreen
+\def\DA#1{\textcolor{B}{\textbf{#1}}}
+\def\DB#1{\textcolor{G}{\textbf{#1}}}
+\def\A#1{\textbf{#1}}
+\def\B#1#2#3{\hspace*{#2}\textbf{#1}\hspace*{#3}}
+\graphicspath{{./images/}} % image path
+\title{Analysis of C. elegans on Drugs Lab Report}
+\author{Philip Kim}
+\date{\today}
+\begin{document}
+\maketitle
+\vspace*{-1cm}
+\begin{center}
+  \begin{longtable}[c]{|c|r|r|r|}
+    \toprule
+    \textbf{\textcolor{white}{\#}} &
+    \A{\textcolor{white}{Drug A -\ Control A}} &
+    \A{\textcolor{white}{Drug A -\ Control A}} &
+    \A{\textcolor{white}{Drug A -\ Control A}}\\
+    \textbf{\#} &
+    \B{Drug \DA{A}}{0em}{3em} &
+    \B{Control \DA{A}}{0em}{2em} &
+    \B{Drug \DA{A} -\ Control \DA{A}}{0em}{0em}\\
+    \textbf{\textcolor{white}{\#}} &
+    \textbf{\textcolor{white}{\#}} &
+    \textbf{\textcolor{white}{\#}} &
+    \textbf{\textcolor{white}{\#}}\\
+    \midrule\endfirsthead%
+    \toprule
+    \textbf{\textcolor{white}{\#}} &
+    \A{\textcolor{white}{Drug A -\ Control A}} &
+    \A{\textcolor{white}{Drug A -\ Control A}} &
+    \A{\textcolor{white}{Drug A -\ Control A}}\\
+    \textbf{\#} &
+    \B{Drug A}{0em}{3em} &
+    \B{Control A}{0em}{2em} &
+    \B{Drug A -\ Control A}{0em}{0em}\\
+    \textbf{\textcolor{white}{\#}} &
+    \textbf{\textcolor{white}{\#}} &
+    \textbf{\textcolor{white}{\#}} &
+    \textbf{\textcolor{white}{\#}}\\
+    \midrule\endhead%
+      1 & 40.20 & 22.40 & 17.80\\\midrule
+      2 & 7.60 & 9.90 & -2.30\\\midrule
+      3 & 0.00 & 6.20 & -6.20\\\midrule
+      4 & 15.10 & 18.10 & -3.00\\\midrule
+      5 & 10.50 & 20.50 & -10.00\\\midrule
+      6 & 5.50 & 2.00 & 3.50\\\midrule
+      7 & 22.50 & 25.00 & -2.50\\\midrule
+      8 & 12.60 & 23.30 & -10.70\\\midrule
+      9 & 3.00 & 15.00 & -12.00\\\midrule
+      10 & 0.00 & 11.00 & -11.00\\
+    \bottomrule
+  \end{longtable}
+\end{center}
+\end{document}
