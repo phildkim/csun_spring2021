@@ -73,7 +73,7 @@ int main(void) {
 				worst_fit();
 				break;
 			default:
-				break;
+				printf("\nInvalid selection.");
 		}
 	}
 	collection();
