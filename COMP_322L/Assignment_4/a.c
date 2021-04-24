@@ -11,24 +11,21 @@ typedef struct block{
 }block;
 
 void accept(process p[],block b[],int *n,int *m){
-
 	int i,j;
-
 	printf("\n Enter no. of blocks : ");
 	scanf("%d",m);
 	for(i=0;i<*m;i++){
 		printf(" Enter size of block[%d] : ",i);
 		scanf("%d",&b[i].bsize);
 	}
-
 	printf("\n Enter no. of processes : ");
 	scanf("%d",n);
 	for(i=0;i<*n;i++){
 		printf(" Enter size of block[%d] : ",i);
 		scanf("%d",&p[i].psize);
 	}
-
 }
+
 void re_init(process p[],block b[],int n,int m){
 	int i;
 	for(i=0;i<n;i++)
@@ -38,7 +35,6 @@ void re_init(process p[],block b[],int n,int m){
 }
 
 void first_fit(process p[],block b[],int n,int m){
-
 	int i,j,in_frag=0,ex_frag=0;
 	for(i=0;i<n;i++){
 		for(j=0;j<m;j++){
@@ -79,20 +75,16 @@ void best_fit(process p[],block b[],int n,int m){
 		if(p[i].pflag == 0)
 			printf("\n P[%d]\t-\tUnassigned",i);
 	}
-
 	printf("\n\n Total internal fragmentation : %d",in_frag );
 	for(j=0;j<m;j++){
 		if(b[j].bflag == 0)
 			ex_frag+=b[j].bsize;
 	}
 	printf("\n Total external fragmentation : %d",ex_frag );
-
-
 }
 
 void worst_fit(process p[],block b[],int n,int m){
 	int i,j,max_frag,in_frag=0,ex_frag=0,id;
-
 	for(i=0;i<n;i++){
 		max_frag = -1;
 		id=9999;
@@ -110,19 +102,15 @@ void worst_fit(process p[],block b[],int n,int m){
 		if(p[i].pflag == 0)
 			printf("\n P[%d]\t-\tUnassigned",i);
 	}
-
 	printf("\n\n Total internal fragmentation : %d",in_frag );
 	for(j=0;j<m;j++){
 		if(b[j].bflag == 0)
 			ex_frag+=b[j].bsize;
 	}
 	printf("\n Total external fragmentation : %d",ex_frag );
-
-
 }
 
 void next_fit(process p[],block b[],int n,int m){
-
 	int i,j,in_frag=0,ex_frag=0,loc;
 	printf("\n Enter block no. to begin allocation : ");
 	scanf("%d",&loc);
@@ -153,7 +141,6 @@ void next_fit(process p[],block b[],int n,int m){
 
 
 int main(){
-
 	int ch,n=0,m=0;
 	process p[10];
 	block b[10];

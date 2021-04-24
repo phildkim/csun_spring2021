@@ -1,85 +1,60 @@
 #include <stdio.h>
 #include <stdlib.h>
 struct node {
-	int *data;
+	int *allocated;
+	int *block;
+	int *process;
 } *ptr = NULL;
 typedef struct node node;
-int size;
-/**
- * @brief init_fit
- * @note initialize
- * @retval None
- */
+
 void init_fit() {
-	int i;
-	printf("\nEnter size:\t");
-	scanf("%d", &size);
-	ptr = (struct node *)malloc(size * sizeof(struct node));
-	ptr->data = (int *)malloc(size * sizeof(*ptr->data));
-	printf("\nEnter data:\t");
-	for (i = 0; i < size; i++)
-		scanf("%d", &ptr->data[i]);
+	int i, n, m;
+	printf("\nBlock size: ");
+	scanf("%d", &n);
+	printf("Process size: ");
+	scanf("%d", &m);
+	ptr = (struct node *)malloc(n * sizeof(struct node));
+	ptr->block = (int *)malloc(n * sizeof(*ptr->block));
+	ptr->process = (int *)malloc(m * sizeof(*ptr->process));
+
+
+
 }
-/**
- * @brief print
- * @note
- * @retval None
- */
+
 void print() {
 	int i;
-	for (i = 0; i < size; i++)
-		printf("%*d", 3, ptr->data[i]);
-	printf("\n");
+
 }
-/**
- * @brief first-fit
- * @note
- * @retval None
- */
+
 void first_fit() {
 	printf("first-fit:\n");
-	print();
+
 }
-/**
- * @brief next-fit
- * @note
- * @retval None
- */
+
 void next_fit() {
 	printf("next-fit:\n");
-	print();
+
 }
-/**
- * @brief best-fit
- * @note
- * @retval None
- */
+
 void best_fit() {
 	printf("best-fit:\n");
-	print();
+
 }
-/**
- * @brief worst-fit
- * @note
- * @retval None
- */
+
 void worst_fit() {
 	printf("worst-fit:\n");
-	print();
+
 }
-/**
- * @brief garbage collection
- * @note deallocate dynamic memory
- * @retval None
- */
+
 void collection() {
 	if (ptr != NULL)
 		free((void*)ptr);
 }
+
 int main(void) {
 	int n;
-	while (n != 7) {
-		printf("\n1. initialize\n2. first-fit\n3. next-fit\n4. best-fit \n5. worst-fit\n6. print\n7. quit\nEnter #: ");
+	while (n != 6) {
+		printf("\n1. Initialize\n2. First-fit\n3. Next-fit\n4. Best-fit \n5. Worst-fit\n7. Quit\nEnter #: ");
 		scanf("%d", &n);
 		switch (n) {
 			case 1:
@@ -97,8 +72,7 @@ int main(void) {
 			case 5:
 				worst_fit();
 				break;
-			case 6:
-				print();
+			default:
 				break;
 		}
 	}
