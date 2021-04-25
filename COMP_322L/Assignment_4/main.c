@@ -1,114 +1,143 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <limits.h>
 struct node {
-	int *allocated;
-	int *block;
-	int *process;
+	int *b, *p;
+	int *bf, *pf;
 } *ptr = NULL;
 typedef struct node node;
 int n, m;
-void init_fit() {
+
+void reset() {
 	int i;
-	printf("\nBlock size: ");//5
-	scanf("%d", &n);
-	printf("Process size: ");//4
-	scanf("%d", &m);
-	ptr = (struct node *)malloc(n * sizeof(struct node));
-	ptr->block = (int *)malloc(n * sizeof(*ptr->block));
-	ptr->process = (int *)malloc(m * sizeof(*ptr->process));
-	ptr->allocated = (int *)malloc(m * sizeof(*ptr->allocated));
-	for (i = 0; i < n; i++) {
-		ptr->block[i] = 0;
-	}
-	for (i = 0; i < m; i++) {
-		ptr->process[i] = 0;
-		ptr->allocated[i] = -1;
-	}
-	// memset(ptr->allocated, -1, sizeof(*ptr->allocated));
-	printf("\nEnter block size: ");
 	for (i = 0; i < n; i++)
-		scanf("%d", &ptr->block[i]);
-	printf("\nEnter process size: ");
+		ptr->pf[i] = 0;
 	for (i = 0; i < m; i++)
-		scanf("%d", &ptr->process[i]);
-
+		ptr->bf[i] = 0;
 }
-
-void print() {
-	int i;
-	printf("P[ID]\t SIZE\t BLOCK");
-	for (i = 0; i < m; i++) {
-		printf("\nP[%d]:\t%*d", i + 1, 4, ptr->process[i]);
-		(ptr->allocated[i] != -1) ? printf("\t\b%*d", 5, ptr->block[i] + 1) : printf("\t NOT ALLOCATED");
-	}
-	printf("\n");
-}
-
-void first_fit() {
-	int i, j;
-	printf("first-fit:\n");
-	for (i = 0; i < m; i++) {
-		for (j = 0; j < n; j++) {
-			if (ptr->block[j] >= ptr->process[i]) {
-				ptr->allocated[i] = j;
-				ptr->block[j] -= ptr->process[i];
-				break;
-			}
-		}
-	}
-	print();
-}
-
-void next_fit() {
-	printf("next-fit:\n");
-
-}
-
-void best_fit() {
-	printf("best-fit:\n");
-
-}
-
-void worst_fit() {
-	printf("worst-fit:\n");
-
-}
-
 void collection() {
 	if (ptr != NULL)
 		free((void*)ptr);
 }
 
-int main(void) {
-	int n = 0;
-	while (n < 7) {
-		printf("\n1. Initialize\n2. First-fit\n3. Next-fit\n4. Best-fit \n5. Worst-fit\n6. Quit\nEnter #: ");
-		scanf("%d", &n);
-		switch (n) {
-			case 1:
-				init_fit();
-				break;
-			case 2:
-				first_fit();
-				break;
-			case 3:
-				next_fit();
-				break;
-			case 4:
-				best_fit();
-				break;
-			case 5:
-				worst_fit();
-				break;
-			case 6:
-				collection();
-				exit(-1);
-			default:
-				printf("\nINVALID");
-				n = 0;
-		}
+int main(int argc, char **argv) {
+	int i, j, id, loc,
+	min_frag, max_frag,
+	in_frag = 0, ex_frag = 0;
+	FILE *sys = fopen(argv[1], "r");
+	fscanf(sys, "%d", &m);//block
+	fscanf(sys, "%d", &n);//process
+	ptr = (struct node *)malloc(n * sizeof(struct node));
+	ptr->b = (int *)malloc(m * sizeof(*ptr->b));
+	ptr->bf = (int *)malloc(m * sizeof(*ptr->bf));
+	for (i=0;i<m;i++) {
+		fscanf(sys, "%d", &ptr->b[i]);
+		ptr->bf[i] = 0;
 	}
-	collection();
-	return 0;
+	ptr->p = (int *)malloc(n * sizeof(*ptr->p));
+	ptr->pf = (int *)malloc(m * sizeof(*ptr->pf));
+	for (i = 0; i < n; i++) {
+		fscanf(sys, "%d", &ptr->p[i]);
+		ptr->pf[i] = 0;
+	}
+
+	// first fit
+	printf("\nFirst Fit:");
+	for (i = 0; i < n; i++) {
+		for (j = 0; j < m; j++) {
+			if (ptr->p[i] <= ptr->b[j] && ptr->bf[j] == 0 && ptr->pf[i] == 0) {
+				ptr->bf[j] = ptr->pf[i] = 1;
+				in_frag += ptr->b[j] - ptr->p[i];
+				printf("\nP[%d]:\tB[%d]", i, j);
+				break;
+			}
+		}
+		if (ptr->pf[i] == 0)
+			printf("\nP[%d]:\tNot Allocated", i);
+	}
+	printf("\nTotal internal fragmentation: %d",in_frag);
+	for(j=0;j<m;j++){
+		if(ptr->bf[j] == 0)
+			ex_frag+=ptr->b[j];
+	}
+	printf("\nTotal external fragmentation: %d\n", ex_frag);
+
+	// best fit
+	reset();
+	printf("\n\nBest Fit:");
+	for (i = 0; i < n; i++) {
+		min_frag = INT_MAX;
+		id = INT_MAX;
+		for (j = 0; j < m; j++) {
+			if (ptr->p[i] <= ptr->b[j] && ptr->bf[j] == 0 && min_frag > (ptr->b[j] - ptr->p[i])) {
+				min_frag = ptr->b[j] - ptr->p[i];
+				id = j;
+			}
+		}
+		if (min_frag != INT_MAX) {
+			ptr->bf[id] = ptr->pf[i] = 1;
+			in_frag += ptr->b[id] - ptr->p[i];
+			printf("\nP[%d]:\tB[%d]", i, id);
+		}
+		if (ptr->pf[i] == 0)
+			printf("\nP[%d]:-\tNot Allocated", i);
+	}
+	printf("\nTotal internal fragmentation: %d", in_frag);
+	for(j=0;j<m;j++){
+		if(ptr->bf[j] == 0)
+			ex_frag+=ptr->b[j];
+	}
+	printf("\nTotal external fragmentation: %d\n",ex_frag);
+
+	// worst fit
+	reset();
+	printf("\n\nWorst Fit:");
+	for(i=0;i<n;i++) {
+		max_frag = -1;
+		id=INT_MAX;
+		for (j = 0; j < m; j++) {
+			if (ptr->p[i] <= ptr->b[j] && ptr->bf[j] == 0 && max_frag < (ptr->b[j] - ptr->p[i])) {
+				max_frag = ptr->b[j] - ptr->p[i];
+				id = j;
+			}
+		}
+		if(max_frag != -1){
+				ptr->bf[id] = ptr->pf[i] = 1;
+				in_frag += ptr->b[id] - ptr->p[i];
+				printf("\nP[%d]:\tB[%d]",i,id);
+		}
+		if (ptr->pf[i] == 0)
+			printf("\nP[%d]:\tNot Allocated", i);
+	}
+	printf("\nTotal internal fragmentation: %d",in_frag);
+	for(j=0;j<m;j++){
+		if(ptr->bf[j] == 0)
+			ex_frag+=ptr->b[j];
+	}
+	printf("\nTotal external fragmentation: %d\n",ex_frag);
+
+	// next fit
+	reset();
+	printf("\nEnter block no. to begin allocation: ");
+	scanf("%d", &loc);
+	printf("Next fit:");
+	for (i = 0; i < n; i++) {
+		for (j = loc; j < m; j++) {
+			if (ptr->p[i] <= ptr->b[j] && ptr->bf[j] == 0 && ptr->pf[i] == 0) {
+				ptr->bf[j] = ptr->pf[i] = 1;
+				in_frag += ptr->b[j] - ptr->p[i];
+				printf("\nP[%d]:\tB[%d]", i, j);
+				loc = ((j + 1) == m) ? 0 : j+1;
+				break;
+			}
+		}
+		if (ptr->pf[i] == 0)
+			printf("\nP[%d]:\tNot Allocated", i);
+	}
+	printf("\nTotal internal fragmentation: %d",in_frag);
+	for(j=0;j<m;j++){
+		if(ptr->bf[j] == 0)
+			ex_frag+=ptr->b[j];
+	}
+	printf("\nTotal external fragmentation: %d\n", ex_frag);
 }
