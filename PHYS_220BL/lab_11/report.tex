@@ -10,29 +10,78 @@
 \usepackage{soul}
 \graphicspath{{./images/}}
 \def\F#1{\(#1\)}
-\title{Lab 11: }
+\title{Lab 11: Electron Acceleration and Deflection by Electrostatic Fields}
 \author{Philip Kim}
 \date{\today}
 \begin{document}
 \maketitle
 \vspace*{-1cm}
 \begin{table}[!htp]\centering
-  \begin{tabular}{|c|c|c|}\hline
-    \multicolumn{3}{|c|}{\textbf{Table 1: }}\\\hline
-    1&2&3\\\hline
+  \begin{tabular}{|c|c|c|c|c|}\hline
+    \multicolumn{5}{|c|}{\textbf{Table 1: Baseline Measurement}}\\\hline
+    Point Near Anode&\F{x_1=?}&?&\F{y_1=?}&?\\\hline
+    Point Near 10cm&\F{x_2=?}&?&\F{y_2=?}&?\\\hline
+    Fit to \F{y=ax+b}&\F{a=?}&?&\F{b=?}&?\\\hline
   \end{tabular}
 \end{table}
-\begin{center}
-  \subsection*{Setup}
-  % \includegraphics[scale=0.066]{setup1.jpeg}
-  setup
-  \subsection*{Graph 1}
-  % \includegraphics[scale=0.066]{Vrc.jpeg}
-  graph 1
-  \subsection*{Calculation}
-  Calculation
-\end{center}
+\begin{table}[!htp]\centering
+  \begin{tabular}{|c|c|c|c|}\hline
+    \multicolumn{4}{|c|}{\textbf{Table 2: Electron Deflection}}\\\hline
+    \F{x_{obs}}&\F{y_{obs}} (two values for two polarity method)&\F{y_{baseline}}&\F{y=y_{obs}-y_{baseline}}\\\hline
+    & & & \\\hline
+    & & & \\\hline
+    & & & \\\hline
+    & & & \\\hline
+    & & & \\\hline
+    & & & \\\hline
+    & & & \\\hline
+    & & & \\\hline
+    & & & \\\hline
+    & & & \\\hline
+    & & & \\\hline
+    & & & \\\hline
+  \end{tabular}
+\end{table}
 \begin{itemize}
-  \item
+  \item[(a)] Measure the distance between the plates s =?
+  \item[] a
+  \item[(b)] Graph \F{y~vs.~x^2}, include error bars. Measure the slope of the graph, slope =?
+  \item[] b
+  \item[(c)] From the slope, calculate the correction factor \F{F_D=?}
+  \item[] c
 \end{itemize}
+\newpage
+\begin{table}[!htp]\centering
+  \begin{tabular}{|c|c|c|c|c|}\hline
+    \multicolumn{5}{|c|}{\textbf{Table 3: Thompson's Experiment}}\\\hline
+    \F{V_{PS} (kV)}&2.00&2.50&3.00&3.50\\\hline
+    \F{I} (A)& & & & \\\hline
+    \F{B} (T)& & & & \\\hline
+    \F{e/m} (C/kg)& & & & \\\hline
+  \end{tabular}
+\end{table}
+Sketch the path of the beam:\\
+\fbox{\begin{minipage}{53em}
+\text{}\\
+\text{}\\
+\text{}\\
+\text{}\\
+\text{}\\
+\text{}\\
+\text{}\\
+\text{}\\
+\text{}\\
+\text{}\\
+\text{}\\
+\text{}\\
+\text{}\\
+\text{}
+\end{minipage}}
+\subsection*{11.6 Questions}
+\begin{enumerate}
+  \item Calculate the speed of the electron for the maximum voltage available for acceleration, in meters per seconds.
+  \item What fraction of the speed of light is this?
+  \item According to the special theory of relativity, the mass m of an object that is moving with velocity v with respect to an observer is larger than its rest mass \F{m_0}. The rest mass is the mass of the object when it is at rest. The equation that describes this phenomenon is \begin{center}\F{m=\frac{m_0}{\sqrt{1-\frac{v^2}{c^2}}}},\end{center} where \F{c=3.0\times10^8m/s} is the speed of light in vacuum. Evaluate the mass for the electrons in this experiment that are moving at v you calculated in 1. How much larger is this than \F{m_0}?
+  \item Compare your measured \F{e/m} from Thompsons Experiment to the known value, \F{1.76\times10^{11}C/kg}.
+\end{enumerate}
 \end{document}
