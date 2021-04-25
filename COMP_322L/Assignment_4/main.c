@@ -33,6 +33,9 @@ void reset() {
 	for (i = 0; i < m; i++)
 		ptr->bf[i] = 0;
 }
+void print() {
+
+}
 void collection() {
 	if (ptr != NULL)
 		free((void*)ptr);
@@ -43,9 +46,11 @@ int main(int argc, char **argv) {
 	min_frag, max_frag,
 	in_frag = 0, ex_frag = 0;
 
+	// initialize
 	init(argv);
+
 	// first fit
-	printf("\nFirst Fit:");
+	printf("\nFIRST-FIT");
 	for (i = 0; i < n; i++) {
 		for (j = 0; j < m; j++) {
 			if (ptr->p[i] <= ptr->b[j] && ptr->bf[j] == 0 && ptr->pf[i] == 0) {
@@ -58,16 +63,16 @@ int main(int argc, char **argv) {
 		if (ptr->pf[i] == 0)
 			printf("\nP[%d]:\tNot Allocated", i);
 	}
-	printf("\nTotal internal fragmentation: %d",in_frag);
+	printf("\nINTERNAL FRAG: %d", in_frag);
 	for(j=0;j<m;j++){
 		if(ptr->bf[j] == 0)
 			ex_frag+=ptr->b[j];
 	}
-	printf("\nTotal external fragmentation: %d\n", ex_frag);
+	printf("\nEXTERNAL FRAG: %d\n", ex_frag);
 
 	// best fit
 	reset();
-	printf("\n\nBest Fit:");
+	printf("\n\nBEST-FIT");
 	for (i = 0; i < n; i++) {
 		min_frag = INT_MAX;
 		id = INT_MAX;
@@ -85,16 +90,16 @@ int main(int argc, char **argv) {
 		if (ptr->pf[i] == 0)
 			printf("\nP[%d]:-\tNot Allocated", i);
 	}
-	printf("\nTotal internal fragmentation: %d", in_frag);
+	printf("\nINTERNAL FRAG: %d", in_frag);
 	for(j=0;j<m;j++){
 		if(ptr->bf[j] == 0)
 			ex_frag+=ptr->b[j];
 	}
-	printf("\nTotal external fragmentation: %d\n",ex_frag);
+	printf("\nEXTERNAL FRAG: %d\n", ex_frag);
 
 	// worst fit
 	reset();
-	printf("\n\nWorst Fit:");
+	printf("\n\nWORST-FIT");
 	for(i=0;i<n;i++) {
 		max_frag = -1;
 		id=INT_MAX;
@@ -112,18 +117,18 @@ int main(int argc, char **argv) {
 		if (ptr->pf[i] == 0)
 			printf("\nP[%d]:\tNot Allocated", i);
 	}
-	printf("\nTotal internal fragmentation: %d",in_frag);
+	printf("\nINTERNAL FRAG: %d", in_frag);
 	for(j=0;j<m;j++){
 		if(ptr->bf[j] == 0)
 			ex_frag+=ptr->b[j];
 	}
-	printf("\nTotal external fragmentation: %d\n",ex_frag);
+	printf("\nEXTERNAL FRAG: %d\n", ex_frag);
 
 	// next fit
 	reset();
 	printf("\nEnter block no. to begin allocation: ");
 	scanf("%d", &loc);
-	printf("Next fit:");
+	printf("NEXT-FIT");
 	for (i = 0; i < n; i++) {
 		for (j = loc; j < m; j++) {
 			if (ptr->p[i] <= ptr->b[j] && ptr->bf[j] == 0 && ptr->pf[i] == 0) {
@@ -137,10 +142,10 @@ int main(int argc, char **argv) {
 		if (ptr->pf[i] == 0)
 			printf("\nP[%d]:\tNot Allocated", i);
 	}
-	printf("\nTotal internal fragmentation: %d",in_frag);
+	printf("\nINTERNAL FRAG: %d",in_frag);
 	for(j=0;j<m;j++){
 		if(ptr->bf[j] == 0)
 			ex_frag+=ptr->b[j];
 	}
-	printf("\nTotal external fragmentation: %d\n", ex_frag);
+	printf("\nEXTERNAL FRAG: %d\n", ex_frag);
 }
