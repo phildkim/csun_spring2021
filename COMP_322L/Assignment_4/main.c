@@ -1,3 +1,10 @@
+/**
+ * @brief memory allocation strategies, first-fit, next-fit, best-fit, worst-fit
+ * @note To run program:
+ * 			 $ gcc main.c
+ * 			 $ ./a.out test.txt
+ * @retval None
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -33,9 +40,6 @@ void reset() {
 	for (i = 0; i < m; i++)
 		ptr->bf[i] = 0;
 }
-void print() {
-
-}
 void collection() {
 	if (ptr != NULL)
 		free((void*)ptr);
@@ -68,8 +72,9 @@ int main(int argc, char **argv) {
 		if(ptr->bf[j] == 0)
 			ex_frag+=ptr->b[j];
 	}
-	printf("\nEXTERNAL FRAG: %d\n", ex_frag);
-
+	printf("\nEXTERNAL FRAG: %d", ex_frag);
+	printf("\nMEM UTILITIES: %0.2f", (float)in_frag/n);
+	printf("\nSEARCH TIMES:  %0.2f\n", (float)ex_frag / m);
 	// best fit
 	reset();
 	printf("\n\nBEST-FIT");
@@ -95,8 +100,9 @@ int main(int argc, char **argv) {
 		if(ptr->bf[j] == 0)
 			ex_frag+=ptr->b[j];
 	}
-	printf("\nEXTERNAL FRAG: %d\n", ex_frag);
-
+	printf("\nEXTERNAL FRAG: %d", ex_frag);
+	printf("\nMEM UTILITIES: %0.2f", (float)in_frag / n);
+	printf("\nSEARCH TIMES:  %0.2f\n", (float)ex_frag / m);
 	// worst fit
 	reset();
 	printf("\n\nWORST-FIT");
@@ -122,8 +128,9 @@ int main(int argc, char **argv) {
 		if(ptr->bf[j] == 0)
 			ex_frag+=ptr->b[j];
 	}
-	printf("\nEXTERNAL FRAG: %d\n", ex_frag);
-
+	printf("\nEXTERNAL FRAG: %d", ex_frag);
+	printf("\nMEM UTILITIES: %0.2f", (float)in_frag / n);
+	printf("\nSEARCH TIMES:  %0.2f\n", (float)ex_frag / m);
 	// next fit
 	reset();
 	printf("\nEnter block no. to begin allocation: ");
@@ -147,7 +154,9 @@ int main(int argc, char **argv) {
 		if(ptr->bf[j] == 0)
 			ex_frag+=ptr->b[j];
 	}
-	printf("\nEXTERNAL FRAG: %d\n", ex_frag);
+	printf("\nEXTERNAL FRAG: %d", ex_frag);
+	printf("\nMEM UTILITIES: %0.2f", (float)in_frag / n);
+	printf("\nSEARCH TIMES:  %0.2f\n", (float)ex_frag/m);
 	collection();
 	return 0;
 }
