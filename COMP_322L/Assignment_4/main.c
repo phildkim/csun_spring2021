@@ -148,4 +148,6 @@ int main(int argc, char **argv) {
 			ex_frag+=ptr->b[j];
 	}
 	printf("\nEXTERNAL FRAG: %d\n", ex_frag);
+	collection();
+	return 0;
 }
