@@ -63,7 +63,7 @@ npm run build && npm start // production server
 ## COMP-322 LAB: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/85037971220?pwd=Vk5JbnBLQVlpU3ZQL0Z6R0dXbW1JZz09)
 
 - [X] ~~Project 4: Banker's Algorithm **Due on Apr 25 by 11:59pm**~~
-- [ ] Project 5: Memory allocation strategies
+- [X] ~~Project 5: Memory allocation strategies~~
 
 ***
 
