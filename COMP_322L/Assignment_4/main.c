@@ -7,23 +7,8 @@ struct node {
 } *ptr = NULL;
 typedef struct node node;
 int n, m;
-
-void reset() {
+void init(char **argv) {
 	int i;
-	for (i = 0; i < n; i++)
-		ptr->pf[i] = 0;
-	for (i = 0; i < m; i++)
-		ptr->bf[i] = 0;
-}
-void collection() {
-	if (ptr != NULL)
-		free((void*)ptr);
-}
-
-int main(int argc, char **argv) {
-	int i, j, id, loc,
-	min_frag, max_frag,
-	in_frag = 0, ex_frag = 0;
 	FILE *sys = fopen(argv[1], "r");
 	fscanf(sys, "%d", &m);//block
 	fscanf(sys, "%d", &n);//process
@@ -40,7 +25,25 @@ int main(int argc, char **argv) {
 		fscanf(sys, "%d", &ptr->p[i]);
 		ptr->pf[i] = 0;
 	}
+}
+void reset() {
+	int i;
+	for (i = 0; i < n; i++)
+		ptr->pf[i] = 0;
+	for (i = 0; i < m; i++)
+		ptr->bf[i] = 0;
+}
+void collection() {
+	if (ptr != NULL)
+		free((void*)ptr);
+}
 
+int main(int argc, char **argv) {
+	int i, j, id, loc,
+	min_frag, max_frag,
+	in_frag = 0, ex_frag = 0;
+
+	init(argv);
 	// first fit
 	printf("\nFirst Fit:");
 	for (i = 0; i < n; i++) {
