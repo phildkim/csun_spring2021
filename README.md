@@ -75,8 +75,6 @@ npm run build && npm start // production server
 
 ## COMP-300 (Grade: 95.58%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
 
-- [ ] [Essay #12](https://docs.google.com/document/d/1Nx2MUAz1ecL4lXr_3KRATTrozLR3hOS4kbpEzKMYuSE/edit): **Apr 25 by 11:59pm**
-  - [X] ~~[_Research Paper_](https://docs.google.com/document/d/1M6orVz_O3qvcHRX4s2yfCgBHDjIFA7Z37FPuEicI-qo/edit): **Apr 25 by 11:59pm**~~
 - [ ] [Essay #13](https://docs.google.com/document/d/1RUrrBidI0zVxYQ00QFuhMLoKcUnPHv4tIXzK7igGKzc/edit): **May 2 by 11:59pm**
   - [X] _Class Presentation_: **May 14, 2021**
   - [X] ~~GitHub~~
@@ -87,7 +85,7 @@ npm run build && npm start // production server
 
 ## BIO-106 LAB: (Grade: 98.59%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
-- [ ] Ch 11 Quiz
+- [X] ~~Ch 11 Quiz~~
 - [X] ~~Ch 11 Discussion~~
 - [X] ~~Simulation 5: Scientific Method with Pillbugs~~
 
