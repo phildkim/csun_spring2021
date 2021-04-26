@@ -8,6 +8,7 @@ STDDEVa=sqrt(sum(abs(A-MEANa).^2)/(Na-1));
 STDDEVb=sqrt(sum(abs(B-MEANb).^2)/(Nb-1));
 STDERRa=2*(STDDEVa./sqrt(Na));
 STDERRb=2*(STDDEVb./sqrt(Nb));
+
 col(1, :) = [0.3010 0.7450 0.9330]; % blue
 col(2, :) = [0.4660 0.6740 0.1880]; % green
 x = categorical({'Ethanol', 'Caffeine'}); % xaxis
