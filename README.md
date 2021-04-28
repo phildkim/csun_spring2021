@@ -69,8 +69,6 @@ npm run build && npm start // production server
 
 ## COMP-491 LAB: (Grade: 100%), [Zoom](https://csun.zoom.us/j/4853398877?pwd=NHd2T292blFlc2pZMmpTMENncFdBZz09)
 
-- [X] ~~Lab 4~~
-
 ***
 
 ## COMP-300 (Grade: 95.58%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
@@ -101,8 +99,8 @@ npm run build && npm start // production server
 - [X] ~~16.3 Population Outbreaks and Population Regulation (Lecture 30:28)~~
 - [X] ~~16.4 Population Dynamics (Lecture 22:55)~~
 - [X] ~~Population Ecology (Reading)~~
-- [ ] Population Ecology (Connect)
-- [ ] Population Growth (Connect)
+- [X] ~~Population Ecology (Connect)~~
+- [X] ~~Population Growth (Connect)~~
 - [ ] Quiz 23 (Due May 2) (will require calculator)
 - [ ] Quiz 24 (Due May 2)
 
