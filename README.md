@@ -99,8 +99,8 @@ npm run build && npm start // production server
 - [X] ~~16.1 Population Ecology (Lecture 17:37)~~
 - [X] ~~16.2 Population Ecology (Lecture 19:43)~~
 - [X] ~~16.3 Population Outbreaks and Population Regulation (Lecture 30:28)~~
-- [ ] 16.4 Population Dynamics (Lecture 22:55)
-- [ ] Population Ecology (Reading)
+- [X] ~~16.4 Population Dynamics (Lecture 22:55)~~
+- [X] ~~Population Ecology (Reading)~~
 - [ ] Population Ecology (Connect)
 - [ ] Population Growth (Connect)
 - [ ] Quiz 23 (Due May 2) (will require calculator)
