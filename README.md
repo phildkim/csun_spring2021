@@ -76,7 +76,8 @@ npm run build && npm start // production server
 ## COMP-300 (Grade: 95.58%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
 
 - [ ] [Essay #13](https://docs.google.com/document/d/1RUrrBidI0zVxYQ00QFuhMLoKcUnPHv4tIXzK7igGKzc/edit): **May 2 by 11:59pm**
-  - [X] _Class Presentation_: **May 14, 2021**
+
+- [ ] _Class Presentation_: **May 14, 2021**
   - [X] ~~GitHub~~
   - [X] ~~LeetCode~~
   - [X] ~~Senior Project?~~
@@ -85,9 +86,9 @@ npm run build && npm start // production server
 
 ## BIO-106 LAB: (Grade: 98.59%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
-- [X] ~~Ch 11 Quiz~~
-- [X] ~~Ch 11 Discussion~~
-- [X] ~~Simulation 5: Scientific Method with Pillbugs~~
+- [ ] Ch 12 Quiz
+- [ ] Ch 12 Discussion
+- [X] ~~Choice experiment with fish Lab Report~~
 
 ***
 
@@ -95,9 +96,9 @@ npm run build && npm start // production server
 
 ### Population Ecology: April 24 - May 2
 
-- [ ] 16.1 Population Ecology (Lecture 17:37)
-- [ ] 16.2 Population Ecology (Lecture 19:43)
-- [ ] 16.3 Population Outbreaks and Population Regulation (Lecture 30:28)
+- [X] ~~16.1 Population Ecology (Lecture 17:37)~~
+- [X] ~~16.2 Population Ecology (Lecture 19:43)~~
+- [X] ~~16.3 Population Outbreaks and Population Regulation (Lecture 30:28)~~
 - [ ] 16.4 Population Dynamics (Lecture 22:55)
 - [ ] Population Ecology (Reading)
 - [ ] Population Ecology (Connect)
