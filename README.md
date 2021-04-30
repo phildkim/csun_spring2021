@@ -48,7 +48,7 @@ npm run build && npm start // production server
 
 ## PHYS-220B LAB (Grade: 100\%)
 
-- [ ] [Lab 9](https://www.csun.edu/~hpostma/2021-1-220BL/lab09/lab09.html)
+- [X] ~~[Lab 9](https://www.csun.edu/~hpostma/2021-1-220BL/lab09/lab09.html)~~
 - [X] ~~Lab 10: _@ CSUN, **10AM - 04/14/21**_~~
 - [ ] Lab 11: _@ CSUN, **11AM - 05/12/21**_
 - [ ] [Lab 12](https://www.csun.edu/~hpostma/2021-1-220BL/lab12/lab12.html)
