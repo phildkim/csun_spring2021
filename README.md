@@ -69,6 +69,8 @@ npm run build && npm start // production server
 
 ## COMP-491 LAB: (Grade: 100%), [Zoom](https://csun.zoom.us/j/4853398877?pwd=NHd2T292blFlc2pZMmpTMENncFdBZz09)
 
+- [ ] [Senior Design Showcase:](https://docs.google.com/document/d/1kPaWEoUQstn80dZ6LSDKEgsV5TF5foAJngix_0LeQKw/edit) **May 7th @ 2:15 - 2:32 PM**
+
 ***
 
 ## COMP-300 (Grade: 95.58%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
