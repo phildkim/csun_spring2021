@@ -44,12 +44,13 @@ npm run build && npm start // production server
 
 ## PHYS-220B (Grade: 87.22\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
+- [ ] Ch 29
+- [ ] Ch 30
+
 ***
 
 ## PHYS-220B LAB (Grade: 100\%)
 
-- [X] ~~[Lab 9](https://www.csun.edu/~hpostma/2021-1-220BL/lab09/lab09.html)~~
-- [X] ~~Lab 10: _@ CSUN, **10AM - 04/14/21**_~~
 - [ ] Lab 11: _@ CSUN, **11AM - 05/12/21**_
 - [ ] [Lab 12](https://www.csun.edu/~hpostma/2021-1-220BL/lab12/lab12.html)
 - [ ] Lab 13
@@ -57,6 +58,8 @@ npm run build && npm start // production server
 ***
 
 ## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/89815022379?pwd=b2dJVllxQnZ2VDViTWJza2dSN2VrQT09)
+
+- [ ] Chapter 6: [Zybook](https://docs.google.com/document/d/1ok55Toj0mHL_4XhrBburVK8euIC3FC55qj69Ri3ADD4/edit)
 
 ***
 
@@ -75,8 +78,6 @@ npm run build && npm start // production server
 
 ## COMP-300 (Grade: 95.58%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
 
-- [X] [Essay #13](https://docs.google.com/document/d/1RUrrBidI0zVxYQ00QFuhMLoKcUnPHv4tIXzK7igGKzc/edit): **May 2 by 11:59pm**
-
 - [ ] _Class Presentation_: **May 14, 2021**
   - [X] ~~GitHub~~
   - [X] ~~LeetCode~~
@@ -86,25 +87,13 @@ npm run build && npm start // production server
 
 ## BIO-106 LAB: (Grade: 98.59%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
-- [ ] Ch 12 Quiz
-- [ ] Ch 12 Discussion
-- [X] ~~Choice experiment with fish Lab Report~~
+- [ ] Ch 13 Quiz
+- [ ] Ch 13 Discussion
+- [ ] [Practical 2](https://docs.google.com/document/d/1-UKJeaXqltIGNa5sww4WQZReALMdI7oYnuU_DiYIbiY/edit)
 
 ***
 
 ## BIO-106: (Grade: 89.63%)
-
-### Population Ecology: April 24 - May 2
-
-- [X] ~~16.1 Population Ecology (Lecture 17:37)~~
-- [X] ~~16.2 Population Ecology (Lecture 19:43)~~
-- [X] ~~16.3 Population Outbreaks and Population Regulation (Lecture 30:28)~~
-- [X] ~~16.4 Population Dynamics (Lecture 22:55)~~
-- [X] ~~Population Ecology (Reading)~~
-- [X] ~~Population Ecology (Connect)~~
-- [X] ~~Population Growth (Connect)~~
-- [ ] Quiz 23 (Due May 2) (will require calculator)
-- [ ] Quiz 24 (Due May 2)
 
 ### Behavioral Ecology: May 1 - May 9
 
