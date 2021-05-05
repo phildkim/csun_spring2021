@@ -44,8 +44,8 @@ npm run build && npm start // production server
 
 ## PHYS-220B (Grade: 87.22\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
-- [ ] Ch 29
-- [ ] Ch 30
+- [ ] Ch 29: (8, 11, 17, 18, 26)
+- [ ] Ch 30: (2, 4, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 20, 21, 22, 23)
 
 ***
 
