@@ -6,6 +6,7 @@
 \usepackage{amssymb,amsmath,amsthm}
 \usepackage{changepage,threeparttable}
 \usepackage{booktabs,multirow}
+\usepackage{subcaption}
 \usepackage{graphicx}
 \usepackage{soul}
 \graphicspath{{./images/}}
@@ -20,14 +21,14 @@
   \begin{tabular}{|c|c|c|c|c|c|c|}\hline
     \multicolumn{7}{|c|}{\textbf{Table 1: First Approximation for \F{R_{int}}}}\\\hline
     \F{f (Hz)}&s/DIV&\F{V_{RL} (V)}&V/DIV for \F{V_{RL}}&\F{V_{L} (V)}&V/DIV for \F{V_{L}}&\F{R_{int} (\Omega)}\\\hline
-    1000& & & & & & \\\hline
+    1000&0.5ms&3.48V&2V&0.08V&2V&2.35\\\hline
   \end{tabular}
 \end{table}
 \begin{table}[!htp]\centering
   \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
     \multicolumn{10}{|c|}{\textbf{Table 2: First Approximation for \F{L}}}\\\hline
     \F{f (Hz)}&s/DIV&\F{V_{RL} (V)}&V/DIV for \F{V_{RL}}&\F{V_{L} (V)}&V/DIV for \F{V_{L}}&\F{I_R (A)}&\F{Z_{L,eff} (\Omega)}&\F{X_L (\Omega)}&L (H)\\\hline
-    65000& & & & & & & & & \\\hline
+    65000&0.5ms&0.68V&0.1V&0.01V&0.1V&0.0086&1.163& & \\\hline
   \end{tabular}
 \end{table}
 \begin{table}[!htp]\centering
@@ -45,16 +46,21 @@
     65000& & & & & \\\hline
   \end{tabular}
 \end{table}
+
 \begin{center}
-  \subsection*{Setup}
-  % \includegraphics[scale=0.066]{setup1.jpeg}
-  setup
-  \subsection*{Graph 1}
-  % \includegraphics[scale=0.066]{Vrc.jpeg}
-  graph 1
-  \subsection*{Calculation}
-  Calculation
+  \subsection*{SETUP}
+  \begin{figure}[!htp]
+    \begin{subfigure}{0.5\textwidth}
+    \includegraphics[scale=0.066]{V_RL.jpeg}
+    \caption*{\F{V_{RL}}}\label{fig:subim1}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    \includegraphics[scale=0.066]{V_L.jpeg}
+    \caption*{\F{V_{L}}}\label{fig:subim2}
+    \end{subfigure}
+  \end{figure}
 \end{center}
+
 \begin{itemize}
   \item We assume that the current is determined by the largest resistor in the circuit, R. How large is the error that we can expect as a result?
 \end{itemize}
