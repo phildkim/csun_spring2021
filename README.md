@@ -53,7 +53,7 @@ npm run build && npm start // production server
 
 - [ ] Lab 11: _@ CSUN, **11AM - 05/12/21**_
 - [ ] [Lab 12](https://www.csun.edu/~hpostma/2021-1-220BL/lab12/lab12.html)
-- [ ] Lab 13
+- [ ] [Lab 13](https://www.csun.edu/~hpostma/2021-1-220BL/lab13/lab13.html)
 
 ***
 
@@ -64,9 +64,6 @@ npm run build && npm start // production server
 ***
 
 ## COMP-322 LAB: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/85037971220?pwd=Vk5JbnBLQVlpU3ZQL0Z6R0dXbW1JZz09#success)
-
-- [X] ~~Project 4: Banker's Algorithm **Due on Apr 25 by 11:59pm**~~
-- [X] ~~Project 5: Memory allocation strategies~~
 
 ***
 
