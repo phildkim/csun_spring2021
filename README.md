@@ -46,7 +46,7 @@ npm run build && npm start // production server
 
 - [ ] Ch 29: (8, 11, 17, 18, 26)
 - [ ] Ch 30: (2, 4, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 20, 21, 22, 23)
-- [ ] RECITATION 9 ~ CHAPTER 29 & 30
+- [X] ~~RECITATION 9 ~ CHAPTER 29 & 30~~
 
 ***
 
