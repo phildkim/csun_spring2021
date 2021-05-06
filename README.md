@@ -88,7 +88,7 @@ npm run build && npm start // production server
 ## BIO-106 LAB: (Grade: 98.59%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
 - [ ] Ch 13 Quiz
-- [ ] Ch 13 Discussion
+- [X] Ch 13 Discussion
 - [ ] [Practical 2](https://docs.google.com/document/d/1-UKJeaXqltIGNa5sww4WQZReALMdI7oYnuU_DiYIbiY/edit)
 
 ***
