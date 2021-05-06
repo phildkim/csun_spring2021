@@ -46,6 +46,7 @@ npm run build && npm start // production server
 
 - [ ] Ch 29: (8, 11, 17, 18, 26)
 - [ ] Ch 30: (2, 4, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 20, 21, 22, 23)
+- [ ] RECITATION 9 ~ CHAPTER 29 & 30
 
 ***
 
@@ -64,6 +65,8 @@ npm run build && npm start // production server
 ***
 
 ## COMP-322 LAB: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/85037971220?pwd=Vk5JbnBLQVlpU3ZQL0Z6R0dXbW1JZz09#success)
+
+- [ ] Project 6
 
 ***
 
