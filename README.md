@@ -44,7 +44,7 @@ npm run build && npm start // production server
 
 ## PHYS-220B (Grade: 87.22\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
-- [ ] Ch 29: (8, 11, 17, 18, 26)
+- [X] ~~Ch 29: (8, 11, 17, 18, 26): Due by Sunday 11:59PM~~
 - [ ] Ch 30: (2, 4, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 20, 21, 22, 23)
 - [X] ~~RECITATION 9 ~ CHAPTER 29 & 30~~
 
@@ -72,7 +72,7 @@ npm run build && npm start // production server
 
 ## COMP-491 LAB: (Grade: 100%), [Zoom](https://csun.zoom.us/j/4853398877?pwd=NHd2T292blFlc2pZMmpTMENncFdBZz09)
 
-- [ ] [Senior Design Showcase:](https://docs.google.com/document/d/1kPaWEoUQstn80dZ6LSDKEgsV5TF5foAJngix_0LeQKw/edit) **May 7th @ 2:15 - 2:32 PM**
+- [X] ~~[Senior Design Showcase:](https://docs.google.com/document/d/1kPaWEoUQstn80dZ6LSDKEgsV5TF5foAJngix_0LeQKw/edit) **May 7th @ 2:15 - 2:32 PM**~~
 
 ***
 
@@ -87,8 +87,8 @@ npm run build && npm start // production server
 
 ## BIO-106 LAB: (Grade: 98.59%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
-- [ ] Ch 13 Quiz
-- [X] Ch 13 Discussion
+- [X] ~~Ch 13 Quiz~~
+- [X] ~~Ch 13 Discussion: Post~~
 - [ ] [Practical 2](https://docs.google.com/document/d/1-UKJeaXqltIGNa5sww4WQZReALMdI7oYnuU_DiYIbiY/edit)
 
 ***
@@ -99,8 +99,8 @@ npm run build && npm start // production server
 
 - [X] ~~17.1 Behavioral Ecology (Innate vs Learned) (Lecture  26:08)~~
 - [X] ~~17.2 Sexual Selection, Mating Systems, and Cooperation (Lecture 41:15)~~
-- [ ] Behavioral Ecology (Reading)
-- [ ] Behavioral Ecology (Connect)
+- [X] ~~Behavioral Ecology (Reading)~~
+- [X] ~~Behavioral Ecology (Connect)~~
 - [ ] Quiz 25 (Due May 9)
 - [ ] Quiz 26 (Due May 9)
 
