@@ -61,6 +61,8 @@ npm run build && npm start // production server
 ## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/89815022379?pwd=b2dJVllxQnZ2VDViTWJza2dSN2VrQT09)
 
 - [X] ~~Chapter 6: [Zybook](https://docs.google.com/document/d/1ok55Toj0mHL_4XhrBburVK8euIC3FC55qj69Ri3ADD4/edit)~~
+- [ ] Chapter 7: [Zybook](https://docs.google.com/document/d/1ok55Toj0mHL_4XhrBburVK8euIC3FC55qj69Ri3ADD4/edit)
+- [X] ~~Chapter 8: [Zybook](https://docs.google.com/document/d/1ok55Toj0mHL_4XhrBburVK8euIC3FC55qj69Ri3ADD4/edit)~~
 
 ***
 
@@ -89,20 +91,11 @@ npm run build && npm start // production server
 
 - [X] ~~Ch 13 Quiz~~
 - [X] ~~Ch 13 Discussion: Post~~
-- [ ] [Practical 2](https://docs.google.com/document/d/1-UKJeaXqltIGNa5sww4WQZReALMdI7oYnuU_DiYIbiY/edit)
+- [X] ~~[Practical 2](https://docs.google.com/document/d/1-UKJeaXqltIGNa5sww4WQZReALMdI7oYnuU_DiYIbiY/edit)~~
 
 ***
 
 ## BIO-106: (Grade: 89.63%)
-
-### Behavioral Ecology: May 1 - May 9
-
-- [X] ~~17.1 Behavioral Ecology (Innate vs Learned) (Lecture  26:08)~~
-- [X] ~~17.2 Sexual Selection, Mating Systems, and Cooperation (Lecture 41:15)~~
-- [X] ~~Behavioral Ecology (Reading)~~
-- [X] ~~Behavioral Ecology (Connect)~~
-- [ ] Quiz 25 (Due May 9)
-- [ ] Quiz 26 (Due May 9)
 
 ### Communities and Ecosystems: May 8 - May 14
 
