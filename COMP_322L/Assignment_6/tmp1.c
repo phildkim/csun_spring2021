@@ -1,67 +1,70 @@
+/**
+ * Page Replacement Algorithms:
+ *  - Compare the performance of page replacement
+ *    algorithms for fixed numbers of frames.
+ *  - OPTIMAL
+ *  - FIFO
+ *  - LRU
+ */
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include <unistd.h>
 #define N 1000
-int tim = 1;
-int numberOfFrames;
-int pages[N];
+struct node {
+  int *pages;
+  int frames;
+  int counter;
+}*ptr=NULL;
+typedef struct node node;
 
-// printing current status of frame memory table
-void printMemoryTable(int memoryTable[], int numberOfFrames) {
-  for (int i = 0; i < numberOfFrames; i++) {
-    if (memoryTable[i] == -1)
-      printf("-- ");
-    else
-      printf("%2d ", memoryTable[i]);
-  }
+void printMemoryTable(int table[], int frames) {
+  for (int i = 0; i < frames; i++)
+    (table[i] == -1) ? printf("-- ") : printf("%2d ", table[i]);
   printf(" |");
 }
 
-// checking particular page existance in frame
-int exists(int memoryTable[], int numberOfFrames, int page){
-  for (int i = 0; i < numberOfFrames; i++)
-    if (page == memoryTable[i])
-      return 1;
-  return 0;
+bool exists(int table[], int frames, int pages) {
+  for (int i = 0; i < frames; i++)
+    if (pages == table[i])
+      return true;
+  return false;
 }
 
-// FIFO CODE
-void FIFO(int n){
+void FIFO(int n) {
   printf("\n---------FIFO ALGORITHM--------\n");
   int pos = 0, cnt1 = 0, memoryTable[N];
   printf("%d\n", n);
   for (int i = 0; i < N; i++)
     memoryTable[i] = -1;
   for (int i = 0; i < n; i++) {
-    printf("Table after request %2d | ", pages[i]);
-    if (!exists(memoryTable, numberOfFrames, pages[i])) {
-      memoryTable[pos] = pages[i];
-      pos = (pos + 1) % numberOfFrames;
-      printMemoryTable(memoryTable, numberOfFrames);
+    printf("Table after request %2d | ", ptr->pages[i]);
+    if (!exists(memoryTable, ptr->frames, ptr->pages[i])) {
+      memoryTable[pos] = ptr->pages[i];
+      pos = (pos + 1) % ptr->frames;
+      printMemoryTable(memoryTable, ptr->frames);
       printf(" Page Fault\n");
       cnt1++;
       continue;
-    }
-    printMemoryTable(memoryTable, numberOfFrames);
-    printf("\n");
+    } else
+      printf("\n");
   }
-  printf("\nNumber of page faults in FIFO : %d\n\n", cnt1);
+  printf("\nNumber of page faults in FIFO: %d\n\n", cnt1);
 }
 
-// checking particular page existance in frame for LRU
-int lru_exists(int memoryTable[], int numberOfFrames, int page, int used[]){
-  for (int i = 0; i < numberOfFrames; i++)
-    if (page == memoryTable[i]){
-      used[i] = tim++;
-      return 1;
+bool lru_exists(int table[], int frames, int pages, int used[]) {
+  for (int i = 0; i < frames; i++)
+    if (pages == table[i]) {
+      used[i] = ptr->counter++;
+      return true;
     }
-  return 0;
+  return false;
 }
 
-// getting position where page should be placed in LRU
-int lru_getpos(int numberOfFrames, int used[]){
+int lru_getpos(int frames, int used[]){
   int mini = 1e9, pos = -1;
-  for (int i = 0; i < numberOfFrames; i++)
+  for (int i = 0; i < frames; i++)
     if (mini > used[i]){
       mini = used[i];
       pos = i;
@@ -69,8 +72,7 @@ int lru_getpos(int numberOfFrames, int used[]){
   return pos;
 }
 
-// LRU CODE
-void LRU(int n){
+void LRU(int n) {
   printf("\n----------LRU ALGORITHM---------\n");
   int pos = 0, cnt2 = 0;
   int memoryTable[N], used[N];
@@ -78,41 +80,39 @@ void LRU(int n){
     memoryTable[i] = -1;
     used[i] = 0;
   }
-  printf("\nFrame table after each request\n");
-  printf("---------------------------------\n");
-  for (int i = 0; i < n; i++){
-    printf("Table after request %2d | ", pages[i]);
-    if (!lru_exists(memoryTable, numberOfFrames, pages[i], used)){
-      pos = lru_getpos(numberOfFrames, used);
-      memoryTable[pos] = pages[i];
-      used[pos] = tim++;
-      printMemoryTable(memoryTable, numberOfFrames);
+  printf("\nFrame table after each request\n---------------------------------\n");
+  for (int i = 0; i < n; i++) {
+    printf("Table after request %2d | ", ptr->pages[i]);
+    if (!lru_exists(memoryTable, ptr->frames, ptr->pages[i], used)) {
+      pos = lru_getpos(ptr->frames, used);
+      memoryTable[pos] = ptr->pages[i];
+      used[pos] = ptr->counter++;
+      printMemoryTable(memoryTable, ptr->frames);
       printf(" Page Fault\n");
       cnt2++;
       continue;
     }
-    printMemoryTable(memoryTable, numberOfFrames);
+    printMemoryTable(memoryTable, ptr->frames);
     printf("\n");
   }
-  printf("\nNumber of page faults in LRU : %d\n\n", cnt2);
+  printf("\nNumber of page faults in LRU: %d\n\n", cnt2);
 }
 
-// getting position where page should be placed in OPTIMAL
-int optimal_getpos(int memoryTable[], int numberOfFrames, int pages[], int curr, int n){
-  for (int i = 0; i < numberOfFrames; i++)
-    if (memoryTable[i] == -1)
+int optimal_getpos(int table[], int frames, int pages[], int curr, int n){
+  for (int i = 0; i < frames; i++)
+    if (table[i] == -1)
       return i;
   int pos[N] = {0};
-  for (int i = 0; i < numberOfFrames; i++){
+  for (int i = 0; i < frames; i++){
     pos[i] = 1e9;
     for (int j = curr + 1; j < n; j++)
-      if (pages[j] == memoryTable[i]){
+      if (pages[j] == table[i]){
         pos[i] = j;
         break;
       }
   }
   int maxi = -1, retPos = -1;
-  for (int i = 0; i < numberOfFrames; i++)
+  for (int i = 0; i < frames; i++)
     if (maxi < pos[i]){
       maxi = pos[i];
       retPos = i;
@@ -120,8 +120,7 @@ int optimal_getpos(int memoryTable[], int numberOfFrames, int pages[], int curr,
   return retPos;
 }
 
-// OPTIMAL CODE
-void OPTIMAL(int n){
+void OPTIMAL(int n) {
   printf("\n----------OPTIMAL ALGORITHM----------\n");
   int pos = 0, cnt3 = 0, memoryTable[N];
   for (int i = 0; i < N; i++)
@@ -129,43 +128,37 @@ void OPTIMAL(int n){
   printf("\nFrame table for optimal page replacement after each request\n");
   printf("---------------------------------\n");
   for (int i = 0; i < n; i++){
-    printf("Table after request %2d | ", pages[i]);
-    if (!exists(memoryTable, numberOfFrames, pages[i])){
-      pos = optimal_getpos(memoryTable, numberOfFrames, pages, i, n);
-      memoryTable[pos] = pages[i];
-      printMemoryTable(memoryTable, numberOfFrames);
+    printf("Table after request %2d | ", ptr->pages[i]);
+    if (!exists(memoryTable, ptr->frames, ptr->pages[i])){
+      pos = optimal_getpos(memoryTable, ptr->frames, ptr->pages, i, n);
+      memoryTable[pos] = ptr->pages[i];
+      printMemoryTable(memoryTable, ptr->frames);
       printf(" Page Fault\n");
       cnt3++;
       continue;
     }
-    printMemoryTable(memoryTable, numberOfFrames);
+    printMemoryTable(memoryTable, ptr->frames);
     printf("\n");
   }
-  printf("\nNumber of page faults in OPT : %d\n\n", cnt3);
+  printf("\nNumber of page faults in OPT: %d\n\n", cnt3);
 }
 
-// main program
-int main(){
-  int x = 2;
-  int k = 0, T = 20;
-  int n = T;
-  // random number generator
-  // you can T value as input variable
-  while (T--){
-    //between 1 t0 10
-    int random_integer = rand() % (10) + 1;
-    pages[k++] = random_integer;
+int main(int argc, char **argv) {
+  srand(time(NULL));
+  int i, x = 2, t = 20, r = 10, n = t, k = 0;
+  ptr = (struct node *)malloc(N * sizeof(struct node));
+  ptr->pages = (int *)malloc(N * sizeof(*ptr->pages));
+  while (t--) {
+    int random = (rand() % r) + 1;
+    ptr->pages[k++] = random;
   }
   printf("--------- Page Reference ----------\n");
-  for (int i = 0; i < 20; i++){
-    printf("%d ", pages[i]);
-  }
-  while (x){
-    if (x == 2)
-      numberOfFrames = 3;
-    else
-      numberOfFrames = 4;
-    printf("----------For %d frames ----------\n", numberOfFrames);
+  for (i = 0; i < 20; i++)
+    printf("%d ", ptr->pages[i]);
+  printf("\n");
+  while (x) {
+    ptr->frames = (x == 2) ? 3 : 4;
+    printf("----------For %d frames ----------\n", ptr->frames);
     printf("\n");
     FIFO(n);
     LRU(n);
