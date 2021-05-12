@@ -45,8 +45,10 @@ npm run build && npm start // production server
 ## PHYS-220B (Grade: 87.22\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
 - [X] ~~Ch 29: (8, 11, 17, 18, 26): Due by Sunday 11:59PM~~
-- [ ] Ch 30: (2, 4, 7, 9, 10, 11, 12, 14, 15, 17, 18, 19, 20, 21, 22, 23)
+- [ ] Ch 30: (11, 17, 19, 22)
 - [X] ~~RECITATION 9 ~ CHAPTER 29 & 30~~
+- [ ] Final Practice Exam: **Sunday by 11:59pm**
+- [ ] **Final Monday 8-10AM**
 
 ***
 
@@ -61,14 +63,15 @@ npm run build && npm start // production server
 ## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/89815022379?pwd=b2dJVllxQnZ2VDViTWJza2dSN2VrQT09)
 
 - [X] ~~Chapter 6: [Zybook](https://docs.google.com/document/d/1ok55Toj0mHL_4XhrBburVK8euIC3FC55qj69Ri3ADD4/edit)~~
-- [ ] Chapter 7: [Zybook](https://docs.google.com/document/d/1ok55Toj0mHL_4XhrBburVK8euIC3FC55qj69Ri3ADD4/edit)
+- [X] ~~Chapter 7: [Zybook](https://docs.google.com/document/d/1ok55Toj0mHL_4XhrBburVK8euIC3FC55qj69Ri3ADD4/edit)~~
 - [X] ~~Chapter 8: [Zybook](https://docs.google.com/document/d/1ok55Toj0mHL_4XhrBburVK8euIC3FC55qj69Ri3ADD4/edit)~~
+- [ ] Final Tuesday 8-10AM
 
 ***
 
 ## COMP-322 LAB: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/85037971220?pwd=Vk5JbnBLQVlpU3ZQL0Z6R0dXbW1JZz09#success)
 
-- [ ] Project 6
+- [X] ~~Project 6~~
 
 ***
 
@@ -99,9 +102,10 @@ npm run build && npm start // production server
 
 ### Communities and Ecosystems: May 8 - May 14
 
-- [ ] 18.1 Communities (Lecture 17:44)
-- [ ] 18.2 Ecosystems (Lecture 17:46)
-- [ ] Communities and Ecosystems (Reading)
+- [X] ~~18.1 Communities (Lecture 17:44)~~
+- [X] ~~18.2 Ecosystems (Lecture 17:46)~~
+- [X] ~~Communities and Ecosystems (Reading)~~
 - [ ] Communities and Ecosystems (Connect)
 - [ ] Quiz 27 (Due May 14)
 - [ ] Quiz 28 (Due May 14)
+- [ ] Extra Credit

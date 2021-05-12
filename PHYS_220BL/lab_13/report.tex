@@ -6,6 +6,7 @@
 \usepackage{amssymb,amsmath,amsthm}
 \usepackage{changepage,threeparttable}
 \usepackage{booktabs,multirow}
+\usepackage{subcaption}
 \usepackage{graphicx}
 \usepackage{soul}
 \graphicspath{{./images/}}
@@ -19,52 +20,57 @@
 \begin{table}[!htp]\centering
   \begin{tabular}{|c|c|}\hline
     \multicolumn{2}{|c|}{\textbf{Table 1: Sizes}}\\\hline
-    Copper wire length \F{l}& \\\hline
-    Diameter of pen \F{d}& \\\hline
-    Number of windings \F{N}& \\\hline
-    Length of the inductor \F{a}& \\\hline
+    Copper wire length \F{l}&51.2 cm\\\hline
+    Diameter of pen \F{d}&0.25 cm\\\hline
+    Number of windings \F{N}&70\\\hline
+    Length of the inductor \F{a}&1.1 cm\\\hline
   \end{tabular}
 \end{table}
 \begin{table}[!htp]\centering
   \begin{tabular}{|c|c|c|c|c|c|c|}\hline
     \multicolumn{7}{|c|}{\textbf{Table 2: First Approximation for \F{R_{int}}}}\\\hline
-    \F{f (Hz)}&\F{s/DIV}&\F{V_{RL} (V)}&\F{V/DIV} for \F{V_{RL}}&\F{V_L (V)}&\F{V/DIV} for \F{V_L}&\F{R_{int} (\Omega)}\\\hline
-    1000& & & & & & \\\hline
+    \F{f (Hz)}&s/DIV&\F{V_{RL} (V)}&V/DIV for \F{V_{RL}}&\F{V_{L} (V)}&V/DIV for \F{V_{L}}&\F{R_{int} (\Omega)}\\\hline
+    1000&0.5ms&3.56V&0.5V&0.05V&0.5V&1.42\\\hline
   \end{tabular}
 \end{table}
 \begin{table}[!htp]\centering
   \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
     \multicolumn{10}{|c|}{\textbf{Table 2: First Approximation for \F{L}}}\\\hline
-    \F{f (Hz)}&\F{s/DIV}&\F{V_{RL} (V)}&\F{V/DIV} for \F{V_{RL}}&\F{V_L (V)}&\F{V/DIV} for \F{V_L}&\F{I_R (A)}&\F{Z_{L,eff} (\Omega)}&\F{X_L (\Omega)}&\F{L (H)}\\\hline
-    65000& & & & & & & & & \\\hline
+    \F{f (Hz)}&s/DIV&\F{V_{RL} (V)}&V/DIV for \F{V_{RL}}&\F{V_{L} (V)}&V/DIV for \F{V_{L}}&\F{I_R (A)}&\F{Z_{L,eff} (\Omega)}&\F{X_L (\Omega)}&L (H)\\\hline
+    65000&0.2ms&3.28V&0.5V&0.10V&0.5V&0.033&3.05&0.771&1.89e-6\\\hline
   \end{tabular}
 \end{table}
 \begin{table}[!htp]\centering
   \begin{tabular}{|c|c|c|c|c|c|}\hline
     \multicolumn{6}{|c|}{\textbf{Table 3: The Impedance of an Inductor}}\\\hline
     \F{f (Hz)}&s/DIV&\F{V_{RL} (V)}&V/DIV for \F{V_{RL}}&\F{V_{L} (V)}&V/DIV for \F{V_{L}}\\\hline
-    1000& & & & & \\\hline
-    22000& & & & & \\\hline
-    32000& & & & & \\\hline
-    39000& & & & & \\\hline
-    45000& & & & & \\\hline
-    50000& & & & & \\\hline
-    55000& & & & & \\\hline
-    60000& & & & & \\\hline
-    65000& & & & & \\\hline
+    1000&0.5ms&3.56V&0.5V&0.05V&0.5V\\\hline
+    22000&0.5ms&3.56V&0.5V&0.06V&0.5V\\\hline
+    32000&0.5ms&3.46V&0.5V&0.08V&0.5V\\\hline
+    39000&0.5ms&3.42V&0.5V&0.08V&0.5V\\\hline
+    45000&0.5ms&3.38V&0.5V&0.08V&0.5V\\\hline
+    50000&0.2ms&3.36V&0.5V&0.09V&0.5V\\\hline
+    55000&0.2ms&3.32V&0.5V&0.09V&0.5V\\\hline
+    60000&0.2ms&3.30V&0.5V&0.10V&0.5V\\\hline
+    65000&0.2ms&3.28V&0.5V&0.10V&0.5V\\\hline
   \end{tabular}
 \end{table}
 \begin{center}
-  \subsection*{Setup}
-  % \includegraphics[scale=0.066]{setup1.jpeg}
-  setup
-  \subsection*{Graph 1}
-  % \includegraphics[scale=0.066]{Vrc.jpeg}
-  graph 1
-  \subsection*{Calculation}
-  Calculation
+  \subsection*{SETUP}
+  \begin{figure}[!htp]
+    \begin{subfigure}{0.5\textwidth}
+    \includegraphics[scale=0.061]{V_RL.jpeg}
+    \caption*{\F{V_{RL}}}\label{fig:subim1}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    \includegraphics[scale=0.061]{V_L.jpeg}
+    \caption*{\F{V_{L}}}\label{fig:subim2}
+    \end{subfigure}
+  \end{figure}
+  \subsection*{GRAPH}
+  \includegraphics[width=\textwidth]{graph.jpg}
 \end{center}
 \begin{itemize}
-  \item Compare the obtained value to that predicted for an ideal long inductor made of a wire of length l and taking up length a along the toothpick, \F{L=\frac{l^2}{a}\times{10}^{-7}H}
+  \item Compare the obtained value to that predicted for an ideal long inductor made of a wire of length l and taking up length a along the toothpick, \F{L=\frac{l^2}{a}\times{10}^{-7}H\rightarrow~L=\frac{.512 m}{.011 m}\times{10}^{-7}H\rightarrow~L=4.65\times{10}^{-7}H}
 \end{itemize}
 \end{document}
