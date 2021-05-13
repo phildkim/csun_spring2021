@@ -54,7 +54,7 @@ npm run build && npm start // production server
 
 ## PHYS-220B LAB (Grade: 100\%)
 
-- [ ] Lab 11: _@ CSUN, **11AM - 05/12/21**_
+- [X] Lab 11: _@ CSUN, **11AM - 05/12/21**_
 - [X] ~~[Lab 12](https://www.csun.edu/~hpostma/2021-1-220BL/lab12/lab12.html)~~
 - [X] ~~[Lab 13](https://www.csun.edu/~hpostma/2021-1-220BL/lab13/lab13.html)~~
 
@@ -105,7 +105,7 @@ npm run build && npm start // production server
 - [X] ~~18.1 Communities (Lecture 17:44)~~
 - [X] ~~18.2 Ecosystems (Lecture 17:46)~~
 - [X] ~~Communities and Ecosystems (Reading)~~
-- [ ] Communities and Ecosystems (Connect)
-- [ ] Quiz 27 (Due May 14)
-- [ ] Quiz 28 (Due May 14)
-- [ ] Extra Credit
+- [X] ~~Communities and Ecosystems (Connect)~~
+- [X] ~~Quiz 27 (Due May 14)~~
+- [X] ~~Quiz 28 (Due May 14)~~
+- [X] ~~Extra Credit~~
