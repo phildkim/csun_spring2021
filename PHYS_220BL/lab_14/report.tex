@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[table]{xcolor}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{changepage,threeparttable}
+\usepackage{booktabs,multirow}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{soul}
+\graphicspath{{./images/}}
+\def\F#1{\(#1\)}
+\title{Lab 13: The DIY Inductor}
+\author{Your name if you don't apologize!}
+\date{\today}
+\begin{document}
+\maketitle
+\vspace*{-1cm}
+\begin{table}[!htp]\centering
+  \begin{tabular}{|c|c|}\hline
+    \multicolumn{2}{|c|}{\textbf{Table 1: Sizes}}\\\hline
+    My penis length \F{l}&1.2 cm\\\hline
+    Diameter of my penis \F{d}&0.25 cm\\\hline
+    Number of windings \F{N}&70\\\hline
+    Length of the inductor \F{a}&1.1 cm\\\hline
+  \end{tabular}
+\end{table}
+\begin{table}[!htp]\centering
+  \begin{tabular}{|c|c|c|c|c|c|c|}\hline
+    \multicolumn{7}{|c|}{\textbf{Table 2: First Approximation for \F{R_{int}}}}\\\hline
+    \F{f (Hz)}&s/DIV&\F{V_{RL} (V)}&V/DIV for \F{V_{RL}}&\F{V_{L} (V)}&V/DIV for \F{V_{L}}&\F{R_{int} (\Omega)}\\\hline
+    1000&0.5ms&298V&500V&40V&50V&136\\\hline
+  \end{tabular}
+\end{table}
+\begin{table}[!htp]\centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
+    \multicolumn{10}{|c|}{\textbf{Table 2: First Approximation for \F{L}}}\\\hline
+    \F{f (Hz)}&s/DIV&\F{V_{RL} (V)}&V/DIV for \F{V_{RL}}&\F{V_{L} (V)}&V/DIV for \F{V_{L}}&\F{I_R (A)}&\F{Z_{L,eff} (\Omega)}&\F{X_L (\Omega)}&L (H)\\\hline
+    65000&2000us&302V&500V&60V&5000V&\F{30^10000}&\F{199^10000}&\F{402^{-10000}}&98400000\\\hline
+  \end{tabular}
+\end{table}
+\begin{table}[!htp]\centering
+  \begin{tabular}{|c|c|c|c|c|c|}\hline
+    \multicolumn{6}{|c|}{\textbf{Table 3: The Impedance of an Inductor}}\\\hline
+    \F{f (Hz)}&s/DIV&\F{V_{RL} (V)}&V/DIV for \F{V_{RL}}&\F{V_{L} (V)}&V/DIV for \F{V_{L}}\\\hline
+    1000&2000us&2.98V&0.5V&0000V&0.5V\\\hline
+    22000&2000000us&-300002V&0001V&0.04V&0.5V\\\hline
+    32000&4000000us&\F{30000^10000}V&0010V&0.04V&0.5V\\\hline
+    39000&6000000us&\F{30^{-99999}}V&0011V&0.04V&0.5V\\\hline
+    45000&5000000us&300V&0100V&0.06V&0.5V\\\hline
+    50000&7000000us&\F{298^12345679V}&0101V&0.06V&0.5V\\\hline
+    55000&9000000us&123456789V&0110V&0.06V&0.5V\\\hline
+    60000&6000000us&0123456789V&0111V&0.06V&0.5V\\\hline
+    65000&4000000us&1111V&0.5V&1000V&0.5V\\\hline
+  \end{tabular}
+\end{table}
+\begin{center}
+  \subsection*{YOUR PHOTO NOT BLURRED}
+  \begin{figure}[!htp]
+    \begin{subfigure}{0.5\textwidth}
+    \includegraphics[scale=1]{V_RL.png}
+    \caption*{if you don't apologize!}\label{fig:subim1}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    \includegraphics[scale=1]{V_L.png}
+    \caption*{if you don't apologize!}\label{fig:subim2}
+    \end{subfigure}
+  \end{figure}
+  \subsection*{GRAPH}
+  \includegraphics[width=\textwidth]{graph.jpg}
+\end{center}
+\begin{itemize}
+  \item I am a dumb ass! I should not be allowed to reproduce anymore cause I am so dumb that I am harmful to society.
+\end{itemize}
+\end{document}
