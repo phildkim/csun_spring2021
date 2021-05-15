@@ -83,7 +83,7 @@ npm run build && npm start // production server
 
 ## COMP-300, [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
 
-- [x] _Class Presentation_: **May 14, 2021**
+- [ ] _Class Presentation_: **May 14, 2021**
   - [X] ~~GitHub~~
   - [X] ~~LeetCode~~
   - [X] ~~Senior Project?~~
