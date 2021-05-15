@@ -42,7 +42,7 @@ npm run build && npm start // production server
 
 ***
 
-## PHYS-220B (Grade: 87.22\%), [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
+## PHYS-220B, [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
 - [X] ~~Ch 29: (8, 11, 17, 18, 26): Due by Sunday 11:59PM~~
 - [ ] Ch 30: (11, 17, 19, 22)
@@ -52,7 +52,7 @@ npm run build && npm start // production server
 
 ***
 
-## PHYS-220B LAB (Grade: 100\%)
+## PHYS-220B LAB
 
 - [X] Lab 11: _@ CSUN, **11AM - 05/12/21**_
 - [X] ~~[Lab 12](https://www.csun.edu/~hpostma/2021-1-220BL/lab12/lab12.html)~~
@@ -60,7 +60,7 @@ npm run build && npm start // production server
 
 ***
 
-## COMP-322: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/89815022379?pwd=b2dJVllxQnZ2VDViTWJza2dSN2VrQT09)
+## COMP-322, [Zoom](https://csun.zoom.us/j/89815022379?pwd=b2dJVllxQnZ2VDViTWJza2dSN2VrQT09)
 
 - [X] ~~Chapter 6: [Zybook](https://docs.google.com/document/d/1ok55Toj0mHL_4XhrBburVK8euIC3FC55qj69Ri3ADD4/edit)~~
 - [X] ~~Chapter 7: [Zybook](https://docs.google.com/document/d/1ok55Toj0mHL_4XhrBburVK8euIC3FC55qj69Ri3ADD4/edit)~~
@@ -69,28 +69,28 @@ npm run build && npm start // production server
 
 ***
 
-## COMP-322 LAB: (Grade: N/A%), [Zoom](https://csun.zoom.us/j/85037971220?pwd=Vk5JbnBLQVlpU3ZQL0Z6R0dXbW1JZz09#success)
+## COMP-322 LAB, [Zoom](https://csun.zoom.us/j/85037971220?pwd=Vk5JbnBLQVlpU3ZQL0Z6R0dXbW1JZz09#success)
 
 - [X] ~~Project 6~~
 
 ***
 
-## COMP-491 LAB: (Grade: 100%), [Zoom](https://csun.zoom.us/j/4853398877?pwd=NHd2T292blFlc2pZMmpTMENncFdBZz09)
+## COMP-491 LAB, [Zoom](https://csun.zoom.us/j/4853398877?pwd=NHd2T292blFlc2pZMmpTMENncFdBZz09)
 
 - [X] ~~[Senior Design Showcase:](https://docs.google.com/document/d/1kPaWEoUQstn80dZ6LSDKEgsV5TF5foAJngix_0LeQKw/edit) **May 7th @ 2:15 - 2:32 PM**~~
 
 ***
 
-## COMP-300 (Grade: 95.58%), [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
+## COMP-300, [Zoom](https://csun.zoom.us/j/98975075063?pwd=TnRMZmNQQ2gwSlo3R1UzQkNvcG8vUT09)
 
-- [ ] _Class Presentation_: **May 14, 2021**
+- [x] _Class Presentation_: **May 14, 2021**
   - [X] ~~GitHub~~
   - [X] ~~LeetCode~~
   - [X] ~~Senior Project?~~
 
 ***
 
-## BIO-106 LAB: (Grade: 98.59%), [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
+## BIO-106 LAB, [Zoom](https://csun.zoom.us/j/4814581723?pwd=YTQ3eDFyUGIzYTd6SWg4amtCdElKdz09)
 
 - [X] ~~Ch 13 Quiz~~
 - [X] ~~Ch 13 Discussion: Post~~
@@ -98,7 +98,7 @@ npm run build && npm start // production server
 
 ***
 
-## BIO-106: (Grade: 89.63%)
+## BIO-106
 
 ### Communities and Ecosystems: May 8 - May 14
 
