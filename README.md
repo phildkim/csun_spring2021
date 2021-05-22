@@ -12,7 +12,7 @@
 
 #### CSUN Student ID: 108508736
 
-#### CSUN Password: \<Neg4life> -->
+#### CSUN Password: \<Neg4life>\ -->
 ***
 
 ```bash
@@ -45,16 +45,16 @@ npm run build && npm start // production server
 ## PHYS-220B, [Zoom](https://csun.zoom.us/meeting/register/tZ0kc-CprD0rHNEzHv9Dvm-WCKMQKCqze8SI)
 
 - [X] ~~Ch 29: (8, 11, 17, 18, 26): Due by Sunday 11:59PM~~
-- [ ] Ch 30: (11, 17, 19, 22)
+- [x] ~~Ch 30: (11, 17, 19, 22)~~
 - [X] ~~RECITATION 9 ~ CHAPTER 29 & 30~~
-- [ ] Final Practice Exam: **Sunday by 11:59pm**
-- [ ] **Final Monday 8-10AM**
+- [x] ~~Final Practice Exam: **Sunday by 11:59pm**~~
+- [x] ~~**Final Monday 8-10AM**~~
 
 ***
 
 ## PHYS-220B LAB
 
-- [X] Lab 11: _@ CSUN, **11AM - 05/12/21**_
+- [X] ~~Lab 11: _@ CSUN, **11AM - 05/12/21**_~~
 - [X] ~~[Lab 12](https://www.csun.edu/~hpostma/2021-1-220BL/lab12/lab12.html)~~
 - [X] ~~[Lab 13](https://www.csun.edu/~hpostma/2021-1-220BL/lab13/lab13.html)~~
 
