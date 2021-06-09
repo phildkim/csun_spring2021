@@ -2,17 +2,6 @@
 
 ## Computer Science
 
-### [CSUN Portal Login](https://auth.csun.edu/cas/login?method=POST&service=https%3A%2F%2Fmynorthridge.csun.edu%2Fpsp%2FPANRPRD%2F%3Fcmd%3Dlogin%26languageCd%3DENG)
-
-### [CSUN Canvas Login](https://auth.csun.edu/cas/login?service=https://mynorthridge.csun.edu/psp/PANRPRD/?cmd=login&languageCd=ENG)
-
-#### CSUN Email: [philip.kim.657@my.csun.edu](https://mail.google.com/mail/u/0/?ogbl#inbox)
-
-<!-- #### CSUN UserID: pdk55536
-
-#### CSUN Student ID: 108508736
-
-#### CSUN Password: \<Neg4life>\ -->
 ***
 
 ```bash
